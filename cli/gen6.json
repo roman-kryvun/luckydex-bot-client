@@ -1,0 +1,722 @@
+[
+  {
+    "name": "Chespin",
+    "id": 650,
+    "gen": 6,
+    "href": "chespin",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/chespin.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/chespin.png"
+  },
+  {
+    "name": "Quilladin",
+    "id": 651,
+    "gen": 6,
+    "href": "quilladin",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/quilladin.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/quilladin.png"
+  },
+  {
+    "name": "Chesnaught",
+    "id": 652,
+    "gen": 6,
+    "href": "chesnaught",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/chesnaught.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/chesnaught.png"
+  },
+  {
+    "name": "Fennekin",
+    "id": 653,
+    "gen": 6,
+    "href": "fennekin",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/fennekin.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/fennekin.png"
+  },
+  {
+    "name": "Braixen",
+    "id": 654,
+    "gen": 6,
+    "href": "braixen",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/braixen.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/braixen.png"
+  },
+  {
+    "name": "Delphox",
+    "id": 655,
+    "gen": 6,
+    "href": "delphox",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/delphox.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/delphox.png"
+  },
+  {
+    "name": "Froakie",
+    "id": 656,
+    "gen": 6,
+    "href": "froakie",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/froakie.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/froakie.png"
+  },
+  {
+    "name": "Frogadier",
+    "id": 657,
+    "gen": 6,
+    "href": "frogadier",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/frogadier.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/frogadier.png"
+  },
+  {
+    "name": "Greninja",
+    "id": 658,
+    "gen": 6,
+    "href": "greninja",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/greninja.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/greninja.png"
+  },
+  {
+    "name": "Bunnelby",
+    "id": 659,
+    "gen": 6,
+    "href": "bunnelby",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/bunnelby.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/bunnelby.png"
+  },
+  {
+    "name": "Diggersby",
+    "id": 660,
+    "gen": 6,
+    "href": "diggersby",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/diggersby.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/diggersby.png"
+  },
+  {
+    "name": "Fletchling",
+    "id": 661,
+    "gen": 6,
+    "href": "fletchling",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/fletchling.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/fletchling.png"
+  },
+  {
+    "name": "Fletchinder",
+    "id": 662,
+    "gen": 6,
+    "href": "fletchinder",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/fletchinder.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/fletchinder.png"
+  },
+  {
+    "name": "Talonflame",
+    "id": 663,
+    "gen": 6,
+    "href": "talonflame",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/talonflame.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/talonflame.png"
+  },
+  {
+    "name": "Scatterbug",
+    "id": 664,
+    "gen": 6,
+    "href": "scatterbug",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/scatterbug.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/scatterbug.png"
+  },
+  {
+    "name": "Spewpa",
+    "id": 665,
+    "gen": 6,
+    "href": "spewpa",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/spewpa.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/spewpa.png"
+  },
+  {
+    "name": "Vivillon",
+    "id": 666,
+    "gen": 6,
+    "href": "vivillon",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/vivillon.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/vivillon.png"
+  },
+  {
+    "name": "Litleo",
+    "id": 667,
+    "gen": 6,
+    "href": "litleo",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/litleo.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/litleo.png"
+  },
+  {
+    "name": "Pyroar",
+    "id": 668,
+    "gen": 6,
+    "href": "pyroar",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/pyroar.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/pyroar.png"
+  },
+  {
+    "name": "Flabébé",
+    "id": 669,
+    "gen": 6,
+    "href": "flabebe",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/flabebe.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/flabebe.png"
+  },
+  {
+    "name": "Floette",
+    "id": 670,
+    "gen": 6,
+    "href": "floette",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/floette.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/floette.png"
+  },
+  {
+    "name": "Florges",
+    "id": 671,
+    "gen": 6,
+    "href": "florges",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/florges.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/florges.png"
+  },
+  {
+    "name": "Skiddo",
+    "id": 672,
+    "gen": 6,
+    "href": "skiddo",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/skiddo.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/skiddo.png"
+  },
+  {
+    "name": "Gogoat",
+    "id": 673,
+    "gen": 6,
+    "href": "gogoat",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/gogoat.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/gogoat.png"
+  },
+  {
+    "name": "Pancham",
+    "id": 674,
+    "gen": 6,
+    "href": "pancham",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/pancham.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/pancham.png"
+  },
+  {
+    "name": "Pangoro",
+    "id": 675,
+    "gen": 6,
+    "href": "pangoro",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/pangoro.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/pangoro.png"
+  },
+  {
+    "name": "Furfrou",
+    "id": 676,
+    "gen": 6,
+    "href": "furfrou",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/furfrou.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/furfrou.png"
+  },
+  {
+    "name": "Espurr",
+    "id": 677,
+    "gen": 6,
+    "href": "espurr",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/espurr.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/espurr.png"
+  },
+  {
+    "name": "Meowstic",
+    "id": 678,
+    "gen": 6,
+    "href": "meowstic",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/meowstic.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/meowstic.png"
+  },
+  {
+    "name": "Honedge",
+    "id": 679,
+    "gen": 6,
+    "href": "honedge",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/honedge.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/honedge.png"
+  },
+  {
+    "name": "Doublade",
+    "id": 680,
+    "gen": 6,
+    "href": "doublade",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/doublade.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/doublade.png"
+  },
+  {
+    "name": "Aegislash",
+    "id": 681,
+    "gen": 6,
+    "href": "aegislash",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/aegislash.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/aegislash.png"
+  },
+  {
+    "name": "Spritzee",
+    "id": 682,
+    "gen": 6,
+    "href": "spritzee",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/spritzee.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/spritzee.png"
+  },
+  {
+    "name": "Aromatisse",
+    "id": 683,
+    "gen": 6,
+    "href": "aromatisse",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/aromatisse.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/aromatisse.png"
+  },
+  {
+    "name": "Swirlix",
+    "id": 684,
+    "gen": 6,
+    "href": "swirlix",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/swirlix.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/swirlix.png"
+  },
+  {
+    "name": "Slurpuff",
+    "id": 685,
+    "gen": 6,
+    "href": "slurpuff",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/slurpuff.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/slurpuff.png"
+  },
+  {
+    "name": "Inkay",
+    "id": 686,
+    "gen": 6,
+    "href": "inkay",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/inkay.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/inkay.png"
+  },
+  {
+    "name": "Malamar",
+    "id": 687,
+    "gen": 6,
+    "href": "malamar",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/malamar.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/malamar.png"
+  },
+  {
+    "name": "Binacle",
+    "id": 688,
+    "gen": 6,
+    "href": "binacle",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/binacle.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/binacle.png"
+  },
+  {
+    "name": "Barbaracle",
+    "id": 689,
+    "gen": 6,
+    "href": "barbaracle",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/barbaracle.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/barbaracle.png"
+  },
+  {
+    "name": "Skrelp",
+    "id": 690,
+    "gen": 6,
+    "href": "skrelp",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/skrelp.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/skrelp.png"
+  },
+  {
+    "name": "Dragalge",
+    "id": 691,
+    "gen": 6,
+    "href": "dragalge",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/dragalge.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/dragalge.png"
+  },
+  {
+    "name": "Clauncher",
+    "id": 692,
+    "gen": 6,
+    "href": "clauncher",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/clauncher.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/clauncher.png"
+  },
+  {
+    "name": "Clawitzer",
+    "id": 693,
+    "gen": 6,
+    "href": "clawitzer",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/clawitzer.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/clawitzer.png"
+  },
+  {
+    "name": "Helioptile",
+    "id": 694,
+    "gen": 6,
+    "href": "helioptile",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/helioptile.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/helioptile.png"
+  },
+  {
+    "name": "Heliolisk",
+    "id": 695,
+    "gen": 6,
+    "href": "heliolisk",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/heliolisk.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/heliolisk.png"
+  },
+  {
+    "name": "Tyrunt",
+    "id": 696,
+    "gen": 6,
+    "href": "tyrunt",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/tyrunt.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/tyrunt.png"
+  },
+  {
+    "name": "Tyrantrum",
+    "id": 697,
+    "gen": 6,
+    "href": "tyrantrum",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/tyrantrum.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/tyrantrum.png"
+  },
+  {
+    "name": "Amaura",
+    "id": 698,
+    "gen": 6,
+    "href": "amaura",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/amaura.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/amaura.png"
+  },
+  {
+    "name": "Aurorus",
+    "id": 699,
+    "gen": 6,
+    "href": "aurorus",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/aurorus.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/aurorus.png"
+  },
+  {
+    "name": "Sylveon",
+    "id": 700,
+    "gen": 6,
+    "href": "sylveon",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/sylveon.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/sylveon.png"
+  },
+  {
+    "name": "Hawlucha",
+    "id": 701,
+    "gen": 6,
+    "href": "hawlucha",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/hawlucha.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/hawlucha.png"
+  },
+  {
+    "name": "Dedenne",
+    "id": 702,
+    "gen": 6,
+    "href": "dedenne",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/dedenne.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/dedenne.png"
+  },
+  {
+    "name": "Carbink",
+    "id": 703,
+    "gen": 6,
+    "href": "carbink",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/carbink.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/carbink.png"
+  },
+  {
+    "name": "Goomy",
+    "id": 704,
+    "gen": 6,
+    "href": "goomy",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/goomy.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/goomy.png"
+  },
+  {
+    "name": "Sliggoo",
+    "id": 705,
+    "gen": 6,
+    "href": "sliggoo",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/sliggoo.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/sliggoo.png"
+  },
+  {
+    "name": "Goodra",
+    "id": 706,
+    "gen": 6,
+    "href": "goodra",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/goodra.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/goodra.png"
+  },
+  {
+    "name": "Klefki",
+    "id": 707,
+    "gen": 6,
+    "href": "klefki",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/klefki.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/klefki.png"
+  },
+  {
+    "name": "Phantump",
+    "id": 708,
+    "gen": 6,
+    "href": "phantump",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/phantump.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/phantump.png"
+  },
+  {
+    "name": "Trevenant",
+    "id": 709,
+    "gen": 6,
+    "href": "trevenant",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/trevenant.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/trevenant.png"
+  },
+  {
+    "name": "Pumpkaboo",
+    "id": 710,
+    "gen": 6,
+    "href": "pumpkaboo",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/pumpkaboo.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/pumpkaboo.png"
+  },
+  {
+    "name": "Gourgeist",
+    "id": 711,
+    "gen": 6,
+    "href": "gourgeist",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/gourgeist.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/gourgeist.png"
+  },
+  {
+    "name": "Bergmite",
+    "id": 712,
+    "gen": 6,
+    "href": "bergmite",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/bergmite.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/bergmite.png"
+  },
+  {
+    "name": "Avalugg",
+    "id": 713,
+    "gen": 6,
+    "href": "avalugg",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/avalugg.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/avalugg.png"
+  },
+  {
+    "name": "Noibat",
+    "id": 714,
+    "gen": 6,
+    "href": "noibat",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/noibat.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/noibat.png"
+  },
+  {
+    "name": "Noivern",
+    "id": 715,
+    "gen": 6,
+    "href": "noivern",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/noivern.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/noivern.png"
+  },
+  {
+    "name": "Xerneas",
+    "id": 716,
+    "gen": 6,
+    "href": "xerneas",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/xerneas.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/xerneas.png"
+  },
+  {
+    "name": "Yveltal",
+    "id": 717,
+    "gen": 6,
+    "href": "yveltal",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/yveltal.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/yveltal.png"
+  },
+  {
+    "name": "Zygarde",
+    "id": 718,
+    "gen": 6,
+    "href": "zygarde",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/zygarde.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/zygarde.png"
+  },
+  {
+    "name": "Diancie",
+    "id": 719,
+    "gen": 6,
+    "href": "diancie",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/diancie.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/diancie.png"
+  },
+  {
+    "name": "Hoopa",
+    "id": 720,
+    "gen": 6,
+    "href": "hoopa",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/hoopa.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/hoopa.png"
+  },
+  {
+    "name": "Volcanion",
+    "id": 721,
+    "gen": 6,
+    "href": "volcanion",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/x-y/normal/volcanion.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/x-y/shiny/volcanion.png"
+  }
+]

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
+    <!--        <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover" name="viewport" />
+
+    <!-- Primary Meta Tags -->
+    <title>LuckyDex | Pokémon GO</title>
+    <meta content="LuckyDex | Pokémon GO" name="title" />
+    <meta
+      content="Це список покемонів у Pokémon GO. Відмічай своїх лакі та шайні покемінв. Ділися списком з друзями. Тренуйтеся, щоб бути найкращим."
+      name="description"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type" />
+    <meta content="https://luckydex-app.firebaseapp.com/" property="og:url" />
+    <meta content="LuckyDex | Pokémon GO -  Lucky&Shiny Checklist" property="og:title" />
+    <meta
+      content="Це список покемонів у Pokémon GO. Відмічай своїх лакі та шайні покемінв. Ділися списком з друзями. Тренуйтеся, щоб бути найкращим."
+      property="og:description"
+    />
+    <meta content="./assets/pokemon_go_lucky_pokemon_2.webp" property="og:image" />
+
+    <!-- Twitter -->
+    <meta content="summary_large_image" property="twitter:card" />
+    <meta content="https://luckydex-app.firebaseapp.com/" property="twitter:url" />
+    <meta content="LuckyDex | Pokémon GO -  Lucky&Shiny Checklist" property="twitter:title" />
+    <meta
+      content="Це список покемонів у Pokémon GO. Відмічай своїх лакі та шайні покемінв. Ділися списком з друзями. Тренуйтеся, щоб бути найкращим."
+      property="twitter:description"
+    />
+    <meta content="./assets/pokemon_go_lucky_pokemon_2.webp" property="twitter:image" />
+
+    <base href="/" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="Luckydex App" name="apple-mobile-web-app-title" />
+    <meta content="default" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="yes" name="mobile-web-app-capable" />
+    <meta content="#ffffff" name="msapplication-TileColor" />
+    <meta content="#ffffff" name="theme-color" />
+
+    <meta content="176" name="MobileOptimized" />
+    <meta content="True" name="HandheldFriendly" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="noindex, nofollow" name="robots" />
+    <script src="https://tg.dev/js/telegram-web-app.js?28"></script>
+    <script>
+      function setThemeClass() {
+        document.documentElement.className = Telegram.WebApp.colorScheme
+      }
+
+      Telegram.WebApp.onEvent('themeChanged', setThemeClass)
+      setThemeClass()
+
+      // Telegram.WebApp.isClosingConfirmationEnabled = true;
+      // Telegram.WebApp.enableClosingConfirmation()
+      // Telegram.WebApp.onEvent('mainButtonClicked', callback)
+      // mainButtonClicked
+    </script>
+  </head>
+  <body>
+  <div id="btn_status" class="hint" style="display: none;"></div>
+    <div id="root">
+      <style>.pika-arm-shadow,.pika-ear,.pika-eye,.pika-mouth-3,.pika-wrap{overflow:hidden}@-webkit-keyframes blinky{0%,100%,11%,19%,21%,69%,71%,9%{transform:scaleY(1)}10%,20%,70%{transform:scaleY(0)}}@keyframes blinky{0%,100%,11%,19%,21%,69%,71%,9%{transform:scaleY(1)}10%,20%,70%{transform:scaleY(0)}}:root{--black:#000c82;--white:#fff;--grey:#363ec0;--primary-color:#f9f652;--primary-color-dark:#eae571;--primary-color-tint:#fbf983;--accent-color:#e53225;--accent-color-tint:#eb6e65;--gbc-white:#d2d6c9;--gbc-black:#000852;--gbc-stroke-color:var(--white);--gbc-body-color:transparent;--gbc-controls-color:transparent;--gbc-screen-wrap-color:transparent;--gbc-screen-color:transparent;--gbc-screen-light-color:transparent}*{box-sizing:border-box}body{display:grid;place-items:center;height:100vh;padding:1rem;background-color:var(--background-color);font-family:Ranchers,sans-serif;font-size:16px;line-height:1}.gbc{position:relative}.gbc-screen{top:1.25em;height:calc(100% - 3.5em);width:calc(100% - 3.5em);border-radius:.25em}.gbc-screen::after{content:"";position:absolute;top:0;height:100%;width:100%;z-index:-1;left:50%;width:var(--gbc-screen-width,0);border-radius:inherit;transform:translateX(-50%) scaleY(var(--gbc-screen-scale,.01));background-color:var(--gbc-screen-color);transition:var(--gbc-screen-transition, transform .3s ease-in-out, width .3s .3s ease-in-out, background-color 0s .6s)}.gbc-screen,.gbc-screen-wrap{position:absolute;left:50%;transform:translateX(-50%);border:inherit;transition:.3s ease-in-out}.gbc-screen-wrap{border-radius:.5em .5em 50% 50%/.5em .5em 1em 1em;top:.5em;height:11em;width:calc(100% - 1em);background-color:var(--gbc-screen-wrap-color)}.gbc-screen-light{position:absolute;top:3.25em;left:.625em;height:.5em;width:.5em;border-radius:100%;background-color:var(--gbc-screen-light-color);transition:.3s ease-in-out}.gbc-button,.gbc-dpad::after,.gbc-dpad::before,.gbc-pill{background-color:var(--gbc-controls-color);transition:.3s ease-in-out}.gbc-dpad{position:absolute;top:0;left:0;height:3em;width:3em}.gbc-dpad::after,.gbc-dpad::before{content:"";position:inherit;border-radius:.25em;border:1px solid var(--gbc-stroke-color)}.gbc-dpad::before{top:0;left:50%;height:100%;width:1em;transform:translateX(-50%)}.gbc-dpad::after{top:50%;left:0;height:1em;width:100%;transform:translateY(-50%)}.gbc-button{position:absolute;height:1.5em;width:1.5em;border-radius:100%;border:1px solid var(--gbc-stroke-color)}.gbc-button-a{right:0;top:.5em}.gbc-button-b{right:2.25em;top:1.5em}.gbc-pill{position:absolute;top:4.5em;height:.5em;width:1.25em;border-radius:.25em;border:1px solid var(--gbc-stroke-color)}.gbc-pill-start{right:3.25em}.gbc-pill-select{left:3.25em}.gbc-controls{position:absolute;top:13em;left:50%;width:calc(100% - 2em);transform:translateX(-50%)}.gbc-power-control{position:absolute;z-index:-1;opacity:0}.gbc-power-control:checked+.gbc-power-label{--power-translate:0%;--gbc-controls-color:var(--black);--gbc-stroke-color:var(--black)}.gbc-power-control:checked~.gbc-body{--gbc-stroke-color:transparent;--gbc-body-color:var(--grey);--gbc-controls-color:var(--black);--gbc-screen-wrap-color:var(--gbc-black);--gbc-screen-color:var(--gbc-white);--gbc-screen-light-color:var(--accent-color);--gbc-screen-transition:background-color 0.3s ease-in-out;--gbc-screen-width:100%;--gbc-screen-scale:1;--gbc-body-shadow-opacity:0.3;--pika-bubble-scale:1;--pika-bubble-transition:transform 0.4s 0.7s cubic-bezier(0, 0.51, 0.31, 1.51);--pika-wrap-scale:0.5;--pika-wrap-transition:transform 0.4s 0.3s cubic-bezier(0, 0.51, 0.31, 1.51);--pika-opacity:1}.gbc-power-control:not(:checked)+.gbc-power-label .gbc-power-label-lines{position:absolute;left:100%;bottom:.3125em;height:1px}.gbc-power-control:not(:checked)+.gbc-power-label .gbc-power-label-line-1,.gbc-power-control:not(:checked)+.gbc-power-label .gbc-power-label-line-2,.gbc-power-control:not(:checked)+.gbc-power-label .gbc-power-label-line-3{position:absolute;height:1px;background-color:var(--gbc-stroke-color);transform-origin:left center;-webkit-animation:2.2s ease-out 1s infinite moveyLines;animation:2.2s ease-out 1s infinite moveyLines}.gbc-power-control:not(:checked)+.gbc-power-label .gbc-power-label-line-2,.gbc-power-control:not(:checked)+.gbc-power-label .gbc-power-label-line-3{left:-.125em}.gbc-power-control:not(:checked)+.gbc-power-label .gbc-power-label-line-2{top:-.5em;transform:rotate(-20deg)}.gbc-power-control:not(:checked)+.gbc-power-label .gbc-power-label-line-3{top:.5em;transform:rotate(20deg)}.gbc-power-label{position:absolute;top:4em;left:calc(100% - 1px);height:2em;width:1.5em;cursor:pointer}.gbc-body,.pika{position:relative}.gbc-power-label::before{content:"";position:absolute;height:1em;width:.25em;transform:translateY(var(--power-translate,100%));border-top-right-radius:2px;border-bottom-right-radius:2px;border:1px solid var(--gbc-stroke-color);background-color:var(--gbc-controls-color);transition:transform .3s ease-in-out;cursor:pointer}.gbc-body{border-radius:1em 1em 50% 50%/1em 1em 1.5em 1.5em;height:20em;width:12em;border:1px solid var(--gbc-stroke-color);background-color:var(--gbc-body-color);font-size:1rem}.pika-eye,.pika-nose{background-color:var(--black)}.gbc-body::before{content:"";position:absolute;bottom:-.75em;left:50%;height:2em;width:80%;transform:translateX(-50%);border-radius:100%;background-color:var(--grey);opacity:var(--gbc-body-shadow-opacity, 0)}.pika{display:flex;flex-direction:column;align-items:center;top:1em}.pika-eye{border-radius:50%/55% 55% 45% 45%;position:absolute;top:2.25em;height:1em;width:1em;transform-origin:center 70%;-webkit-animation:7s infinite blinky;animation:7s infinite blinky}.pika-eye::after,.pika-eye::before{content:"";position:absolute;bottom:0;height:.5em;width:100%;border-radius:100%;background-color:var(--grey)}.pika-eye::after{top:.125em;height:.375em;width:.375em;background-color:var(--white);border-radius:100%}.pika-eye-left{left:1em}.pika-mouth,.pika-nose{left:50%;position:absolute;transform:translateX(-50%)}.pika-eye-left::before{left:-.25em}.pika-eye-left::after{right:.125em}.pika-eye-right{right:1em}.pika-eye-right::before{right:-.25em}.pika-eye-right::after{left:.125em}.pika-nose{border-radius:.0625em .0625em 50% 50%/.0625em .0625em 80% 80%;top:3em;height:.1875em;width:.325em}.pika-mouth{top:3.4375em;height:.325em;width:1.5em}.pika-mouth-3{position:absolute;top:0;left:0;height:100%;width:100%;--mouth-width:2px;z-index:2}.pika-cheek,.pika-mouth-inner{width:1em;background-color:var(--accent-color)}.pika-mouth-3::after,.pika-mouth-3::before{content:"";position:absolute;bottom:0;height:.5em;width:calc(50% - var(--mouth-width));border-radius:100%;border-bottom:var(--mouth-width) solid var(--black);background-color:var(--primary-color)}.pika-mouth-3::before{left:calc(var(--mouth-width)/ 2);border-right:var(--mouth-width) solid var(--black)}.pika-mouth-3::after{right:calc(var(--mouth-width)/ 2);border-left:var(--mouth-width) solid var(--black)}.pika-mouth-inner{position:absolute;z-index:1;top:1px;left:50%;height:1em;border-bottom-left-radius:50% 100%;border-bottom-right-radius:50% 100%;transform-origin:center top;transform:translateX(-50%) scaleY(var(--pika-mouth-inner-scale,1));overflow:hidden;transition:transform .4s ease-in-out}.pika-cheek,.pika-mouth-inner::after{border-radius:100%;position:absolute}.pika-mouth-inner::after{content:"";bottom:-60%;left:50%;height:100%;width:120%;transform:translateX(-50%);background-color:var(--accent-color-tint)}.pika-cheek{top:3em;height:1.25em}.pika-arm,.pika-ear,.pika-face{background-color:var(--primary-color)}.pika-cheek-left{left:.125em;transform:rotate(5deg)}.pika-cheek-right{right:.125em;transform:rotate(-5deg)}.pika-ear{position:absolute;z-index:1;bottom:calc(100% - 1em);height:3.25em;width:1.75em;transform-origin:center bottom}.pika-ear::after,.pika-ear::before{content:"";position:absolute}.pika-ear::before{height:1.5em;width:150%;background-color:var(--black);transform:rotate(var(--tip-rotate,30deg))}.pika-arm-shadow::after,.pika-ear::after{border-radius:100%;background-color:var(--primary-color-dark)}.pika-ear::after{top:calc(100% - 1.5em);height:3em;width:2em;transform-origin:center center;transform:rotate(var(--shadow-rotate,20deg))}.pika-ear-left{--tip-rotate:-30deg;--shadow-rotate:-20deg;left:.5em;transform:rotate(-70deg);border-top-left-radius:80% 100%;border-top-right-radius:20% 70%;border-bottom-right-radius:30%}.pika-ear-left::before{right:0}.pika-arm-left .pika-arm-shadow::after,.pika-ear-left::after{left:-1em}.pika-ear-right{right:.5em;transform:rotate(70deg);border-top-right-radius:80% 100%;border-top-left-radius:20% 70%;border-bottom-left-radius:30%}.pika-ear-right::before{left:0}.pika-arm-right .pika-arm-shadow::after,.pika-ear-right::after{right:-1em}.pika-face{position:absolute;top:0;left:0;height:100%;width:100%;border-radius:45% 45% 50% 50%/60% 60% 35% 35%;z-index:2}.pika-head{position:relative;z-index:2;height:5.25em;width:6em}.pika-arm{position:absolute;z-index:2;top:0;height:3em;width:2em;transform-origin:center 1em}.pika-arm,.pika-arm-shadow{border-radius:50% 50% 40% 40%/30% 30% 70% 70%}.pika-arm-shadow{position:absolute;top:0;left:0;height:100%;width:100%}.pika-arm-shadow::after{content:"";position:absolute;top:-.25em;height:2.5em;width:1.75em}.pika-arm-fingers{top:calc(100% - .375em);left:50%;transform:translateX(-50%)}.pika-arm-fingers,.pika-arm-fingers::after,.pika-arm-fingers::before{border-radius:20% 20% 50% 50%/30% 30% 70% 70%;content:"";position:absolute;width:.25em;height:.5em;background-color:var(--primary-color)}.pika-arm-fingers::before{left:-.25em;transform:rotate(-20deg)}.pika-arm-fingers::after{left:.25em;transform:rotate(20deg)}.pika-arm-left{--shadow-sm-rotate:-20deg;left:-.75em;transform:rotate(130deg)}.pika-arm-right{right:-.75em;transform:rotate(-130deg)}.pika-bubble,.pika-tail-1{transform-origin:center bottom}.pika-torso{position:absolute;top:0;left:0;height:100%;width:100%;border-radius:20% 20% 50% 50%/70% 70% 20% 20%;z-index:3;background-color:var(--primary-color)}.pika-tail,.pika-torso::after{position:absolute;background-color:var(--primary-color-dark)}.pika-torso::after{content:"";bottom:calc(100% - 1.5em);left:50%;transform:translateX(-50%);height:2em;width:40%;border-radius:100%}.pika-tail{z-index:1}.pika-tail-1{bottom:1em;left:calc(100% - 1.75em);height:1.25em;width:1em;transform:rotate(70deg);-webkit-animation:var(--pika-tail-animation);animation:var(--pika-tail-animation)}.pika-tail-2{right:0;height:1.75em;width:1.25em;transform-origin:top right;transform:rotate(90deg)}.pika-tail-3{bottom:0;right:0;height:3.5em;width:2em;transform-origin:bottom right;transform:rotate(-90deg) skewY(20deg)}.pika-body{position:relative;z-index:1;margin-top:-1em;height:4em;width:5em}.pika-bubble,.pika-bubble::before,.pika-wrap{position:absolute;left:50%}.pika-bubble{bottom:calc(100% + 1.5rem);padding:.25em .5em;transform:translateX(-50%) scale(var(--pika-bubble-scale,0));border-radius:100%;background-color:var(--black);font-size:2em;line-height:1;color:var(--primary-color);transition:var(--pika-bubble-transition, 0s .5s ease-in-out)}.pika-bubble::before{content:"";top:calc(100% - .125em);transform:translateX(-50%);border-right:.325em solid transparent;border-bottom:0 solid transparent;border-left:.325em solid transparent;border-top:.325em solid var(--black)}.pika-wrap{display:flex;align-items:flex-end;justify-content:center;bottom:0;height:200%;width:200%;transform-origin:center bottom;transform:translateX(-50%) scale(var(--pika-wrap-scale,0));opacity:var(--pika-opacity, 0);cursor:pointer;transition:var(--pika-wrap-transition, opacity .5s ease-in-out)}.pika-wrap:hover{--pika-wrap-scale:1;--pika-mouth-inner-scale:0;--pika-tail-animation:tailMove 5s infinite ease-in-out;--pika-bubble-scale:0;--pika-bubble-transition:transform 0.2s ease-in-out}@-webkit-keyframes tailMove{0%,100%{transform:rotate(70deg)}50%{transform:rotate(100deg)}}@keyframes tailMove{0%,100%{transform:rotate(70deg)}50%{transform:rotate(100deg)}}@-webkit-keyframes moveyLines{0%,80%{width:0}85%{opacity:1}100%{width:.75em;opacity:0}}@keyframes moveyLines{0%,80%{width:0}85%{opacity:1}100%{width:.75em;opacity:0}}</style>
+      <div class="">
+        <div class="gbc">
+          <input id="powerSwitch" checked aria-label="Toggle Gameboy power" class="gbc-power-control" type="checkbox">
+          <label for="powerSwitch" class="gbc-power-label">
+            <div class="gbc-power-label-lines">
+              <div class="gbc-power-label-line gbc-power-label-line-1"></div>
+              <div class="gbc-power-label-line gbc-power-label-line-2"></div>
+              <div class="gbc-power-label-line gbc-power-label-line-3"></div>
+            </div>
+          </label>
+          <div class="gbc-body">
+            <div class="gbc-screen-wrap">
+              <div class="gbc-screen-light"></div>
+              <div class="gbc-screen">
+                <div class="pika-wrap">
+                  <div class="pika">
+                    <div class="pika-head">
+                      <div class="pika-face">
+                        <div class="pika-eye pika-eye-left"></div>
+                        <div class="pika-eye pika-eye-right"></div>
+                        <div class="pika-nose"></div>
+                        <div class="pika-mouth">
+                          <div class="pika-mouth-3"></div>
+                          <div class="pika-mouth-inner"></div>
+                        </div>
+                        <div class="pika-cheek pika-cheek-left"></div>
+                        <div class="pika-cheek pika-cheek-right"></div>
+                      </div>
+                      <div class="pika-ear pika-ear-left"></div>
+                      <div class="pika-ear pika-ear-right"></div>
+                    </div>
+                    <div class="pika-body">
+                      <div class="pika-torso"></div>
+                      <div class="pika-arm pika-arm-left">
+                        <div class="pika-arm-fingers"></div>
+                        <div class="pika-arm-shadow"></div>
+                      </div>
+                      <div class="pika-arm pika-arm-right">
+                        <div class="pika-arm-fingers"></div>
+                        <div class="pika-arm-shadow"></div>
+                      </div>
+                      <div class="pika-tail pika-tail-1">
+                        <div class="pika-tail pika-tail-2">
+                          <div class="pika-tail pika-tail-3"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pika-bubble">
+                      Pika!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gbc-controls">
+              <div class="gbc-dpad"></div>
+              <div class="gbc-button gbc-button-a"></div>
+              <div class="gbc-button gbc-button-b"></div>
+              <div class="gbc-pill gbc-pill-start"></div>
+              <div class="gbc-pill gbc-pill-select"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--      <div style="position: fixed;top: 0;right: 0;bottom: 0;left: 0;display: flex;">-->
+<!--      <img src="https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif" alt="pokebol" style="margin: auto;max-width: 80px;">-->
+<!--      </div>-->
+    </div>
+    <script src="/src/main.tsx" type="module"></script>
+  </body>
+</html>

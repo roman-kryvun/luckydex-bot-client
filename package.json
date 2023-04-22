@@ -1,0 +1,60 @@
+{
+  "name": "tg-shop-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "bundle": "vite-bundle-visualizer",
+    "deploy:prod": "npm run build && firebase deploy -P prod --only hosting:prod",
+    "_deploy:dev": "npm run build && firebase deploy -P dev --only hosting:dev",
+    "_deploy:2085": "npm run build && firebase deploy -P chat-market --only hosting:2085",
+    "_deploy:black-honey": "npm run build && firebase deploy -P chat-market --only hosting:black-honey"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
+    "@mui/utils": "^5.11.9",
+    "classnames": "^2.3.2",
+    "copy-to-clipboard": "^3.3.3",
+    "firebase": "^9.17.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "vite-bundle-visualizer": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^3.1.0",
+    "axios": "^1.3.6",
+    "prettier": "^2.8.4",
+    "telegram-webapps-types": "^1.0.5",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

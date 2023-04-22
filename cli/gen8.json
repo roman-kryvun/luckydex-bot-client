@@ -1,0 +1,962 @@
+[
+  {
+    "name": "Grookey",
+    "id": 810,
+    "gen": 8,
+    "href": "grookey",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/grookey.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/grookey.png"
+  },
+  {
+    "name": "Thwackey",
+    "id": 811,
+    "gen": 8,
+    "href": "thwackey",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/thwackey.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/thwackey.png"
+  },
+  {
+    "name": "Rillaboom",
+    "id": 812,
+    "gen": 8,
+    "href": "rillaboom",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/rillaboom.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/rillaboom.png"
+  },
+  {
+    "name": "Scorbunny",
+    "id": 813,
+    "gen": 8,
+    "href": "scorbunny",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/scorbunny.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/scorbunny.png"
+  },
+  {
+    "name": "Raboot",
+    "id": 814,
+    "gen": 8,
+    "href": "raboot",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/raboot.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/raboot.png"
+  },
+  {
+    "name": "Cinderace",
+    "id": 815,
+    "gen": 8,
+    "href": "cinderace",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/cinderace.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/cinderace.png"
+  },
+  {
+    "name": "Sobble",
+    "id": 816,
+    "gen": 8,
+    "href": "sobble",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/sobble.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/sobble.png"
+  },
+  {
+    "name": "Drizzile",
+    "id": 817,
+    "gen": 8,
+    "href": "drizzile",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/drizzile.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/drizzile.png"
+  },
+  {
+    "name": "Inteleon",
+    "id": 818,
+    "gen": 8,
+    "href": "inteleon",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/inteleon.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/inteleon.png"
+  },
+  {
+    "name": "Skwovet",
+    "id": 819,
+    "gen": 8,
+    "href": "skwovet",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/skwovet.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/skwovet.png"
+  },
+  {
+    "name": "Greedent",
+    "id": 820,
+    "gen": 8,
+    "href": "greedent",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/greedent.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/greedent.png"
+  },
+  {
+    "name": "Rookidee",
+    "id": 821,
+    "gen": 8,
+    "href": "rookidee",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/rookidee.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/rookidee.png"
+  },
+  {
+    "name": "Corvisquire",
+    "id": 822,
+    "gen": 8,
+    "href": "corvisquire",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/corvisquire.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/corvisquire.png"
+  },
+  {
+    "name": "Corviknight",
+    "id": 823,
+    "gen": 8,
+    "href": "corviknight",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/corviknight.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/corviknight.png"
+  },
+  {
+    "name": "Blipbug",
+    "id": 824,
+    "gen": 8,
+    "href": "blipbug",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/blipbug.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/blipbug.png"
+  },
+  {
+    "name": "Dottler",
+    "id": 825,
+    "gen": 8,
+    "href": "dottler",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/dottler.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/dottler.png"
+  },
+  {
+    "name": "Orbeetle",
+    "id": 826,
+    "gen": 8,
+    "href": "orbeetle",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/orbeetle.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/orbeetle.png"
+  },
+  {
+    "name": "Nickit",
+    "id": 827,
+    "gen": 8,
+    "href": "nickit",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/nickit.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/nickit.png"
+  },
+  {
+    "name": "Thievul",
+    "id": 828,
+    "gen": 8,
+    "href": "thievul",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/thievul.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/thievul.png"
+  },
+  {
+    "name": "Gossifleur",
+    "id": 829,
+    "gen": 8,
+    "href": "gossifleur",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/gossifleur.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/gossifleur.png"
+  },
+  {
+    "name": "Eldegoss",
+    "id": 830,
+    "gen": 8,
+    "href": "eldegoss",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/eldegoss.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/eldegoss.png"
+  },
+  {
+    "name": "Wooloo",
+    "id": 831,
+    "gen": 8,
+    "href": "wooloo",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/wooloo.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/wooloo.png"
+  },
+  {
+    "name": "Dubwool",
+    "id": 832,
+    "gen": 8,
+    "href": "dubwool",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/dubwool.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/dubwool.png"
+  },
+  {
+    "name": "Chewtle",
+    "id": 833,
+    "gen": 8,
+    "href": "chewtle",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/chewtle.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/chewtle.png"
+  },
+  {
+    "name": "Drednaw",
+    "id": 834,
+    "gen": 8,
+    "href": "drednaw",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/drednaw.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/drednaw.png"
+  },
+  {
+    "name": "Yamper",
+    "id": 835,
+    "gen": 8,
+    "href": "yamper",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/yamper.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/yamper.png"
+  },
+  {
+    "name": "Boltund",
+    "id": 836,
+    "gen": 8,
+    "href": "boltund",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/boltund.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/boltund.png"
+  },
+  {
+    "name": "Rolycoly",
+    "id": 837,
+    "gen": 8,
+    "href": "rolycoly",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/rolycoly.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/rolycoly.png"
+  },
+  {
+    "name": "Carkol",
+    "id": 838,
+    "gen": 8,
+    "href": "carkol",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/carkol.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/carkol.png"
+  },
+  {
+    "name": "Coalossal",
+    "id": 839,
+    "gen": 8,
+    "href": "coalossal",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/coalossal.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/coalossal.png"
+  },
+  {
+    "name": "Applin",
+    "id": 840,
+    "gen": 8,
+    "href": "applin",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/applin.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/applin.png"
+  },
+  {
+    "name": "Flapple",
+    "id": 841,
+    "gen": 8,
+    "href": "flapple",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/flapple.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/flapple.png"
+  },
+  {
+    "name": "Appletun",
+    "id": 842,
+    "gen": 8,
+    "href": "appletun",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/appletun.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/appletun.png"
+  },
+  {
+    "name": "Silicobra",
+    "id": 843,
+    "gen": 8,
+    "href": "silicobra",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/silicobra.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/silicobra.png"
+  },
+  {
+    "name": "Sandaconda",
+    "id": 844,
+    "gen": 8,
+    "href": "sandaconda",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/sandaconda.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/sandaconda.png"
+  },
+  {
+    "name": "Cramorant",
+    "id": 845,
+    "gen": 8,
+    "href": "cramorant",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/cramorant.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/cramorant.png"
+  },
+  {
+    "name": "Arrokuda",
+    "id": 846,
+    "gen": 8,
+    "href": "arrokuda",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/arrokuda.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/arrokuda.png"
+  },
+  {
+    "name": "Barraskewda",
+    "id": 847,
+    "gen": 8,
+    "href": "barraskewda",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/barraskewda.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/barraskewda.png"
+  },
+  {
+    "name": "Toxel",
+    "id": 848,
+    "gen": 8,
+    "href": "toxel",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/toxel.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/toxel.png"
+  },
+  {
+    "name": "Toxtricity",
+    "id": 849,
+    "gen": 8,
+    "href": "toxtricity",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/toxtricity.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/toxtricity.png"
+  },
+  {
+    "name": "Sizzlipede",
+    "id": 850,
+    "gen": 8,
+    "href": "sizzlipede",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/sizzlipede.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/sizzlipede.png"
+  },
+  {
+    "name": "Centiskorch",
+    "id": 851,
+    "gen": 8,
+    "href": "centiskorch",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/centiskorch.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/centiskorch.png"
+  },
+  {
+    "name": "Clobbopus",
+    "id": 852,
+    "gen": 8,
+    "href": "clobbopus",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/clobbopus.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/clobbopus.png"
+  },
+  {
+    "name": "Grapploct",
+    "id": 853,
+    "gen": 8,
+    "href": "grapploct",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/grapploct.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/grapploct.png"
+  },
+  {
+    "name": "Sinistea",
+    "id": 854,
+    "gen": 8,
+    "href": "sinistea",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/sinistea.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/sinistea.png"
+  },
+  {
+    "name": "Polteageist",
+    "id": 855,
+    "gen": 8,
+    "href": "polteageist",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/polteageist.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/polteageist.png"
+  },
+  {
+    "name": "Hatenna",
+    "id": 856,
+    "gen": 8,
+    "href": "hatenna",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/hatenna.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/hatenna.png"
+  },
+  {
+    "name": "Hattrem",
+    "id": 857,
+    "gen": 8,
+    "href": "hattrem",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/hattrem.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/hattrem.png"
+  },
+  {
+    "name": "Hatterene",
+    "id": 858,
+    "gen": 8,
+    "href": "hatterene",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/hatterene.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/hatterene.png"
+  },
+  {
+    "name": "Impidimp",
+    "id": 859,
+    "gen": 8,
+    "href": "impidimp",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/impidimp.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/impidimp.png"
+  },
+  {
+    "name": "Morgrem",
+    "id": 860,
+    "gen": 8,
+    "href": "morgrem",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/morgrem.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/morgrem.png"
+  },
+  {
+    "name": "Grimmsnarl",
+    "id": 861,
+    "gen": 8,
+    "href": "grimmsnarl",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/grimmsnarl.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/grimmsnarl.png"
+  },
+  {
+    "name": "Obstagoon",
+    "id": 862,
+    "gen": 8,
+    "href": "obstagoon",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/obstagoon.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/obstagoon.png"
+  },
+  {
+    "name": "Perrserker",
+    "id": 863,
+    "gen": 8,
+    "href": "perrserker",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/perrserker.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/perrserker.png"
+  },
+  {
+    "name": "Cursola",
+    "id": 864,
+    "gen": 8,
+    "href": "cursola",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/cursola.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/cursola.png"
+  },
+  {
+    "name": "Sirfetch'd",
+    "id": 865,
+    "gen": 8,
+    "href": "sirfetchd",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/sirfetchd.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/sirfetchd.png"
+  },
+  {
+    "name": "Mr. Rime",
+    "id": 866,
+    "gen": 8,
+    "href": "mr-rime",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/mr-rime.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/mr-rime.png"
+  },
+  {
+    "name": "Runerigus",
+    "id": 867,
+    "gen": 8,
+    "href": "runerigus",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/runerigus.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/runerigus.png"
+  },
+  {
+    "name": "Milcery",
+    "id": 868,
+    "gen": 8,
+    "href": "milcery",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/milcery.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/milcery.png"
+  },
+  {
+    "name": "Alcremie",
+    "id": 869,
+    "gen": 8,
+    "href": "alcremie",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/alcremie.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/alcremie.png"
+  },
+  {
+    "name": "Falinks",
+    "id": 870,
+    "gen": 8,
+    "href": "falinks",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/falinks.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/falinks.png"
+  },
+  {
+    "name": "Pincurchin",
+    "id": 871,
+    "gen": 8,
+    "href": "pincurchin",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/pincurchin.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/pincurchin.png"
+  },
+  {
+    "name": "Snom",
+    "id": 872,
+    "gen": 8,
+    "href": "snom",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/snom.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/snom.png"
+  },
+  {
+    "name": "Frosmoth",
+    "id": 873,
+    "gen": 8,
+    "href": "frosmoth",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/frosmoth.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/frosmoth.png"
+  },
+  {
+    "name": "Stonjourner",
+    "id": 874,
+    "gen": 8,
+    "href": "stonjourner",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/stonjourner.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/stonjourner.png"
+  },
+  {
+    "name": "Eiscue",
+    "id": 875,
+    "gen": 8,
+    "href": "eiscue",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/eiscue.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/eiscue.png"
+  },
+  {
+    "name": "Indeedee",
+    "id": 876,
+    "gen": 8,
+    "href": "indeedee",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/indeedee.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/indeedee.png"
+  },
+  {
+    "name": "Morpeko",
+    "id": 877,
+    "gen": 8,
+    "href": "morpeko",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/morpeko.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/morpeko.png"
+  },
+  {
+    "name": "Cufant",
+    "id": 878,
+    "gen": 8,
+    "href": "cufant",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/cufant.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/cufant.png"
+  },
+  {
+    "name": "Copperajah",
+    "id": 879,
+    "gen": 8,
+    "href": "copperajah",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/copperajah.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/copperajah.png"
+  },
+  {
+    "name": "Dracozolt",
+    "id": 880,
+    "gen": 8,
+    "href": "dracozolt",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/dracozolt.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/dracozolt.png"
+  },
+  {
+    "name": "Arctozolt",
+    "id": 881,
+    "gen": 8,
+    "href": "arctozolt",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/arctozolt.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/arctozolt.png"
+  },
+  {
+    "name": "Dracovish",
+    "id": 882,
+    "gen": 8,
+    "href": "dracovish",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/dracovish.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/dracovish.png"
+  },
+  {
+    "name": "Arctovish",
+    "id": 883,
+    "gen": 8,
+    "href": "arctovish",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/arctovish.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/arctovish.png"
+  },
+  {
+    "name": "Duraludon",
+    "id": 884,
+    "gen": 8,
+    "href": "duraludon",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sword-shield/normal/duraludon.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sword-shield/shiny/duraludon.png"
+  },
+  {
+    "name": "Dreepy",
+    "id": 885,
+    "gen": 8,
+    "href": "dreepy",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/dreepy.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/dreepy.png"
+  },
+  {
+    "name": "Drakloak",
+    "id": 886,
+    "gen": 8,
+    "href": "drakloak",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/drakloak.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/drakloak.png"
+  },
+  {
+    "name": "Dragapult",
+    "id": 887,
+    "gen": 8,
+    "href": "dragapult",
+    "legend": false,
+    "firstForm": false,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/dragapult.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/dragapult.png"
+  },
+  {
+    "name": "Zacian",
+    "id": 888,
+    "gen": 8,
+    "href": "zacian",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/zacian.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/zacian.png"
+  },
+  {
+    "name": "Zamazenta",
+    "id": 889,
+    "gen": 8,
+    "href": "zamazenta",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/zamazenta.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/zamazenta.png"
+  },
+  {
+    "name": "Eternatus",
+    "id": 890,
+    "gen": 8,
+    "href": "eternatus",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/eternatus.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/eternatus.png"
+  },
+  {
+    "name": "Kubfu",
+    "id": 891,
+    "gen": 8,
+    "href": "kubfu",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/kubfu.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/kubfu.png"
+  },
+  {
+    "name": "Urshifu",
+    "id": 892,
+    "gen": 8,
+    "href": "urshifu",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/urshifu.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/urshifu.png"
+  },
+  {
+    "name": "Zarude",
+    "id": 893,
+    "gen": 8,
+    "href": "zarude",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/zarude.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/zarude.png"
+  },
+  {
+    "name": "Regieleki",
+    "id": 894,
+    "gen": 8,
+    "href": "regieleki",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/regieleki.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/regieleki.png"
+  },
+  {
+    "name": "Regidrago",
+    "id": 895,
+    "gen": 8,
+    "href": "regidrago",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/regidrago.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/regidrago.png"
+  },
+  {
+    "name": "Glastrier",
+    "id": 896,
+    "gen": 8,
+    "href": "glastrier",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/glastrier.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/glastrier.png"
+  },
+  {
+    "name": "Spectrier",
+    "id": 897,
+    "gen": 8,
+    "href": "spectrier",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/spectrier.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/spectrier.png"
+  },
+  {
+    "name": "Calyrex",
+    "id": 898,
+    "gen": 8,
+    "href": "calyrex",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/scarlet-violet/normal/1x/calyrex.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/scarlet-violet/shiny/1x/calyrex.png"
+  },
+  {
+    "name": "Wyrdeer",
+    "id": 899,
+    "gen": 8,
+    "href": "wyrdeer",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/legends-arceus/normal/1x/wyrdeer.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/legends-arceus/shiny/1x/wyrdeer.png"
+  },
+  {
+    "name": "Kleavor",
+    "id": 900,
+    "gen": 8,
+    "href": "kleavor",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/legends-arceus/normal/1x/kleavor.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/legends-arceus/shiny/1x/kleavor.png"
+  },
+  {
+    "name": "Ursaluna",
+    "id": 901,
+    "gen": 8,
+    "href": "ursaluna",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/legends-arceus/normal/1x/ursaluna.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/legends-arceus/shiny/1x/ursaluna.png"
+  },
+  {
+    "name": "Basculegion",
+    "id": 902,
+    "gen": 8,
+    "href": "basculegion",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/legends-arceus/normal/1x/basculegion.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/legends-arceus/shiny/1x/basculegion.png"
+  },
+  {
+    "name": "Sneasler",
+    "id": 903,
+    "gen": 8,
+    "href": "sneasler",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/legends-arceus/normal/1x/sneasler.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/legends-arceus/shiny/1x/sneasler.png"
+  },
+  {
+    "name": "Overqwil",
+    "id": 904,
+    "gen": 8,
+    "href": "overqwil",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/legends-arceus/normal/1x/overqwil.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/legends-arceus/shiny/1x/overqwil.png"
+  },
+  {
+    "name": "Enamorus",
+    "id": 905,
+    "gen": 8,
+    "href": "enamorus",
+    "legend": false,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/legends-arceus/normal/1x/enamorus.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/legends-arceus/shiny/1x/enamorus.png"
+  }
+]

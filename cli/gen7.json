@@ -1,0 +1,862 @@
+[
+  {
+    "name": "Rowlet",
+    "id": 721,
+    "gen": 7,
+    "href": "rowlet",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/rowlet.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/rowlet.png"
+  },
+  {
+    "name": "Dartrix",
+    "id": 722,
+    "gen": 7,
+    "href": "dartrix",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/dartrix.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/dartrix.png"
+  },
+  {
+    "name": "Decidueye",
+    "id": 723,
+    "gen": 7,
+    "href": "decidueye",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/decidueye.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/decidueye.png"
+  },
+  {
+    "name": "Litten",
+    "id": 724,
+    "gen": 7,
+    "href": "litten",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/litten.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/litten.png"
+  },
+  {
+    "name": "Torracat",
+    "id": 725,
+    "gen": 7,
+    "href": "torracat",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/torracat.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/torracat.png"
+  },
+  {
+    "name": "Incineroar",
+    "id": 726,
+    "gen": 7,
+    "href": "incineroar",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/incineroar.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/incineroar.png"
+  },
+  {
+    "name": "Popplio",
+    "id": 727,
+    "gen": 7,
+    "href": "popplio",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/popplio.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/popplio.png"
+  },
+  {
+    "name": "Brionne",
+    "id": 728,
+    "gen": 7,
+    "href": "brionne",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/brionne.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/brionne.png"
+  },
+  {
+    "name": "Primarina",
+    "id": 729,
+    "gen": 7,
+    "href": "primarina",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/primarina.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/primarina.png"
+  },
+  {
+    "name": "Pikipek",
+    "id": 730,
+    "gen": 7,
+    "href": "pikipek",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/pikipek.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/pikipek.png"
+  },
+  {
+    "name": "Trumbeak",
+    "id": 731,
+    "gen": 7,
+    "href": "trumbeak",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/trumbeak.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/trumbeak.png"
+  },
+  {
+    "name": "Toucannon",
+    "id": 732,
+    "gen": 7,
+    "href": "toucannon",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/toucannon.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/toucannon.png"
+  },
+  {
+    "name": "Yungoos",
+    "id": 733,
+    "gen": 7,
+    "href": "yungoos",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/yungoos.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/yungoos.png"
+  },
+  {
+    "name": "Gumshoos",
+    "id": 734,
+    "gen": 7,
+    "href": "gumshoos",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/gumshoos.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/gumshoos.png"
+  },
+  {
+    "name": "Grubbin",
+    "id": 735,
+    "gen": 7,
+    "href": "grubbin",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/grubbin.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/grubbin.png"
+  },
+  {
+    "name": "Charjabug",
+    "id": 736,
+    "gen": 7,
+    "href": "charjabug",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/charjabug.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/charjabug.png"
+  },
+  {
+    "name": "Vikavolt",
+    "id": 737,
+    "gen": 7,
+    "href": "vikavolt",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/vikavolt.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/vikavolt.png"
+  },
+  {
+    "name": "Crabrawler",
+    "id": 738,
+    "gen": 7,
+    "href": "crabrawler",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/crabrawler.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/crabrawler.png"
+  },
+  {
+    "name": "Crabominable",
+    "id": 739,
+    "gen": 7,
+    "href": "crabominable",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/crabominable.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/crabominable.png"
+  },
+  {
+    "name": "Oricorio",
+    "id": 740,
+    "gen": 7,
+    "href": "oricorio",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/1x/oricorio-baile.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/1x/oricorio-baile.png"
+  },
+  {
+    "name": "Cutiefly",
+    "id": 741,
+    "gen": 7,
+    "href": "cutiefly",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/cutiefly.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/cutiefly.png"
+  },
+  {
+    "name": "Ribombee",
+    "id": 742,
+    "gen": 7,
+    "href": "ribombee",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/ribombee.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/ribombee.png"
+  },
+  {
+    "name": "Rockruff",
+    "id": 743,
+    "gen": 7,
+    "href": "rockruff",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/rockruff.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/rockruff.png"
+  },
+  {
+    "name": "Lycanroc",
+    "id": 744,
+    "gen": 7,
+    "href": "lycanroc",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/1x/lycanroc-midday.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/shiny/1x/lycanroc-midday.png"
+  },
+  {
+    "name": "Wishiwashi",
+    "id": 745,
+    "gen": 7,
+    "href": "wishiwashi",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/1x/wishiwashi-solo.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/1x/wishiwashi-solo.png"
+  },
+  {
+    "name": "Mareanie",
+    "id": 746,
+    "gen": 7,
+    "href": "mareanie",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/mareanie.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/mareanie.png"
+  },
+  {
+    "name": "Toxapex",
+    "id": 747,
+    "gen": 7,
+    "href": "toxapex",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/toxapex.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/toxapex.png"
+  },
+  {
+    "name": "Mudbray",
+    "id": 748,
+    "gen": 7,
+    "href": "mudbray",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/mudbray.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/mudbray.png"
+  },
+  {
+    "name": "Mudsdale",
+    "id": 749,
+    "gen": 7,
+    "href": "mudsdale",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/mudsdale.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/mudsdale.png"
+  },
+  {
+    "name": "Dewpider",
+    "id": 750,
+    "gen": 7,
+    "href": "dewpider",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/dewpider.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/dewpider.png"
+  },
+  {
+    "name": "Araquanid",
+    "id": 751,
+    "gen": 7,
+    "href": "araquanid",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/araquanid.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/araquanid.png"
+  },
+  {
+    "name": "Fomantis",
+    "id": 752,
+    "gen": 7,
+    "href": "fomantis",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/fomantis.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/fomantis.png"
+  },
+  {
+    "name": "Lurantis",
+    "id": 753,
+    "gen": 7,
+    "href": "lurantis",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/lurantis.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/lurantis.png"
+  },
+  {
+    "name": "Morelull",
+    "id": 754,
+    "gen": 7,
+    "href": "morelull",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/morelull.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/morelull.png"
+  },
+  {
+    "name": "Shiinotic",
+    "id": 755,
+    "gen": 7,
+    "href": "shiinotic",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/shiinotic.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/shiinotic.png"
+  },
+  {
+    "name": "Salandit",
+    "id": 756,
+    "gen": 7,
+    "href": "salandit",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/salandit.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/salandit.png"
+  },
+  {
+    "name": "Salazzle",
+    "id": 757,
+    "gen": 7,
+    "href": "salazzle",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/salazzle.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/salazzle.png"
+  },
+  {
+    "name": "Stufful",
+    "id": 758,
+    "gen": 7,
+    "href": "stufful",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/stufful.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/stufful.png"
+  },
+  {
+    "name": "Bewear",
+    "id": 759,
+    "gen": 7,
+    "href": "bewear",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/bewear.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/bewear.png"
+  },
+  {
+    "name": "Bounsweet",
+    "id": 760,
+    "gen": 7,
+    "href": "bounsweet",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/bounsweet.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/bounsweet.png"
+  },
+  {
+    "name": "Steenee",
+    "id": 761,
+    "gen": 7,
+    "href": "steenee",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/steenee.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/steenee.png"
+  },
+  {
+    "name": "Tsareena",
+    "id": 762,
+    "gen": 7,
+    "href": "tsareena",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/tsareena.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/tsareena.png"
+  },
+  {
+    "name": "Comfey",
+    "id": 763,
+    "gen": 7,
+    "href": "comfey",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/comfey.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/comfey.png"
+  },
+  {
+    "name": "Oranguru",
+    "id": 764,
+    "gen": 7,
+    "href": "oranguru",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/oranguru.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/oranguru.png"
+  },
+  {
+    "name": "Passimian",
+    "id": 765,
+    "gen": 7,
+    "href": "passimian",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/passimian.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/passimian.png"
+  },
+  {
+    "name": "Wimpod",
+    "id": 766,
+    "gen": 7,
+    "href": "wimpod",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/wimpod.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/wimpod.png"
+  },
+  {
+    "name": "Golisopod",
+    "id": 767,
+    "gen": 7,
+    "href": "golisopod",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/golisopod.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/golisopod.png"
+  },
+  {
+    "name": "Sandygast",
+    "id": 768,
+    "gen": 7,
+    "href": "sandygast",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/sandygast.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/sandygast.png"
+  },
+  {
+    "name": "Palossand",
+    "id": 769,
+    "gen": 7,
+    "href": "palossand",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/palossand.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/palossand.png"
+  },
+  {
+    "name": "Pyukumuku",
+    "id": 770,
+    "gen": 7,
+    "href": "pyukumuku",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/pyukumuku.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/pyukumuku.png"
+  },
+  {
+    "name": "Type: Null",
+    "id": 771,
+    "gen": 7,
+    "href": "type-null",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/1x/type-null.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/1x/type-null.png"
+  },
+  {
+    "name": "Silvally",
+    "id": 772,
+    "gen": 7,
+    "href": "silvally",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/silvally.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/silvally.png"
+  },
+  {
+    "name": "Minior",
+    "id": 773,
+    "gen": 7,
+    "href": "minior",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/1x/minior-meteor.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/1x/minior-meteor.png"
+  },
+  {
+    "name": "Komala",
+    "id": 774,
+    "gen": 7,
+    "href": "komala",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/komala.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/komala.png"
+  },
+  {
+    "name": "Turtonator",
+    "id": 775,
+    "gen": 7,
+    "href": "turtonator",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/turtonator.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/turtonator.png"
+  },
+  {
+    "name": "Togedemaru",
+    "id": 776,
+    "gen": 7,
+    "href": "togedemaru",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/togedemaru.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/togedemaru.png"
+  },
+  {
+    "name": "Mimikyu",
+    "id": 777,
+    "gen": 7,
+    "href": "mimikyu",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/mimikyu.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/mimikyu.png"
+  },
+  {
+    "name": "Bruxish",
+    "id": 778,
+    "gen": 7,
+    "href": "bruxish",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/bruxish.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/bruxish.png"
+  },
+  {
+    "name": "Drampa",
+    "id": 779,
+    "gen": 7,
+    "href": "drampa",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/drampa.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/drampa.png"
+  },
+  {
+    "name": "Dhelmise",
+    "id": 780,
+    "gen": 7,
+    "href": "dhelmise",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/dhelmise.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/dhelmise.png"
+  },
+  {
+    "name": "Jangmo-o",
+    "id": 781,
+    "gen": 7,
+    "href": "jangmo-o",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/jangmo-o.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/jangmo-o.png"
+  },
+  {
+    "name": "Hakamo-o",
+    "id": 782,
+    "gen": 7,
+    "href": "hakamo-o",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/hakamo-o.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/hakamo-o.png"
+  },
+  {
+    "name": "Kommo-o",
+    "id": 783,
+    "gen": 7,
+    "href": "kommo-o",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/kommo-o.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/kommo-o.png"
+  },
+  {
+    "name": "Tapu Koko",
+    "id": 784,
+    "gen": 7,
+    "href": "tapu-koko",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/1x/tapu-koko.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/1x/tapu-koko.png"
+  },
+  {
+    "name": "Tapu Lele",
+    "id": 785,
+    "gen": 7,
+    "href": "tapu-lele",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/1x/tapu-lele.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/1x/tapu-lele.png"
+  },
+  {
+    "name": "Tapu Bulu",
+    "id": 786,
+    "gen": 7,
+    "href": "tapu-bulu",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/1x/tapu-bulu.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/1x/tapu-bulu.png"
+  },
+  {
+    "name": "Tapu Fini",
+    "id": 787,
+    "gen": 7,
+    "href": "tapu-fini",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/1x/tapu-fini.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/1x/tapu-fini.png"
+  },
+  {
+    "name": "Cosmog",
+    "id": 788,
+    "gen": 7,
+    "href": "cosmog",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/cosmog.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/cosmog.png"
+  },
+  {
+    "name": "Cosmoem",
+    "id": 789,
+    "gen": 7,
+    "href": "cosmoem",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/cosmoem.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/cosmoem.png"
+  },
+  {
+    "name": "Solgaleo",
+    "id": 790,
+    "gen": 7,
+    "href": "solgaleo",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/solgaleo.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/solgaleo.png"
+  },
+  {
+    "name": "Lunala",
+    "id": 791,
+    "gen": 7,
+    "href": "lunala",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/lunala.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/lunala.png"
+  },
+  {
+    "name": "Nihilego",
+    "id": 792,
+    "gen": 7,
+    "href": "nihilego",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/nihilego.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/nihilego.png"
+  },
+  {
+    "name": "Buzzwole",
+    "id": 793,
+    "gen": 7,
+    "href": "buzzwole",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/buzzwole.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/buzzwole.png"
+  },
+  {
+    "name": "Pheromosa",
+    "id": 794,
+    "gen": 7,
+    "href": "pheromosa",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/pheromosa.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/pheromosa.png"
+  },
+  {
+    "name": "Xurkitree",
+    "id": 795,
+    "gen": 7,
+    "href": "xurkitree",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/xurkitree.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/xurkitree.png"
+  },
+  {
+    "name": "Celesteela",
+    "id": 796,
+    "gen": 7,
+    "href": "celesteela",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/celesteela.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/celesteela.png"
+  },
+  {
+    "name": "Kartana",
+    "id": 797,
+    "gen": 7,
+    "href": "kartana",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/kartana.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/kartana.png"
+  },
+  {
+    "name": "Guzzlord",
+    "id": 798,
+    "gen": 7,
+    "href": "guzzlord",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/guzzlord.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/guzzlord.png"
+  },
+  {
+    "name": "Necrozma",
+    "id": 799,
+    "gen": 7,
+    "href": "necrozma",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/necrozma.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/necrozma.png"
+  },
+  {
+    "name": "Magearna",
+    "id": 800,
+    "gen": 7,
+    "href": "magearna",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/magearna.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/magearna.png"
+  },
+  {
+    "name": "Marshadow",
+    "id": 801,
+    "gen": 7,
+    "href": "marshadow",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/sun-moon/normal/marshadow.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/sun-moon/shiny/marshadow.png"
+  },
+  {
+    "name": "Poipole",
+    "id": 802,
+    "gen": 7,
+    "href": "poipole",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/1x/poipole.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/shiny/1x/poipole.png"
+  },
+  {
+    "name": "Naganadel",
+    "id": 803,
+    "gen": 7,
+    "href": "naganadel",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/1x/naganadel.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/shiny/1x/naganadel.png"
+  },
+  {
+    "name": "Stakataka",
+    "id": 804,
+    "gen": 7,
+    "href": "stakataka",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/1x/stakataka.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/shiny/1x/stakataka.png"
+  },
+  {
+    "name": "Blacephalon",
+    "id": 805,
+    "gen": 7,
+    "href": "blacephalon",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/1x/blacephalon.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/shiny/1x/blacephalon.png"
+  },
+  {
+    "name": "Zeraora",
+    "id": 806,
+    "gen": 7,
+    "href": "zeraora",
+    "legend": true,
+    "firstForm": true,
+    "img_normal": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/normal/1x/zeraora.png",
+    "img_shiny": "https://img.pokemondb.net/sprites/ultra-sun-ultra-moon/shiny/1x/zeraora.png"
+  }
+]

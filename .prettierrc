@@ -1,0 +1,10 @@
+{
+  "printWidth": 160,
+  "singleQuote": true,
+  "semi": false,
+  "trailingComma": "all",
+  "jsxBracketSameLine": true,
+  "arrowParens": "avoid",
+  "eslintIntegration": true,
+  "endOfLine": "auto"
+}
