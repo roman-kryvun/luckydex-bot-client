@@ -40,15 +40,21 @@
 }
 
 .container.dex-lucky li.selected {
-  color: #c6b410;
+  color: #fdbc67;
+  color: #d9881e;
 }
 
 .container.dex-shiny li.selected {
-  color: #0077ff;
+  /*color: #0077ff;*/
+  /*  color: #f4c206;*/
+  /*  color: #dac008;*/
+    color: #c3b005;
 }
 
-.container.dex-100 li.selected {
-  color: #ff247a;
+.container.dex-perfect li.selected {
+  /*color: #ff247a;*/
+  /*  color: #f4b4da;*/
+    color: #da69ac;
 }
 
 /*li.item.selected:before {*/
@@ -216,8 +222,8 @@
 
 .dex-button.active {
   background-color: #ef7719;
-  color: #ffffff;
-  box-shadow: inset 0px 0px 0px 2px var(--bg-color);
+  /*color: #ffffff;*/
+  /*box-shadow: inset 0px 0px 0px 2px var(--bg-color);*/
 }
 .dex-button:after {
   content: '';
@@ -233,44 +239,44 @@
 }
 
 .dex-button.active:after {
-  opacity: 0.4;
+  opacity: 0.6;
   transform: scale(1);
 }
 
 .dex-button.dex-lucky {
-  border-color: #c6b410;
+  border-color: #fdbc67;
 }
 .dex-button.dex-lucky.active {
-  /*background-color: #c6b410;*/
-  background-color: #c6b410;
-  /*color: var(--text-color);*/
+  background: transparent;
 }
-.dex-button.dex-lucky.active:after {
-  background-color: #c6b410;
+.dex-button.dex-lucky:after {
+  background-color: #fdbc67;
 }
 
 .dex-button.dex-shiny {
-  border-color: #0561cb;
+  border-color: #f4c206;
 }
 .dex-button.dex-shiny.active {
-  /*background-color: #0077ff;*/
-  background-color: #0561cb;
-  /*color: var(--text-color);*/
+  background: transparent;
+}
+.dex-button.dex-shiny:after {
+  background-color: #f4c206;
 }
 
-.dex-button.dex-shiny.active {
-  /*background-color: #c6b410;*/
-  background-color: #0561cb;
-  /*color: var(--text-color);*/
+.dex-button.dex-perfect {
+  border-color: #f4b4da;
 }
-.dex-button.dex-shiny.active:after {
-  background-color: #0561cb;
+.dex-button.dex-perfect.active {
+  background: transparent;
+}
+.dex-button.dex-perfect:after {
+  background-color: #f4b4da;
 }
 
-.dex-button.dex-100.active {
-  background-color: #ff247a;
-  /*color: var(--text-color);*/
-}
+/*.dex-button.dex-100.active {*/
+/*  background-color: #ff247a;*/
+/*  !*color: var(--text-color);*!*/
+/*}*/
 
 .dex-button:hover {
   opacity: 0.8;

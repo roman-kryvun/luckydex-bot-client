@@ -1,16 +1,48 @@
-import "./styles.css"
-import { Fragment, useEffect, useState } from "react"
-import { useCartContext } from "../../contexts/cart"
-import { useNavigate } from "react-router-dom"
+import './styles.css'
+import { Fragment, useEffect, useMemo, useState } from 'react'
+import { useCartContext } from '../../contexts/cart'
+import { useNavigate } from 'react-router-dom'
 // @ts-ignore
-import { ImageRenderer } from "./components/ImageRenderer"
-import pokDataMap from "./data/data.json"
-import pokInfoMap from "./data/info.json"
-import generatinosMap from "./data/generations.json"
-import Detective from "./../../assets/detective-pikachu.png"
-import { CopyNeeded } from "./components/CopyNeeded"
+import { ImageRenderer } from './components/ImageRenderer'
+import Detective from './../../assets/detective-pikachu.png'
+import { CopyNeeded } from './components/CopyNeeded'
+import * as api from './../../api'
+import { updatePokedex } from './../../api'
+
+import pokDataMap from './data/data.json'
+import pokInfoMap from './data/info.json'
+import generatinosMap from './data/generations.json'
+import releasedPokemon from './data/released_pokemon.json'
+import shinyPokemon from './data/shiny_pokemon.json'
+
+// const fetchRelesedPokemons = async () => {
+//   console.log('fetchRelesedPokemons');
+//   let _data
+//
+//   try {
+//     const endpoint = 'https://pogoapi.net/api/v1/released_pokemon.json';
+//     //fetch(endpoint, {mode: 'cors'})
+//     const response = await fetch(endpoint, {
+//       mode: 'cors',
+//       method: 'GET',
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//       //body: JSON.stringify(todo)
+//     })
+//     _data = await response.json()
+//     console.log('> _f', _data);
+//   } catch (error) {
+//     console.log(error)
+//   }
+//   console.log('fetchRelesedPokemons');
+//   console.log(_data);
+//   console.log('--------------');
+//   return _data
+// }
 
 var geners = [
+  { key: '0', label: 'All' },
   { key: '1', label: 'Kanto' },
   { key: '2', label: 'Johto' },
   { key: '3', label: 'Hoenn' },
@@ -19,7 +51,7 @@ var geners = [
   { key: '6', label: 'Kalos' },
   { key: '7', label: 'Alola' },
   { key: '8', label: 'Galar' },
-  // { key: '9', label: '9' },
+  { key: '9', label: 'Paldea' },
 ]
 const imgOptions = {}
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
@@ -35,7 +67,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
   })
 }, imgOptions)
 
-type DexType = 'lucky' | 'shiny' | '100'
+type DexType = 'lucky' | 'shiny' | 'perfect'
 
 type Pokemon = { numero3decimals: string; urlImage: string; name: string; nr: string }
 
@@ -43,7 +75,7 @@ type SelectedPokemon = {
   [str: string]: {
     lucky?: boolean
     shiny?: boolean
-    '100'?: boolean
+    perfect?: boolean
   }
 }
 
@@ -66,13 +98,18 @@ export const Home = () => {
     is_mythical: false,
   })
   const [displayPokemons, setDisplayPokemons] = useState<Pokemon[]>([])
-  const [disPok, setDisPok] = useState<Pokemon[]>([])
+  // const [disPok, setDisPok] = useState<Pokemon[]>([])
+
+  const [relesedPokemon, setRelesedPokemon] = useState<Pokemon[]>([])
+  const [shinyRelesedPokemon, setShinyRelesedPokemon] = useState<Pokemon[]>([])
+
   const [catchPokemon, setCatchPokemon] = useState<SelectedPokemon>({})
   const [showFilters, setShowFilters] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
-  const [gen, setGen] = useState('0')
+  const [gen, setGen] = useState('8')
   const [dex, setDex] = useState<DexType>('lucky')
 
+  // console.log('catchPokemon', catchPokemon);
   /////////////////////////////////
 
   var toggle = false
@@ -97,6 +134,7 @@ export const Home = () => {
     if (gen === '0') {
       // @ts-ignore
       return geners.reduce((agg, { key }) => {
+        if (key === '0') return agg
         // @ts-ignore
         return [...agg, ...generatinosMap[key]]
       }, [])
@@ -133,6 +171,8 @@ export const Home = () => {
     for (let j = 0; j < pokemons.length; j++) {
       pokemons[j].nr = orderNumber(pokemons[j].url)
     }
+
+    pokemons = pokemons.filter(({ nr }: { nr: string }) => releasedPokemon.includes(nr))
     // @ts-ignore
     pokemons.sort((a, b) => a.nr - b.nr)
 
@@ -155,8 +195,11 @@ export const Home = () => {
 
       return { ...pokemon, numero3decimals, urlImage }
     })
-    console.log(_nv[0])
-    setDisPok(_nv)
+
+    setRelesedPokemon(_nv)
+    setShinyRelesedPokemon(_nv.filter(({ nr }: { nr: string }) => shinyPokemon.includes(nr)))
+
+    // setDisPok(_nv)
     // container.innerHTML+=html;
   }
 
@@ -180,10 +223,10 @@ export const Home = () => {
 
   //
   // useEffect(() => {
-  //   getPokemons()
+  //   fetchRelesedPokemons()
   // }, [])
 
-  const onDexSelected = (nextDex: 'lucky' | 'shiny' | '100') => {
+  const onDexSelected = (nextDex: DexType) => {
     setDex(nextDex)
   }
 
@@ -214,13 +257,24 @@ export const Home = () => {
   }
 
   const onGenSelected = (nextGen: string) => setGen(nextGen)
-  const onPokemonSelect = (dex: DexType, pokemonNumber: string) => {
-    if(!editable) return;
 
-    setCatchPokemon(prev => {
-      const _pok = prev[pokemonNumber] || {}
-      return { ...prev, [pokemonNumber]: { ..._pok, [dex]: !_pok[dex] } }
-    })
+  const onPokemonSelect = async (dex: DexType, pokemonNumber: string) => {
+    if (!editable) return
+
+    try {
+      const _pok = catchPokemon[pokemonNumber] || {}
+      const value = !_pok[dex]
+
+      const uid = (Telegram?.WebApp?.initDataUnsafe?.user?.id || '').toString()
+      await updatePokedex(uid, { dex, pokemon: pokemonNumber, value })
+
+      setCatchPokemon(prev => {
+        // const _pok = prev[pokemonNumber] || {}
+        return { ...prev, [pokemonNumber]: { ..._pok, [dex]: !_pok[dex] } }
+      })
+    } catch (e) {
+      console.error(e)
+    }
   }
 
   useEffect(() => {
@@ -228,19 +282,26 @@ export const Home = () => {
   }, [dex, gen])
 
   useEffect(() => {
-    let res
+    let res = dex === 'shiny' ? [...shinyRelesedPokemon] : [...relesedPokemon]
 
     if (Object.values(filters).some(Boolean) || Object.values(settings).some(Boolean)) {
       const { is_baby, is_legendary, is_mythical } = filters
       const { first_form, hide_collected, hide_mythical, hide_legendary } = settings
 
-      res = disPok
+      res = res
         .filter(({ nr }) => {
           if (!first_form) return true
           // @ts-ignore
           const _info = pokInfoMap[nr]
 
           return first_form && _info?.is_first_form
+        })
+        .filter(({ nr }) => {
+          if (!hide_collected) return true
+          // @ts-ignore
+          const _info = catchPokemon[nr] || {}
+
+          return hide_collected && !_info[dex]
         })
         .filter(({ nr }) => {
           // @ts-ignore
@@ -262,18 +323,91 @@ export const Home = () => {
           // @ts-ignore
           const _deteils = pokDataMap[nr]
 
+          // console.log('>', nr, _deteils, [is_baby, is_legendary, is_mythical]);
+
           if (_deteils && [is_baby, is_legendary, is_mythical].includes(true)) {
             return (is_baby && _deteils?.is_baby) || (is_legendary && _deteils?.is_legendary) || (is_mythical && _deteils?.is_mythical)
           }
 
           return true
         })
-    } else {
-      res = [...disPok]
+      // .map(item => {
+      //   catchPokemon[item.nr]
+      //   return Object.assign({}, item, )
+      // })
     }
 
     setDisplayPokemons(res)
-  }, [disPok, filters, settings, gen])
+  }, [dex, shinyRelesedPokemon, relesedPokemon, filters, settings, gen])
+
+  useEffect(() => {
+    const uid = (Telegram?.WebApp?.initDataUnsafe?.user?.id || '').toString()
+    // console.log('ue', uid)
+    if (typeof uid === 'string') {
+      api.getPokedex<SelectedPokemon>(uid).then(res => {
+        // console.log('>', res)
+        if (res !== null) setCatchPokemon(res)
+      })
+    }
+    // if (typeof uid !== 'string') {
+    //   api.getPokedex<SelectedPokemon>('').then(res => {
+    //     if(res !== null) setCatchPokemon(res);
+    //   })
+    // }
+  }, [dex])
+
+  const selectOptions = useMemo(() => {
+    const [common, ...rest] = geners
+    const options = rest.map(({ key, label }) => {
+      let count = 0
+      let total = 0
+      if (key === '0') {
+        // @ts-ignore
+        // total = geners.reduce((agg, { key }) => {
+        //   // @ts-ignore
+        //   const arr = generatinosMap[key] || []
+        //   return agg + (arr?.length || 0)
+        //   // return agg + 1
+        // }, 0)
+      } else {
+        // @ts-ignore
+        const arr = (generatinosMap[key] || []).filter(({ url }: { url: string }) => {
+          const _nr = orderNumber(url)
+          return dex === 'shiny' ? shinyPokemon.includes(_nr) : releasedPokemon.includes(_nr)
+        })
+        // console.log('-----------------')
+        // console.log('arr', arr)
+        // console.log('-----------------')
+        // const arr = (generatinosMap[key] || []).filter((_i) => dex !== 'shiny' ? releasedPokemon.includes(_i) : shinyPokemon.includes(_i))
+        total = arr.length || 0
+        // @ts-ignore
+        count = arr.filter(({ url }) => {
+          const number = orderNumber(url)
+          const pok = catchPokemon[number] || {}
+          return pok[dex] || false
+        }).length
+        // total = 0
+      }
+
+      return { key, label, count, total }
+    })
+
+    const { count, total } = options.reduce(
+      (agg, { count, total }) => {
+        agg.count = agg.count + count
+        agg.total = agg.total + total
+        return { ...agg }
+      },
+      { count: 0, total: 0 },
+    )
+
+    return [{ ...common, count, total }, ...options].reduce((agg, { key, label, count, total }) => {
+      //@ts-ignore
+      agg[key] = `${label}  (${count}/${total})`
+
+      return agg
+    }, {})
+  }, [gen, dex, catchPokemon, displayPokemons])
 
   return (
     <div>
@@ -281,14 +415,14 @@ export const Home = () => {
       {/*<Navigation />*/}
       <div className={`dex-buttons`}>
         <div className={`dex-button  dex-lucky ${dex === 'lucky' ? 'active' : ''}`} onClick={() => onDexSelected('lucky')}>
-          Luckydex
+          Lucky
         </div>
         <div className={`dex-button  dex-shiny ${dex === 'shiny' ? 'active' : ''}`} onClick={() => onDexSelected('shiny')}>
-          Shinydex
+          Shiny
         </div>
-        {/*<div className={`dex-button  dex-${dex} ${dex === '100' ? 'active' : ''}`} onClick={() => onDexSelected('100')}>*/}
-        {/*  100*/}
-        {/*</div>*/}
+        <div className={`dex-button  dex-perfect ${dex === 'perfect' ? 'active' : ''}`} onClick={() => onDexSelected('perfect')}>
+          Perfect
+        </div>
       </div>
 
       <section className="">
@@ -304,10 +438,18 @@ export const Home = () => {
             name="generation-select"
             id="generation-select"
             onChange={e => onGenSelected(e.target.value)}>
-            <option value="0">All generations</option>
+            {/*{selectOptions?.map(({ key, label }) => (*/}
+            {/*  <option key={label} value={key}>*/}
+            {/*    {label}*/}
+            {/*  </option>*/}
+            {/*))}*/}
+            {/*<option value="0">All generations </option>*/}
             {geners.map(({ key, label }) => (
               <option key={label} value={key}>
-                {label}
+                {
+                  // @ts-ignore
+                  selectOptions[key]
+                }
               </option>
             ))}
           </select>
@@ -333,7 +475,7 @@ export const Home = () => {
                 Settings
               </button>
               {Object.values(settings).some(Boolean) && (
-                <div style={{ lineHeight: 0, opacity: .8 }} onClick={onResetSettings}>
+                <div style={{ lineHeight: 0, opacity: 0.8 }} onClick={onResetSettings}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#000000"
@@ -359,7 +501,7 @@ export const Home = () => {
             {showSettings &&
               [
                 { key: 'first_form', label: '1st form' },
-                // { key: 'hide_collected', label: `Hide ${dex}` },
+                { key: 'hide_collected', label: `Hide ${dex}` },
                 { key: 'hide_legendary', label: 'Hide Legendary' },
                 {
                   key: 'hide_mythical',
@@ -401,25 +543,25 @@ export const Home = () => {
                 //   {/*reset {Object.values(filters).some(Boolean) && <span>{Object.values(filters).filter(Boolean).length}</span>}*/}
                 //   {/*filter{Object.values(filters).filter(Boolean).length > 1 && 's'}*/}
                 // </button>
-                <div style={{ lineHeight: 0, opacity: .8 }} onClick={onResetFilter}>
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#000000"
-                height="31px"
-                width="31px"
-                version="1.1"
-                id="Layer_1"
-                viewBox="0 0 512 512"
-                style={{ padding: '8px', fill: 'var(--text-color)' }}>
-                <g>
-                <g>
-                <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   " />
-                </g>
-                </g>
-                </svg>
-              {/*reset*/}
-              {/*reset {Object.values(settings).some(Boolean) && <span>{Object.values(settings).filter(Boolean).length}</span>}*/}
-              {/*setting{Object.values(settings).filter(Boolean).length > 1 && 's'}*/}
+                <div style={{ lineHeight: 0, opacity: 0.8 }} onClick={onResetFilter}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#000000"
+                    height="31px"
+                    width="31px"
+                    version="1.1"
+                    id="Layer_1"
+                    viewBox="0 0 512 512"
+                    style={{ padding: '8px', fill: 'var(--text-color)' }}>
+                    <g>
+                      <g>
+                        <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   " />
+                      </g>
+                    </g>
+                  </svg>
+                  {/*reset*/}
+                  {/*reset {Object.values(settings).some(Boolean) && <span>{Object.values(settings).filter(Boolean).length}</span>}*/}
+                  {/*setting{Object.values(settings).filter(Boolean).length > 1 && 's'}*/}
                 </div>
               )}
               <button className={['dex-button', showFilters ? 'active' : ''].join(' ')} style={{ margin: '' }} onClick={() => setShowFilters(!showFilters)}>
@@ -476,7 +618,7 @@ export const Home = () => {
             </li>
           ))}
 
-          {disPok.length > 0 && displayPokemons.length === 0 && (
+          {relesedPokemon.length > 0 && displayPokemons.length === 0 && (
             <div className="no-pokemons">
               <img src={Detective} alt="sad pokemon" className="displayed" style={{ maxWidth: '120px' }} />
               <br />
