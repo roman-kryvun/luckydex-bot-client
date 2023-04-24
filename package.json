@@ -9,10 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "bundle": "vite-bundle-visualizer",
-    "deploy:prod": "npm run build && firebase deploy -P prod --only hosting:prod",
-    "_deploy:dev": "npm run build && firebase deploy -P dev --only hosting:dev",
-    "_deploy:2085": "npm run build && firebase deploy -P chat-market --only hosting:2085",
-    "_deploy:black-honey": "npm run build && firebase deploy -P chat-market --only hosting:black-honey"
+    "deploy:prod": "npm run build && firebase deploy -P prod --only hosting:prod"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",

@@ -106,7 +106,7 @@ export const Home = () => {
   const [catchPokemon, setCatchPokemon] = useState<SelectedPokemon>({})
   const [showFilters, setShowFilters] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
-  const [gen, setGen] = useState('8')
+  const [gen, setGen] = useState('0')
   const [dex, setDex] = useState<DexType>('lucky')
 
   // console.log('catchPokemon', catchPokemon);
