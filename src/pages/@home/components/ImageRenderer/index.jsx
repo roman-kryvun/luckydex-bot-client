@@ -28,13 +28,13 @@ export const ImageRenderer = ({ url, thumb, width, height, altLabel }) => {
       }}>
       {isInView && (
         <>
-          {/*<img*/}
-          {/*  className={classnames('image', 'thumb', {*/}
-          {/*    ['isLoaded']: !!isLoaded,*/}
-          {/*    ['isError']: !!isError,*/}
-          {/*  })}*/}
-          {/*  src={thumb}*/}
-          {/*/>*/}
+          <img
+            className={classnames('image', 'thumb', {
+              ['isLoaded']: !!isLoaded,
+              ['isError']: !!isError,
+            })}
+            src={thumb}
+          />
           <img
 
             className={classnames('image', {
@@ -48,7 +48,8 @@ export const ImageRenderer = ({ url, thumb, width, height, altLabel }) => {
           <div className={classnames('image', {
             ['unreleased']: !!isError,
           })}>
-            {altLabel} <br/>unreleased
+            {altLabel}
+            {/*<br/>unreleased*/}
           </div>
         </>
       )}
