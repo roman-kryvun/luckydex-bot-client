@@ -1,16 +1,17 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { CartProvider } from '../contexts/cart'
 import { Home } from './@home'
+import { Login } from './@login'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
   },
-  // {
-  //   path: '/cart',
-  //   element: <Cart />,
-  // },
+  {
+    path: '/login',
+    element: <Login />,
+  },
   // {
   //   path: '/profile',
   //   element: <Profile />,
