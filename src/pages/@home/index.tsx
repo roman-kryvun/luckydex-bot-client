@@ -189,7 +189,13 @@ export const Home = () => {
       if (numero3decimals < 100) {
         numero3decimals = '0' + numero3decimals
       }
-      const toggleurl = dex === 'shiny' ? 'https://www.serebii.net/pokemongo/pokemon/shiny/' : 'https://www.serebii.net/pokemongo/pokemon/'
+      let toggleurl = dex === 'shiny' ? 'https://www.serebii.net/pokemongo/pokemon/shiny/' : 'https://www.serebii.net/pokemongo/pokemon/';
+
+      // fix for Lake Trio Shiny
+      if(dex === 'shiny' && ['480', '481', '482'].includes(numero3decimals)) {
+        toggleurl = 'https://www.serebii.net/Shiny/SWSH/'
+      }
+
       // img.src = 'https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif'
       const urlImage = `${toggleurl}${numero3decimals}.png`
 

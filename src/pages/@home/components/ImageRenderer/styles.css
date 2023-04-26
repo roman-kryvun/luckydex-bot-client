@@ -21,7 +21,7 @@
   /*filter: blur(10px);*/
   transition: opacity 1s ease-out, transform 1s ease-out;
   position: absolute;
-  transform: scale(1);
+  transform: scale(0.5);
 }
 
 .image.thumb.isLoaded {
