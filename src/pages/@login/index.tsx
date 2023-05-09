@@ -3,7 +3,7 @@ export const Login = () => {
     <>
       <h1>login</h1>
 
-      <button onClick={window.onTelegramAuth}></button>
+      {/*<button onClick={window?.onTelegramAuth}></button>*/}
 
       <script
         async

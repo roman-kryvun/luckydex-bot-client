@@ -15,32 +15,6 @@ import generatinosMap from './data/generations.json'
 import releasedPokemon from './data/released_pokemon.json'
 import shinyPokemon from './data/shiny_pokemon.json'
 
-// const fetchRelesedPokemons = async () => {
-//   console.log('fetchRelesedPokemons');
-//   let _data
-//
-//   try {
-//     const endpoint = 'https://pogoapi.net/api/v1/released_pokemon.json';
-//     //fetch(endpoint, {mode: 'cors'})
-//     const response = await fetch(endpoint, {
-//       mode: 'cors',
-//       method: 'GET',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       //body: JSON.stringify(todo)
-//     })
-//     _data = await response.json()
-//     console.log('> _f', _data);
-//   } catch (error) {
-//     console.log(error)
-//   }
-//   console.log('fetchRelesedPokemons');
-//   console.log(_data);
-//   console.log('--------------');
-//   return _data
-// }
-
 var geners = [
   { key: '0', label: 'All' },
   { key: '1', label: 'Kanto' },
@@ -53,19 +27,19 @@ var geners = [
   { key: '8', label: 'Galar' },
   { key: '9', label: 'Paldea' },
 ]
-const imgOptions = {}
-const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return
 
-    const img = entry.target
-    var dataImage = img.getAttribute('data-image')
-    // @ts-ignore
-    img.src = dataImage
-    // img.classList.remove("spinner");
-    imgObserver.unobserve(img)
-  })
-}, imgOptions)
+
+const REGIONS: {[str: string]: string} = {
+  "1": "Kanto",
+  "152": 'Johto',
+  "252": 'Hoenn',
+  "387": 'Sinnoh',
+  "494": 'Unova',
+  "650": 'Kalos',
+  "722": 'Alola',
+  "810": 'Galar',
+  "906": 'Paldea',
+}
 
 type DexType = 'lucky' | 'shiny' | 'perfect'
 
@@ -79,24 +53,90 @@ type SelectedPokemon = {
   }
 }
 
+// init start
+
+type SettingsType = {
+  first_form: boolean
+  hide_collected: boolean
+  hide_legendary: boolean
+  hide_mythical: boolean
+}
+
+const DEFAULT_SETTING: SettingsType = {
+  first_form: false,
+  hide_collected: false,
+  hide_legendary: false,
+  hide_mythical: false,
+}
+const SETTINGS_KEY = 'settings_0'
+const initSettings = getLocalStorageObject<SettingsType>(SETTINGS_KEY, JSON.stringify(DEFAULT_SETTING))
+
+type FilterType = {
+  // is_first_form: boolean,
+  is_baby: boolean
+  is_legendary: boolean
+  is_mythical: boolean
+}
+
+const DEFAULT_FILTERS: FilterType = {
+  // is_first_form: false,
+  is_baby: false,
+  is_legendary: false,
+  is_mythical: false,
+}
+const FILTERS_KEY = 'filters_0'
+const initFilters = getLocalStorageObject<FilterType>(FILTERS_KEY, JSON.stringify(DEFAULT_FILTERS))
+
+const DEFAULT_GEN = '0'
+const GEN_KEY = 'gen_0'
+const initGen = getLocalStorageValue<string>(
+  GEN_KEY,
+  DEFAULT_GEN,
+  geners.map(({ key }) => key),
+)
+
+const DEFAULT_DEX = 'lucky'
+const DEX_KEY = 'dex_0'
+const initDex = getLocalStorageValue<DexType>(DEX_KEY, DEFAULT_DEX, ['lucky', 'shiny', 'perfect'])
+
+function setLocalStorageObject(key: string, value: any) {
+  window.localStorage.setItem(key, JSON.stringify(value))
+}
+
+function getLocalStorageObject<T>(key: string, defaultJSON: string): T {
+  // @ts-ignore
+  let storedVisibleTeamList = window.localStorage.getItem(key) || defaultJSON
+  let initVisibleTeamList = JSON.parse(defaultJSON)
+  try {
+    // @ts-ignore
+    initVisibleTeamList = JSON.parse(storedVisibleTeamList) || {}
+  } catch (e) {
+    console.error(e)
+  }
+
+  return initVisibleTeamList as T
+}
+
+function setLocalStorageValue(key: string, value: any) {
+  window.localStorage.setItem(key, value)
+}
+
+function getLocalStorageValue<T>(key: string, def: T, validValues: T[]): T {
+  // @ts-ignore
+  const storedValue: T = window.localStorage.getItem(key) || def
+  return validValues.includes(storedValue) ? storedValue : def
+}
+
+// init end
+
 export const Home = () => {
   const navigate = useNavigate()
   const { products, total, shopType } = useCartContext()
 
   const [editable, setEditable] = useState(true)
 
-  const [settings, setSettings] = useState({
-    first_form: false,
-    hide_collected: false,
-    hide_legendary: false,
-    hide_mythical: false,
-  })
-  const [filters, setFilters] = useState({
-    // is_first_form: false,
-    is_baby: false,
-    is_legendary: false,
-    is_mythical: false,
-  })
+  const [settings, setSettings] = useState(initSettings)
+  const [filters, setFilters] = useState(initFilters)
   const [displayPokemons, setDisplayPokemons] = useState<Pokemon[]>([])
   // const [disPok, setDisPok] = useState<Pokemon[]>([])
 
@@ -106,8 +146,8 @@ export const Home = () => {
   const [catchPokemon, setCatchPokemon] = useState<SelectedPokemon>({})
   const [showFilters, setShowFilters] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
-  const [gen, setGen] = useState('0')
-  const [dex, setDex] = useState<DexType>('lucky')
+  const [gen, setGen] = useState(initGen)
+  const [dex, setDex] = useState<DexType>(initDex)
 
   // console.log('catchPokemon', catchPokemon);
   /////////////////////////////////
@@ -189,10 +229,10 @@ export const Home = () => {
       if (numero3decimals < 100) {
         numero3decimals = '0' + numero3decimals
       }
-      let toggleurl = dex === 'shiny' ? 'https://www.serebii.net/pokemongo/pokemon/shiny/' : 'https://www.serebii.net/pokemongo/pokemon/';
+      let toggleurl = dex === 'shiny' ? 'https://www.serebii.net/pokemongo/pokemon/shiny/' : 'https://www.serebii.net/pokemongo/pokemon/'
 
       // fix for Lake Trio Shiny
-      if(dex === 'shiny' && ['480', '481', '482'].includes(numero3decimals)) {
+      if (dex === 'shiny' && ['480', '481', '482'].includes(numero3decimals)) {
         toggleurl = 'https://www.serebii.net/Shiny/SWSH/'
       }
 
@@ -238,7 +278,8 @@ export const Home = () => {
 
   const onResetSettings = () => {
     // @ts-ignore
-    setSettings(Object.fromEntries(Object.entries(filters).map(([key]) => [key, false])))
+    // setSettings(Object.fromEntries(Object.entries(filters).map(([key]) => [key, false])))
+    setSettings(JSON.parse(JSON.stringify(DEFAULT_SETTING)))
     setShowSettings(false)
   }
 
@@ -251,7 +292,8 @@ export const Home = () => {
 
   const onResetFilter = () => {
     // @ts-ignore
-    setFilters(Object.fromEntries(Object.entries(filters).map(([key]) => [key, false])))
+    // setFilters(Object.fromEntries(Object.entries(filters).map(([key]) => [key, false])))
+    setFilters(JSON.parse(JSON.stringify(DEFAULT_FILTERS)))
     setShowFilters(false)
   }
 
@@ -283,12 +325,10 @@ export const Home = () => {
     }
   }
 
-  useEffect(() => {
-    getPokemons()
-  }, [dex, gen])
-
-  useEffect(() => {
+  const updateDisplayPokemon = () => {
     let res = dex === 'shiny' ? [...shinyRelesedPokemon] : [...relesedPokemon]
+
+    console.log({ filters, settings })
 
     if (Object.values(filters).some(Boolean) || Object.values(settings).some(Boolean)) {
       const { is_baby, is_legendary, is_mythical } = filters
@@ -337,13 +377,25 @@ export const Home = () => {
 
           return true
         })
-      // .map(item => {
-      //   catchPokemon[item.nr]
-      //   return Object.assign({}, item, )
-      // })
+        .map(item => {
+          catchPokemon[item.nr]
+          return Object.assign({}, item)
+        })
     }
 
     setDisplayPokemons(res)
+  }
+
+  useEffect(() => {
+    getPokemons()
+  }, [dex, gen])
+
+  // useEffect(() => {
+  //   updateDisplayPokemon()
+  // }, [shinyRelesedPokemon, relesedPokemon])
+
+  useEffect(() => {
+    updateDisplayPokemon()
   }, [dex, shinyRelesedPokemon, relesedPokemon, filters, settings, gen])
 
   useEffect(() => {
@@ -415,6 +467,11 @@ export const Home = () => {
     }, {})
   }, [gen, dex, catchPokemon, displayPokemons])
 
+  useEffect(() => setLocalStorageValue(DEX_KEY, dex), [dex])
+  useEffect(() => setLocalStorageValue(GEN_KEY, gen), [gen])
+  useEffect(() => setLocalStorageObject(SETTINGS_KEY, settings), [settings])
+  useEffect(() => setLocalStorageObject(FILTERS_KEY, filters), [filters])
+
   return (
     <div>
       <CopyNeeded list={displayPokemons.map(({ nr }) => nr)} />
@@ -443,6 +500,7 @@ export const Home = () => {
             className="minimal"
             name="generation-select"
             id="generation-select"
+            value={gen}
             onChange={e => onGenSelected(e.target.value)}>
             {/*{selectOptions?.map(({ key, label }) => (*/}
             {/*  <option key={label} value={key}>*/}
@@ -608,6 +666,9 @@ export const Home = () => {
 
         <div className={`container dex-${dex}`} id="container">
           {displayPokemons.map((pokemon, i) => (
+            <Fragment key={[dex, i].join('_')}>
+              {REGIONS[pokemon.nr] && <li className='region'><div>{REGIONS[pokemon.nr]}</div></li>}
+
             <li
               className={`item ${catchPokemon[pokemon.nr] && catchPokemon[pokemon.nr][dex] ? 'selected' : ''}`}
               key={[dex, i].join('_')}
@@ -621,7 +682,7 @@ export const Home = () => {
                 height={100}
               />
               <div>#{pokemon.numero3decimals}</div>
-            </li>
+            </li></Fragment>
           ))}
 
           {relesedPokemon.length > 0 && displayPokemons.length === 0 && (
