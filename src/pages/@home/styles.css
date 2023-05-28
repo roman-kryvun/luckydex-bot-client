@@ -52,7 +52,7 @@ li.region {
   /* margin: 0 20px; */
   letter-spacing: 3px;
   position: sticky;
-  top: 123px;
+  top: 125px;
   background: var(--bg-color);
    z-index: 1;
 }
