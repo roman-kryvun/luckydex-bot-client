@@ -213,6 +213,15 @@ export const Home = () => {
     }
 
     pokemons = pokemons.filter(({ nr }: { nr: string }) => releasedPokemon.includes(nr))
+
+    if(dex === 'lucky') {
+      pokemons = pokemons.filter(({ nr }) => {
+        // @ts-ignore
+        const _deteils = pokDataMap[nr]
+        return !_deteils?.is_mythical || ["808", "809"].includes(nr)
+      })
+    }
+
     // @ts-ignore
     pokemons.sort((a, b) => a.nr - b.nr)
 
@@ -431,6 +440,12 @@ export const Home = () => {
         // @ts-ignore
         const arr = (generatinosMap[key] || []).filter(({ url }: { url: string }) => {
           const _nr = orderNumber(url)
+
+          if(dex === 'lucky') {
+            // @ts-ignore
+            return releasedPokemon.includes(_nr) && (!pokDataMap[_nr]?.is_mythical || ["808", "809"].includes(_nr))
+          }
+
           return dex === 'shiny' ? shinyPokemon.includes(_nr) : releasedPokemon.includes(_nr)
         })
         // console.log('-----------------')
