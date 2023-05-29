@@ -215,6 +215,7 @@ export const Home = () => {
     pokemons = pokemons.filter(({ nr }: { nr: string }) => releasedPokemon.includes(nr))
 
     if(dex === 'lucky') {
+      // @ts-ignore
       pokemons = pokemons.filter(({ nr }) => {
         // @ts-ignore
         const _deteils = pokDataMap[nr]
