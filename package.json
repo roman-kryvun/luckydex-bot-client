@@ -11,6 +11,9 @@
     "bundle": "vite-bundle-visualizer",
     "deploy:prod": "npm run build && firebase deploy -P prod --only hosting:prod"
   },
+  "engines": {
+    "node": "18.15.0"
+  },
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
