@@ -9,13 +9,13 @@ import { CopyNeeded } from './components/CopyNeeded'
 import * as api from './../../api'
 import { updatePokedex } from './../../api'
 
-import pokDataMap from './data/data.json'
-import pokInfoMap from './data/info.json'
+// import pokDataMap from './data/data.json'
+// import pokInfoMap from './data/info.json'
 import generatinosMap from './data/generations.json'
-import releasedPokemon from './data/released_pokemon.json'
-import __shinyPokemon from './data/shiny_pokemon.json'
-
-const shinyPokemon = [...new Set(__shinyPokemon.concat(['785', '786', '787', '793', '866', '900', '901']))]
+// import releasedPokemon from './data/released_pokemon.json'
+// import __shinyPokemon from './data/shiny_pokemon.json'
+//
+// const shinyPokemon = [...new Set(__shinyPokemon.concat(['785', '786', '787', '793', '866', '900', '901']))]
 
 var geners = [
   { key: '0', label: 'All' },
@@ -42,7 +42,7 @@ const REGIONS: { [str: string]: string } = {
   '906': 'Paldea',
 }
 
-type DexType = 'lucky' | 'shiny' | 'perfect'
+type DexType = 'lucky' | 'shiny' | 'perfect' | 'shadow' | 'purified'
 
 type Pokemon = { numero3decimals: string; urlImage: string; name: string; nr: string }
 
@@ -51,6 +51,8 @@ type SelectedPokemon = {
     lucky?: boolean
     shiny?: boolean
     perfect?: boolean
+    shadow?: boolean
+    purified?: boolean
   }
 }
 
@@ -98,7 +100,7 @@ const initGen = getLocalStorageValue<string>(
 
 const DEFAULT_DEX = 'lucky'
 const DEX_KEY = 'dex_0'
-const initDex = getLocalStorageValue<DexType>(DEX_KEY, DEFAULT_DEX, ['lucky', 'shiny', 'perfect'])
+const initDex = getLocalStorageValue<DexType>(DEX_KEY, DEFAULT_DEX, ['lucky', 'shiny', 'perfect', 'shadow', 'purified'])
 
 function setLocalStorageObject(key: string, value: any) {
   window.localStorage.setItem(key, JSON.stringify(value))
@@ -132,7 +134,7 @@ function getLocalStorageValue<T>(key: string, def: T, validValues: T[]): T {
 
 export const Home = () => {
   const navigate = useNavigate()
-  const { products, total, shopType } = useCartContext()
+  const { pokemons: dataset, pokemonsMap, releasedPokemon, shinyPokemon, shadowPokemon } = useCartContext()
 
   const [editable, setEditable] = useState(true)
 
@@ -143,6 +145,8 @@ export const Home = () => {
 
   const [relesedPokemon, setRelesedPokemon] = useState<Pokemon[]>([])
   const [shinyRelesedPokemon, setShinyRelesedPokemon] = useState<Pokemon[]>([])
+  const [shadowRelesedPokemon, setShadowRelesedPokemon] = useState<Pokemon[]>([])
+  const [purifiedRelesedPokemon, setPurifiedRelesedPokemon] = useState<Pokemon[]>([])
 
   const [catchPokemon, setCatchPokemon] = useState<SelectedPokemon>({})
   const [showFilters, setShowFilters] = useState(false)
@@ -218,9 +222,8 @@ export const Home = () => {
     if (dex === 'lucky') {
       // @ts-ignore
       pokemons = pokemons.filter(({ nr }) => {
-        // @ts-ignore
-        const _deteils = pokDataMap[nr]
-        return !_deteils?.is_mythical || ['808', '809'].includes(nr)
+        const _deteils = pokemonsMap[nr]
+        return !_deteils?.mythical || ['808', '809'].includes(nr)
       })
     }
 
@@ -255,6 +258,8 @@ export const Home = () => {
 
     setRelesedPokemon(_nv)
     setShinyRelesedPokemon(_nv.filter(({ nr }: { nr: string }) => shinyPokemon.includes(nr)))
+    setShadowRelesedPokemon(_nv.filter(({ nr }: { nr: string }) => shadowPokemon.includes(nr)))
+    setPurifiedRelesedPokemon(_nv.filter(({ nr }: { nr: string }) => pokemonsMap[nr].released_purified))
 
     // setDisPok(_nv)
     // container.innerHTML+=html;
@@ -337,7 +342,25 @@ export const Home = () => {
   }
 
   const updateDisplayPokemon = () => {
-    let res = dex === 'shiny' ? [...shinyRelesedPokemon] : [...relesedPokemon]
+    // let res = dex === 'shiny' ? [...shinyRelesedPokemon] : [...relesedPokemon]
+    let res = relesedPokemon;
+
+    switch (dex) {
+      case 'lucky':
+        res = [...relesedPokemon]
+        break;
+      case 'perfect':
+        res = [...relesedPokemon]
+        break;
+      case 'shiny':
+        res = [...shinyRelesedPokemon]
+        break;
+      case 'purified':
+        res = [...purifiedRelesedPokemon]
+        break;
+      default:
+        res = [...relesedPokemon]
+    }
 
     console.log({ filters, settings })
 
@@ -348,10 +371,9 @@ export const Home = () => {
       res = res
         .filter(({ nr }) => {
           if (!first_form) return true
-          // @ts-ignore
-          const _info = pokInfoMap[nr]
+          const _info = pokemonsMap[nr]
 
-          return first_form && _info?.is_first_form
+          return first_form && _info?.first_form
         })
         .filter(({ nr }) => {
           if (!hide_collected) return true
@@ -361,29 +383,26 @@ export const Home = () => {
           return hide_collected && !_info[dex]
         })
         .filter(({ nr }) => {
-          // @ts-ignore
-          const _deteils = pokDataMap[nr]
+          const _deteils = pokemonsMap[nr]
 
           if (!hide_legendary) return true
 
-          return hide_legendary && !_deteils?.is_legendary
+          return hide_legendary && !_deteils?.legendary
         })
         .filter(({ nr }) => {
-          // @ts-ignore
-          const _deteils = pokDataMap[nr]
+          const _deteils = pokemonsMap[nr]
 
           if (!hide_mythical) return true
 
-          return hide_mythical && !_deteils?.is_mythical
+          return hide_mythical && !_deteils?.mythical
         })
         .filter(({ nr }) => {
-          // @ts-ignore
-          const _deteils = pokDataMap[nr]
+          const _deteils = pokemonsMap[nr]
 
           // console.log('>', nr, _deteils, [is_baby, is_legendary, is_mythical]);
 
           if (_deteils && [is_baby, is_legendary, is_mythical].includes(true)) {
-            return (is_baby && _deteils?.is_baby) || (is_legendary && _deteils?.is_legendary) || (is_mythical && _deteils?.is_mythical)
+            return (is_baby && _deteils?.baby) || (is_legendary && _deteils?.legendary) || (is_mythical && _deteils?.mythical)
           }
 
           return true
@@ -399,7 +418,7 @@ export const Home = () => {
 
   useEffect(() => {
     getPokemons()
-  }, [dex, gen])
+  }, [dex, gen, dataset])
 
   // useEffect(() => {
   //   updateDisplayPokemon()
@@ -414,15 +433,9 @@ export const Home = () => {
     // console.log('ue', uid)
     if (typeof uid === 'string') {
       api.getPokedex<SelectedPokemon>(uid).then(res => {
-        // console.log('>', res)
         if (res !== null) setCatchPokemon(res)
       })
     }
-    // if (typeof uid !== 'string') {
-    //   api.getPokedex<SelectedPokemon>('').then(res => {
-    //     if(res !== null) setCatchPokemon(res);
-    //   })
-    // }
   }, [dex])
 
   const selectOptions = useMemo(() => {
@@ -444,8 +457,7 @@ export const Home = () => {
           const _nr = orderNumber(url)
 
           if (dex === 'lucky') {
-            // @ts-ignore
-            return releasedPokemon.includes(_nr) && (!pokDataMap[_nr]?.is_mythical || ['808', '809'].includes(_nr))
+            return releasedPokemon.includes(_nr) && (!pokemonsMap[_nr]?.mythical || ['808', '809'].includes(_nr))
           }
 
           return dex === 'shiny' ? shinyPokemon.includes(_nr) : releasedPokemon.includes(_nr)
@@ -489,6 +501,76 @@ export const Home = () => {
   useEffect(() => setLocalStorageObject(SETTINGS_KEY, settings), [settings])
   useEffect(() => setLocalStorageObject(FILTERS_KEY, filters), [filters])
 
+  if(!dataset?.length) {
+    return (
+      <div className="global-loader">
+        <div className="gbc">
+          <input id="powerSwitch" checked aria-label="Toggle Gameboy power" className="gbc-power-control"
+                 type="checkbox" />
+            <label htmlFor="powerSwitch" className="gbc-power-label">
+              <div className="gbc-power-label-lines">
+                <div className='gbc-power-label-line gbc-power-label-line-1'/>
+                <div className='gbc-power-label-line gbc-power-label-line-2'/>
+                <div className='gbc-power-label-line gbc-power-label-line-3'/>
+              </div>
+            </label>
+            <div className="gbc-body">
+              <div className="gbc-screen-wrap">
+                <div className='gbc-screen-light'/>
+                <div className="gbc-screen">
+                  <div className="pika-wrap">
+                    <div className="pika">
+                      <div className="pika-head">
+                        <div className="pika-face">
+                          <div className='pika-eye pika-eye-left'/>
+                          <div className='pika-eye pika-eye-right'/>
+                          <div className='pika-nose'/>
+                          <div className="pika-mouth">
+                            <div className='pika-mouth-3'/>
+                            <div className='pika-mouth-inner'/>
+                          </div>
+                          <div className='pika-cheek pika-cheek-left'/>
+                          <div className='pika-cheek pika-cheek-right'/>
+                        </div>
+                        <div className='pika-ear pika-ear-left'/>
+                        <div className='pika-ear pika-ear-right'/>
+                      </div>
+                      <div className="pika-body">
+                        <div className='pika-torso'/>
+                        <div className="pika-arm pika-arm-left">
+                          <div className='pika-arm-fingers'/>
+                          <div className='pika-arm-shadow'/>
+                        </div>
+                        <div className="pika-arm pika-arm-right">
+                          <div className='pika-arm-fingers'/>
+                          <div className='pika-arm-shadow'/>
+                        </div>
+                        <div className="pika-tail pika-tail-1">
+                          <div className="pika-tail pika-tail-2">
+                            <div className='pika-tail pika-tail-3'/>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="pika-bubble">
+                        Pika!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="gbc-controls">
+                <div className='gbc-dpad'/>
+                <div className='gbc-button gbc-button-a'/>
+                <div className='gbc-button gbc-button-b'/>
+                <div className='gbc-pill gbc-pill-start'/>
+                <div className='gbc-pill gbc-pill-select'/>
+              </div>
+            </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div>
       <CopyNeeded list={displayPokemons.map(({ nr }) => nr)} />
@@ -502,6 +584,12 @@ export const Home = () => {
         </div>
         <div className={`dex-button  dex-perfect ${dex === 'perfect' ? 'active' : ''}`} onClick={() => onDexSelected('perfect')}>
           Perfect
+        </div>
+        <div className={`dex-button  dex-shadow ${dex === 'shadow' ? 'active' : ''}`} onClick={() => onDexSelected('shadow')}>
+          Shadow
+        </div>
+        <div className={`dex-button  dex-purified ${dex === 'purified' ? 'active' : ''}`} onClick={() => onDexSelected('purified')}>
+          Purified
         </div>
       </div>
 

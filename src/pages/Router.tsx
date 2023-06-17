@@ -24,10 +24,8 @@ const router = createBrowserRouter([
 
 export const Router = () => {
   return (
-    <>
-      <CartProvider>
-        <RouterProvider router={router} />
-      </CartProvider>
-    </>
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   )
 }

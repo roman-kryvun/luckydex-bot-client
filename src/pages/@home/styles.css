@@ -88,7 +88,7 @@ li.region:before,
 }
 
 .container.dex-lucky li.selected {
-color: #fdbc67;
+/*color: #fdbc67;*/
 color: #d9881e;
 }
 
@@ -96,13 +96,21 @@ color: #d9881e;
 /*color: #0077ff;*/
   /*  color: #f4c206;*/
   /*  color: #dac008;*/
-    color: #c3b005;
+    color: #b3a315;
 }
 
 .container.dex-perfect li.selected {
   /*color: #ff247a;*/
   /*  color: #f4b4da;*/
     color: #da69ac;
+}
+.container.dex-shadow li.selected {
+    /*color: #ca9aff;*/
+    color: #ab63fb;
+}
+.container.dex-purified li.selected {
+    /*color: #93d3cd;*/
+    color: #4cc9bd;
 }
 
 /*li.item.selected:before {*/
@@ -262,9 +270,9 @@ color: #d9881e;
   flex: 1;
   text-align: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   position: relative;
 }
 
@@ -275,13 +283,13 @@ color: #d9881e;
 }
 .dex-button:after {
   content: '';
-  width: calc(100% - 8px);
+  width: calc(100% - 6px);
   border-radius: 2px;
-  height: 22px;
+  height: 18px;
   background-color: #ef7719;
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 3px;
+  left: 3px;
   opacity: 0;
   transition: all 0.2s ease;
 }
@@ -319,6 +327,29 @@ color: #d9881e;
 }
 .dex-button.dex-perfect:after {
   background-color: #f4b4da;
+}
+
+
+.dex-button.dex-shadow {
+  border-color: #ca9aff;
+}
+.dex-button.dex-shadow.active {
+  background: transparent;
+}
+.dex-button.dex-shadow:after {
+  background-color: #ca9aff;
+}
+
+
+
+.dex-button.dex-purified {
+  border-color: #93d3cd;
+}
+.dex-button.dex-purified.active {
+  background: transparent;
+}
+.dex-button.dex-purified:after {
+  background-color: #93d3cd;
 }
 
 /*.dex-button.dex-100.active {*/
@@ -381,13 +412,13 @@ color: #d9881e;
 
 .filters-head > button:after {
   content: '';
-  width: calc(100% - 8px);
+  width: calc(100% - 6px);
   border-radius: 2px;
-  height: 22px;
+  height: 18px;
   background-color: var(--success-color);
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 3px;
+  left: 3px;
   opacity: 0;
   transition: all 0.2s ease;
 }

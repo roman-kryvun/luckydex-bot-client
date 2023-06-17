@@ -1,22 +1,25 @@
 import { createContext, useContext } from "react"
-import { useCart } from '../hooks/useCart'
+import { Pokemon, useCart } from '../hooks/useCart'
 
 type CartType = {
-  total: number
-  products: any[],
-  shopType: 'bear' | 'coffee',
-  order: { [id: string]: number }
-  addItem: (id: string) => void
-  removeItem: (id: string) => void
+  pokemons: Pokemon[],
+  pokemonsMap: {[num: string]: Pokemon },
+  releasedPokemon: string[],
+  shinyPokemon: string[],
+  shadowPokemon: string[],
+  // total: number
+  // shopType: 'bear' | 'coffee',
+  // order: { [id: string]: number }
+  // addItem: (id: string) => void
+  // removeItem: (id: string) => void
 }
 
 const init: CartType = {
-  total: 0,
-  order: {},
-  products: [],
-  shopType: 'coffee',
-  addItem: () => {},
-  removeItem: () => {},
+  pokemons: [],
+  pokemonsMap: {},
+  releasedPokemon: [],
+  shinyPokemon: [],
+  shadowPokemon: [],
 }
 
 export const CartContext = createContext<CartType>(init)

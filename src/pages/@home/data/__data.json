@@ -1,0 +1,7072 @@
+{
+  "1": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "2": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "3": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "4": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "5": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "6": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "7": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "8": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "9": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "10": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "11": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "12": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "13": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "14": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "15": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "16": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "17": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "18": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "19": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "20": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "21": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "22": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "23": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "24": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "25": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "26": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "27": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "28": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "29": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "30": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "31": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "32": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "33": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "34": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "35": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "36": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "37": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "38": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "39": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "40": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "41": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "42": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "43": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "44": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "45": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "46": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "47": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "48": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "49": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "50": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "51": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "52": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "53": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "54": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "55": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "56": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "57": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "58": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "59": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "60": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "61": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "62": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "63": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "64": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "65": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "66": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "67": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "68": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "69": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "70": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "71": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "72": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "73": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "74": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "75": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "76": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "77": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "78": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "79": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "80": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "81": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "82": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "83": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "84": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "85": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "86": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "87": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "88": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "89": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "90": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "91": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "92": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "93": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "94": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "95": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "96": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "97": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "98": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "99": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "100": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "101": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "102": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "103": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "104": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "105": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "106": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "107": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "108": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "109": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "110": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "111": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "112": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "113": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "114": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "115": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "116": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "117": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "118": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "119": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "120": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "121": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "122": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "123": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "124": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "125": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "126": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "127": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "128": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "129": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "130": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "131": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "132": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "133": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "134": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "135": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "136": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "137": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "138": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "139": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "140": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "141": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "142": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "143": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "144": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "145": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "146": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "147": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "148": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "149": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "150": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "151": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "152": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "153": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "154": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "155": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "156": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "157": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "158": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "159": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "160": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "161": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "162": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "163": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "164": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "165": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "166": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "167": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "168": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "169": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "170": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "171": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "172": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "173": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "174": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "175": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "176": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "177": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "178": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "179": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "180": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "181": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "182": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "183": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "184": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "185": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "186": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "187": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "188": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "189": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "190": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "191": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "192": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "193": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "194": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "195": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "196": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "197": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "198": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "199": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "200": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "201": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "202": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "203": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "204": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "205": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "206": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "207": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "208": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "209": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "210": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "211": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "212": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "213": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "214": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "215": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "216": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "217": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "218": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "219": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "220": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "221": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "222": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "223": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "224": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "225": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "226": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "227": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "228": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "229": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "230": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "231": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "232": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "233": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "234": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "235": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "236": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "237": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "238": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "239": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "240": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "241": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "242": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "243": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "244": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "245": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "246": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "247": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "248": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "249": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "250": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "251": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "252": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "253": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "254": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "255": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "256": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "257": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "258": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "259": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "260": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "261": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "262": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "263": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "264": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "265": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "266": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "267": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "268": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "269": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "270": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "271": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "272": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "273": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "274": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "275": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "276": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "277": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "278": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "279": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "280": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "281": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "282": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "283": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "284": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "285": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "286": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "287": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "288": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "289": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "290": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "291": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "292": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "293": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "294": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "295": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "296": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "297": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "298": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "299": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "300": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "301": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "302": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "303": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "304": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "305": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "306": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "307": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "308": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "309": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "310": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "311": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "312": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "313": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "314": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "315": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "316": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "317": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "318": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "319": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "320": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "321": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "322": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "323": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "324": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "325": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "326": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "327": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "328": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "329": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "330": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "331": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "332": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "333": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "334": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "335": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "336": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "337": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "338": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "339": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "340": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "341": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "342": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "343": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "344": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "345": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "346": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "347": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "348": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "349": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "350": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "351": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "352": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "353": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "354": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "355": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "356": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "357": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "358": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "359": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "360": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "361": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "362": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "363": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "364": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "365": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "366": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "367": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "368": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "369": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "370": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "371": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "372": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "373": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "374": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "375": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "376": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "377": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "378": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "379": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "380": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "381": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "382": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "383": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "384": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "385": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "386": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "387": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "388": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "389": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "390": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "391": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "392": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "393": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "394": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "395": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "396": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "397": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "398": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "399": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "400": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "401": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "402": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "403": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "404": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "405": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "406": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "407": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "408": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "409": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "410": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "411": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "412": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "413": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "414": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "415": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "416": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "417": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "418": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "419": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "420": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "421": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "422": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "423": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "424": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "425": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "426": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "427": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "428": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "429": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "430": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "431": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "432": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "433": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "434": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "435": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "436": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "437": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "438": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "439": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "440": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "441": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "442": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "443": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "444": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "445": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "446": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "447": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "448": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "449": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "450": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "451": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "452": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "453": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "454": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "455": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "456": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "457": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "458": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "459": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "460": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "461": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "462": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "463": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "464": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "465": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "466": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "467": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "468": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "469": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "470": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "471": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "472": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "473": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "474": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "475": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "476": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "477": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "478": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "479": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "480": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "481": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "482": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "483": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "484": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "485": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "486": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "487": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "488": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "489": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "490": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "491": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "492": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "493": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "494": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "495": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "496": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "497": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "498": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "499": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "500": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "501": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "502": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "503": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "504": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "505": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "506": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "507": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "508": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "509": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "510": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "511": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "512": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "513": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "514": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "515": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "516": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "517": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "518": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "519": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "520": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "521": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "522": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "523": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "524": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "525": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "526": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "527": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "528": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "529": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "530": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "531": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "532": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "533": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "534": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "535": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "536": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "537": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "538": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "539": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "540": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "541": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "542": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "543": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "544": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "545": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "546": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "547": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "548": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "549": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "550": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "551": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "552": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "553": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "554": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "555": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "556": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "557": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "558": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "559": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "560": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "561": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "562": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "563": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "564": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "565": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "566": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "567": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "568": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "569": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "570": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "571": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "572": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "573": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "574": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "575": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "576": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "577": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "578": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "579": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "580": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "581": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "582": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "583": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "584": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "585": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "586": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "587": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "588": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "589": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "590": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "591": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "592": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "593": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "594": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "595": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "596": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "597": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "598": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "599": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "600": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "601": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "602": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "603": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "604": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "605": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "606": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "607": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "608": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "609": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "610": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "611": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "612": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "613": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "614": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "615": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "616": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "617": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "618": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "619": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "620": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "621": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "622": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "623": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "624": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "625": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "626": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "627": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "628": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "629": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "630": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "631": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "632": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "633": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "634": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "635": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "636": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "637": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "638": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "639": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "640": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "641": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "642": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "643": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "644": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "645": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "646": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "647": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "648": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "649": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "650": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "651": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "652": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "653": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "654": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "655": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "656": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "657": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "658": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "659": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "660": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "661": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "662": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "663": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "664": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "665": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "666": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "667": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "668": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "669": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "670": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "671": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "672": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "673": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "674": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "675": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "676": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "677": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "678": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": false
+  },
+  "679": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "680": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "681": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "682": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "683": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "684": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "685": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "686": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "687": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "688": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "689": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "690": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "691": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "692": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "693": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "694": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "695": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "696": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "697": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "698": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "699": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "700": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "701": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "702": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "703": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "704": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "705": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "706": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "707": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "708": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "709": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "710": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "711": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "712": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "713": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "714": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "715": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "716": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "717": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "718": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "719": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "720": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "721": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "722": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "723": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "724": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "725": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "726": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "727": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "728": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "729": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "730": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "731": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "732": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "733": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "734": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "735": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "736": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "737": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "738": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "739": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "740": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "741": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "742": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "743": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "744": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "745": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "746": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "747": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "748": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "749": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "750": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "751": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "752": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "753": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "754": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "755": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "756": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "757": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "758": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "759": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "760": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "761": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "762": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "763": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "764": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "765": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "766": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "767": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "768": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "769": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "770": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "771": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "772": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "773": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "774": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "775": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "776": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "777": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "778": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "779": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "780": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "781": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "782": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "783": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "784": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "785": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "786": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "787": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "788": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "789": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "790": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "791": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "792": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "793": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "794": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "795": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "796": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "797": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "798": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "799": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "800": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "801": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "802": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "803": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "804": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "805": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "806": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "807": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "808": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "809": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "810": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "811": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "812": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "813": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "814": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "815": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "816": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "817": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "818": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "819": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "820": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "821": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "822": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "823": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "824": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "825": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "826": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "827": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "828": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "829": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "830": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "831": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "832": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "833": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "834": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "835": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "836": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "837": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "838": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "839": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "840": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "841": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "842": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "843": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "844": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "845": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "846": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "847": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "848": {
+    "is_baby": true,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "849": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "850": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "851": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "852": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "853": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "854": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "855": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "856": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "857": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "858": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "859": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "860": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "861": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "862": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "863": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "864": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "865": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "866": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "867": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "868": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "869": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "870": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "871": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "872": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "873": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "874": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "875": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "876": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "877": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "878": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "879": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "880": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "881": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "882": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "883": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "884": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "885": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "886": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "887": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "888": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "889": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "890": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "891": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "892": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "893": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": true,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "894": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "895": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "896": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "897": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "898": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "899": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "900": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "901": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "902": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": true,
+    "forms_switchable": true
+  },
+  "903": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "904": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "905": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": true
+  },
+  "906": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "907": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "908": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "909": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "910": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "911": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "912": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "913": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "914": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "915": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "916": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "917": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "918": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "919": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "920": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "921": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "922": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "923": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "924": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "925": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "926": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "927": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "928": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "929": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "930": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "931": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "932": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "933": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "934": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "935": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "936": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "937": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "938": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "939": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "940": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "941": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "942": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "943": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "944": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "945": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "946": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "947": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "948": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "949": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "950": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "951": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "952": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "953": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "954": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "955": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "956": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "957": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "958": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "959": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "960": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "961": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "962": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "963": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "964": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "965": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "966": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "967": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "968": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "969": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "970": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "971": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "972": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "973": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "974": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "975": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "976": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "977": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "978": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "979": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "980": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "981": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "982": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "983": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "984": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "985": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "986": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "987": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "988": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "989": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "990": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "991": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "992": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "993": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "994": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "995": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "996": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "997": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "998": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "999": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1000": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1001": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1002": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1003": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1004": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1005": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1006": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1007": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1008": {
+    "is_baby": false,
+    "is_legendary": true,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1009": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  },
+  "1010": {
+    "is_baby": false,
+    "is_legendary": false,
+    "is_mythical": false,
+    "has_gender_differences": false,
+    "forms_switchable": false
+  }
+}
