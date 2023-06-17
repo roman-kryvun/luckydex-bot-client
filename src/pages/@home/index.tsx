@@ -79,6 +79,7 @@ type FilterType = {
   is_baby: boolean
   is_legendary: boolean
   is_mythical: boolean
+  is_ultra_beasts: boolean
 }
 
 const DEFAULT_FILTERS: FilterType = {
@@ -86,6 +87,7 @@ const DEFAULT_FILTERS: FilterType = {
   is_baby: false,
   is_legendary: false,
   is_mythical: false,
+  is_ultra_beasts: false,
 }
 const FILTERS_KEY = 'filters_0'
 const initFilters = getLocalStorageObject<FilterType>(FILTERS_KEY, JSON.stringify(DEFAULT_FILTERS))
@@ -150,7 +152,7 @@ export const Home = () => {
 
   const [catchPokemon, setCatchPokemon] = useState<SelectedPokemon>({})
   const [showFilters, setShowFilters] = useState(false)
-  const [showSettings, setShowSettings] = useState(false)
+  // const [showSettings, setShowSettings] = useState(false)
   const [gen, setGen] = useState(initGen)
   const [dex, setDex] = useState<DexType>(initDex)
 
@@ -259,7 +261,7 @@ export const Home = () => {
     setRelesedPokemon(_nv)
     setShinyRelesedPokemon(_nv.filter(({ nr }: { nr: string }) => shinyPokemon.includes(nr)))
     setShadowRelesedPokemon(_nv.filter(({ nr }: { nr: string }) => shadowPokemon.includes(nr)))
-    setPurifiedRelesedPokemon(_nv.filter(({ nr }: { nr: string }) => pokemonsMap[nr].released_purified))
+    setPurifiedRelesedPokemon(_nv.filter(({ nr }: { nr: string }) => Boolean(pokemonsMap[nr]?.released_shadow)))
 
     // setDisPok(_nv)
     // container.innerHTML+=html;
@@ -296,7 +298,7 @@ export const Home = () => {
     // @ts-ignore
     // setSettings(Object.fromEntries(Object.entries(filters).map(([key]) => [key, false])))
     setSettings(JSON.parse(JSON.stringify(DEFAULT_SETTING)))
-    setShowSettings(false)
+    // setShowSettings(false)
   }
 
   const onSettingsSelected = (filter: string) => {
@@ -310,7 +312,8 @@ export const Home = () => {
     // @ts-ignore
     // setFilters(Object.fromEntries(Object.entries(filters).map(([key]) => [key, false])))
     setFilters(JSON.parse(JSON.stringify(DEFAULT_FILTERS)))
-    setShowFilters(false)
+    // setShowFilters(false)
+    setSettings(JSON.parse(JSON.stringify(DEFAULT_SETTING)))
   }
 
   const onFilterSelected = (filter: string) => {
@@ -343,21 +346,24 @@ export const Home = () => {
 
   const updateDisplayPokemon = () => {
     // let res = dex === 'shiny' ? [...shinyRelesedPokemon] : [...relesedPokemon]
-    let res = relesedPokemon;
+    let res = relesedPokemon
 
     switch (dex) {
       case 'lucky':
         res = [...relesedPokemon]
-        break;
+        break
       case 'perfect':
         res = [...relesedPokemon]
-        break;
+        break
       case 'shiny':
         res = [...shinyRelesedPokemon]
-        break;
+        break
+      case 'shadow':
+        res = [...shadowRelesedPokemon]
+        break
       case 'purified':
         res = [...purifiedRelesedPokemon]
-        break;
+        break
       default:
         res = [...relesedPokemon]
     }
@@ -365,7 +371,7 @@ export const Home = () => {
     console.log({ filters, settings })
 
     if (Object.values(filters).some(Boolean) || Object.values(settings).some(Boolean)) {
-      const { is_baby, is_legendary, is_mythical } = filters
+      const { is_baby, is_legendary, is_mythical, is_ultra_beasts } = filters
       const { first_form, hide_collected, hide_mythical, hide_legendary } = settings
 
       res = res
@@ -399,10 +405,13 @@ export const Home = () => {
         .filter(({ nr }) => {
           const _deteils = pokemonsMap[nr]
 
-          // console.log('>', nr, _deteils, [is_baby, is_legendary, is_mythical]);
-
-          if (_deteils && [is_baby, is_legendary, is_mythical].includes(true)) {
-            return (is_baby && _deteils?.baby) || (is_legendary && _deteils?.legendary) || (is_mythical && _deteils?.mythical)
+          if (_deteils && [is_baby, is_legendary, is_mythical, is_ultra_beasts].includes(true)) {
+            return (
+              (is_baby && _deteils?.baby) ||
+              (is_legendary && _deteils?.legendary) ||
+              (is_mythical && _deteils?.mythical) ||
+              (is_ultra_beasts && _deteils?.ultra_beasts)
+            )
           }
 
           return true
@@ -456,11 +465,25 @@ export const Home = () => {
         const arr = (generatinosMap[key] || []).filter(({ url }: { url: string }) => {
           const _nr = orderNumber(url)
 
-          if (dex === 'lucky') {
-            return releasedPokemon.includes(_nr) && (!pokemonsMap[_nr]?.mythical || ['808', '809'].includes(_nr))
+          switch (dex) {
+            case 'lucky':
+              return (pokemonsMap[_nr]?.released && (!pokemonsMap[_nr]?.mythical || ['808', '809'].includes(_nr))) || false
+            case 'perfect':
+              return pokemonsMap[_nr]?.released || false
+            case 'shiny':
+              return pokemonsMap[_nr]?.released_shiny || false
+            case 'shadow':
+              return pokemonsMap[_nr]?.released_shadow || false
+            case 'purified':
+              return pokemonsMap[_nr]?.released_shadow || false
+            default:
+              return pokemonsMap[_nr]?.released || false
           }
 
-          return dex === 'shiny' ? shinyPokemon.includes(_nr) : releasedPokemon.includes(_nr)
+          // if (dex === 'lucky') {
+          //   return releasedPokemon.includes(_nr) && (!pokemonsMap[_nr]?.mythical || ['808', '809'].includes(_nr))
+          // }
+          // return dex === 'shiny' ? shinyPokemon.includes(_nr) : releasedPokemon.includes(_nr)
         })
         // console.log('-----------------')
         // console.log('arr', arr)
@@ -494,78 +517,78 @@ export const Home = () => {
 
       return agg
     }, {})
-  }, [gen, dex, catchPokemon, displayPokemons])
+  }, [gen, dex, catchPokemon, displayPokemons, filters, settings])
 
   useEffect(() => setLocalStorageValue(DEX_KEY, dex), [dex])
   useEffect(() => setLocalStorageValue(GEN_KEY, gen), [gen])
   useEffect(() => setLocalStorageObject(SETTINGS_KEY, settings), [settings])
   useEffect(() => setLocalStorageObject(FILTERS_KEY, filters), [filters])
 
-  if(!dataset?.length) {
+  const filtersApply = Object.values(filters).filter(Boolean).length + Object.values(settings).filter(Boolean).length
+
+  if (!dataset?.length) {
     return (
-      <div className="global-loader">
-        <div className="gbc">
-          <input id="powerSwitch" checked aria-label="Toggle Gameboy power" className="gbc-power-control"
-                 type="checkbox" />
-            <label htmlFor="powerSwitch" className="gbc-power-label">
-              <div className="gbc-power-label-lines">
-                <div className='gbc-power-label-line gbc-power-label-line-1'/>
-                <div className='gbc-power-label-line gbc-power-label-line-2'/>
-                <div className='gbc-power-label-line gbc-power-label-line-3'/>
-              </div>
-            </label>
-            <div className="gbc-body">
-              <div className="gbc-screen-wrap">
-                <div className='gbc-screen-light'/>
-                <div className="gbc-screen">
-                  <div className="pika-wrap">
-                    <div className="pika">
-                      <div className="pika-head">
-                        <div className="pika-face">
-                          <div className='pika-eye pika-eye-left'/>
-                          <div className='pika-eye pika-eye-right'/>
-                          <div className='pika-nose'/>
-                          <div className="pika-mouth">
-                            <div className='pika-mouth-3'/>
-                            <div className='pika-mouth-inner'/>
-                          </div>
-                          <div className='pika-cheek pika-cheek-left'/>
-                          <div className='pika-cheek pika-cheek-right'/>
+      <div className='global-loader'>
+        <div className='gbc'>
+          <input id='powerSwitch' checked aria-label='Toggle Gameboy power' className='gbc-power-control'
+                 type='checkbox' />
+          <label htmlFor='powerSwitch' className='gbc-power-label'>
+            <div className='gbc-power-label-lines'>
+              <div className='gbc-power-label-line gbc-power-label-line-1' />
+              <div className='gbc-power-label-line gbc-power-label-line-2' />
+              <div className='gbc-power-label-line gbc-power-label-line-3' />
+            </div>
+          </label>
+          <div className='gbc-body'>
+            <div className='gbc-screen-wrap'>
+              <div className='gbc-screen-light' />
+              <div className='gbc-screen'>
+                <div className='pika-wrap'>
+                  <div className='pika'>
+                    <div className='pika-head'>
+                      <div className='pika-face'>
+                        <div className='pika-eye pika-eye-left' />
+                        <div className='pika-eye pika-eye-right' />
+                        <div className='pika-nose' />
+                        <div className='pika-mouth'>
+                          <div className='pika-mouth-3' />
+                          <div className='pika-mouth-inner' />
                         </div>
-                        <div className='pika-ear pika-ear-left'/>
-                        <div className='pika-ear pika-ear-right'/>
+                        <div className='pika-cheek pika-cheek-left' />
+                        <div className='pika-cheek pika-cheek-right' />
                       </div>
-                      <div className="pika-body">
-                        <div className='pika-torso'/>
-                        <div className="pika-arm pika-arm-left">
-                          <div className='pika-arm-fingers'/>
-                          <div className='pika-arm-shadow'/>
-                        </div>
-                        <div className="pika-arm pika-arm-right">
-                          <div className='pika-arm-fingers'/>
-                          <div className='pika-arm-shadow'/>
-                        </div>
-                        <div className="pika-tail pika-tail-1">
-                          <div className="pika-tail pika-tail-2">
-                            <div className='pika-tail pika-tail-3'/>
-                          </div>
-                        </div>
+                      <div className='pika-ear pika-ear-left' />
+                      <div className='pika-ear pika-ear-right' />
+                    </div>
+                    <div className='pika-body'>
+                      <div className='pika-torso' />
+                      <div className='pika-arm pika-arm-left'>
+                        <div className='pika-arm-fingers' />
+                        <div className='pika-arm-shadow' />
                       </div>
-                      <div className="pika-bubble">
-                        Pika!
+                      <div className='pika-arm pika-arm-right'>
+                        <div className='pika-arm-fingers' />
+                        <div className='pika-arm-shadow' />
+                      </div>
+                      <div className='pika-tail pika-tail-1'>
+                        <div className='pika-tail pika-tail-2'>
+                          <div className='pika-tail pika-tail-3' />
+                        </div>
                       </div>
                     </div>
+                    <div className='pika-bubble'>Pika!</div>
                   </div>
                 </div>
               </div>
-              <div className="gbc-controls">
-                <div className='gbc-dpad'/>
-                <div className='gbc-button gbc-button-a'/>
-                <div className='gbc-button gbc-button-b'/>
-                <div className='gbc-pill gbc-pill-start'/>
-                <div className='gbc-pill gbc-pill-select'/>
-              </div>
             </div>
+            <div className='gbc-controls'>
+              <div className='gbc-dpad' />
+              <div className='gbc-button gbc-button-a' />
+              <div className='gbc-button gbc-button-b' />
+              <div className='gbc-pill gbc-pill-start' />
+              <div className='gbc-pill gbc-pill-select' />
+            </div>
+          </div>
         </div>
       </div>
     )
@@ -576,35 +599,40 @@ export const Home = () => {
       <CopyNeeded list={displayPokemons.map(({ nr }) => nr)} />
       {/*<Navigation />*/}
       <div className={`dex-buttons`}>
-        <div className={`dex-button  dex-lucky ${dex === 'lucky' ? 'active' : ''}`} onClick={() => onDexSelected('lucky')}>
+        <div className={`dex-button  dex-lucky ${dex === 'lucky' ? 'active' : ''}`}
+             onClick={() => onDexSelected('lucky')}>
           Lucky
         </div>
-        <div className={`dex-button  dex-shiny ${dex === 'shiny' ? 'active' : ''}`} onClick={() => onDexSelected('shiny')}>
+        <div className={`dex-button  dex-shiny ${dex === 'shiny' ? 'active' : ''}`}
+             onClick={() => onDexSelected('shiny')}>
           Shiny
         </div>
-        <div className={`dex-button  dex-perfect ${dex === 'perfect' ? 'active' : ''}`} onClick={() => onDexSelected('perfect')}>
+        <div className={`dex-button  dex-perfect ${dex === 'perfect' ? 'active' : ''}`}
+             onClick={() => onDexSelected('perfect')}>
           Perfect
         </div>
-        <div className={`dex-button  dex-shadow ${dex === 'shadow' ? 'active' : ''}`} onClick={() => onDexSelected('shadow')}>
+        <div className={`dex-button  dex-shadow ${dex === 'shadow' ? 'active' : ''}`}
+             onClick={() => onDexSelected('shadow')}>
           Shadow
         </div>
-        <div className={`dex-button  dex-purified ${dex === 'purified' ? 'active' : ''}`} onClick={() => onDexSelected('purified')}>
+        <div className={`dex-button  dex-purified ${dex === 'purified' ? 'active' : ''}`}
+             onClick={() => onDexSelected('purified')}>
           Purified
         </div>
       </div>
 
-      <section className="">
+      <section className=''>
         {/*<img id="btnAllSchool" src="https://img.icons8.com/color/48/000000/pokeball-2.png" />*/}
-        <h2 className="title" id="title">
+        <h2 className='title' id='title'>
           Gotta catch 'em all!
         </h2>
 
-        <div className="filters filters-sticky">
+        <div className='filters filters-sticky'>
           <select
             style={{ flex: '1 1 100%', margin: '0 0.25rem', textAlign: 'center' }}
-            className="minimal"
-            name="generation-select"
-            id="generation-select"
+            className='minimal'
+            name='generation-select'
+            id='generation-select'
             value={gen}
             onChange={e => onGenSelected(e.target.value)}>
             {/*{selectOptions?.map(({ key, label }) => (*/}
@@ -638,142 +666,239 @@ export const Home = () => {
           {/* ********************************* */}
           {/* ************ Setting ************ */}
           {/* ********************************* */}
-          <div className="config-box left">
-            <div className="filters-head">
-              <button className={['dex-button', showSettings ? 'active' : ''].join(' ')} style={{ margin: '' }} onClick={() => setShowSettings(!showSettings)}>
-                Settings
-              </button>
-              {Object.values(settings).some(Boolean) && (
-                <div style={{ lineHeight: 0, opacity: 0.8 }} onClick={onResetSettings}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#000000"
-                    height="31px"
-                    width="31px"
-                    version="1.1"
-                    id="Layer_1"
-                    viewBox="0 0 512 512"
-                    style={{ padding: '8px', fill: 'var(--text-color)' }}>
-                    <g>
-                      <g>
-                        <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   " />
-                      </g>
-                    </g>
-                  </svg>
-                  {/*reset*/}
-                  {/*reset {Object.values(settings).some(Boolean) && <span>{Object.values(settings).filter(Boolean).length}</span>}*/}
-                  {/*setting{Object.values(settings).filter(Boolean).length > 1 && 's'}*/}
-                </div>
-              )}
-            </div>
+          {/*<div className="config-box left">*/}
+          {/*  <div className="filters-head">*/}
+          {/*    /!*<button className={['dex-button', showSettings ? 'active' : ''].join(' ')} style={{ margin: '' }} onClick={() => setShowSettings(!showSettings)}>*!/*/}
+          {/*    /!*  Settings*!/*/}
+          {/*    /!*</button>*!/*/}
+          {/*    {Object.values(settings).some(Boolean) && (*/}
+          {/*      <div style={{ lineHeight: 0, opacity: 0.8 }} onClick={onResetSettings}>*/}
+          {/*        <svg*/}
+          {/*          xmlns="http://www.w3.org/2000/svg"*/}
+          {/*          fill="#000000"*/}
+          {/*          height="31px"*/}
+          {/*          width="31px"*/}
+          {/*          version="1.1"*/}
+          {/*          id="Layer_1"*/}
+          {/*          viewBox="0 0 512 512"*/}
+          {/*          style={{ padding: '8px', fill: 'var(--text-color)' }}>*/}
+          {/*          <g>*/}
+          {/*            <g>*/}
+          {/*              <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   " />*/}
+          {/*            </g>*/}
+          {/*          </g>*/}
+          {/*        </svg>*/}
+          {/*        /!*reset*!/*/}
+          {/*        /!*reset {Object.values(settings).some(Boolean) && <span>{Object.values(settings).filter(Boolean).length}</span>}*!/*/}
+          {/*        /!*setting{Object.values(settings).filter(Boolean).length > 1 && 's'}*!/*/}
+          {/*      </div>*/}
+          {/*    )}*/}
+          {/*  </div>*/}
 
-            {showSettings &&
-              [
-                { key: 'first_form', label: '1st form' },
-                { key: 'hide_collected', label: `Hide ${dex}` },
-                { key: 'hide_legendary', label: 'Hide Legendary' },
-                {
-                  key: 'hide_mythical',
-                  label: 'Hide Mythical',
-                },
-              ].map(({ key, label }) => (
-                <Fragment key={label}>
-                  <input
-                    className="radio-gens"
-                    type="radio"
-                    id={'settings' + label}
-                    value={key}
-                    name={'settings' + key}
-                    checked={
-                      // @ts-ignore
-                      settings[key] === true
-                    }
-                    readOnly
-                  />
-                  <label htmlFor={'settings' + label} className="label-gens" onClick={() => onSettingsSelected(key)}>
-                    {label}
-                  </label>
-                </Fragment>
-              ))}
-          </div>
+          {/*  {showFilters &&*/}
+          {/*    [*/}
+          {/*      { key: 'first_form', label: '1st form' },*/}
+          {/*      { key: 'hide_collected', label: `Hide ${dex}` },*/}
+          {/*      { key: 'hide_legendary', label: 'Hide Legendary' },*/}
+          {/*      {*/}
+          {/*        key: 'hide_mythical',*/}
+          {/*        label: 'Hide Mythical',*/}
+          {/*      },*/}
+          {/*    ].map(({ key, label }) => (*/}
+          {/*      <Fragment key={label}>*/}
+          {/*        <input*/}
+          {/*          className="radio-gens"*/}
+          {/*          type="radio"*/}
+          {/*          id={'settings' + label}*/}
+          {/*          value={key}*/}
+          {/*          name={'settings' + key}*/}
+          {/*          checked={*/}
+          {/*            // @ts-ignore*/}
+          {/*            settings[key] === true*/}
+          {/*          }*/}
+          {/*          readOnly*/}
+          {/*        />*/}
+          {/*        <label htmlFor={'settings' + label} className="label-gens" onClick={() => onSettingsSelected(key)}>*/}
+          {/*          {label}*/}
+          {/*        </label>*/}
+          {/*      </Fragment>*/}
+          {/*    ))}*/}
+          {/*</div>*/}
           {/* ********************************* */}
           {/* ************ FILTERS ************ */}
           {/* ********************************* */}
-          <div className="config-box center">
-            <div className="" onClick={() => setEditable(!editable)}>
-              {editable ? '🔓' : '🔒'}
+          <div className='config-box left'>
+            <div className='filters-head text' onClick={() => setEditable(!editable)}>
+              <span style={{ fontSize: '24px' }}>{editable ? '🔓' : '🔒'}</span>
+              <small>{editable ? 'edit mode' : 'view only'}</small>
             </div>
           </div>
-          <div className="config-box right">
-            <div className="filters-head">
-              {Object.values(filters).some(Boolean) && (
-                // <button className="dex-button" style={{ margin: 'auto 8px auto 0' /*, minWidth: 90*/ }} onClick={onResetFilter}>
-                //   reset
-                //   {/*reset {Object.values(filters).some(Boolean) && <span>{Object.values(filters).filter(Boolean).length}</span>}*/}
-                //   {/*filter{Object.values(filters).filter(Boolean).length > 1 && 's'}*/}
-                // </button>
-                <div style={{ lineHeight: 0, opacity: 0.8 }} onClick={onResetFilter}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="#000000"
-                    height="31px"
-                    width="31px"
-                    version="1.1"
-                    id="Layer_1"
-                    viewBox="0 0 512 512"
-                    style={{ padding: '8px', fill: 'var(--text-color)' }}>
-                    <g>
-                      <g>
-                        <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   " />
-                      </g>
-                    </g>
-                  </svg>
-                  {/*reset*/}
-                  {/*reset {Object.values(settings).some(Boolean) && <span>{Object.values(settings).filter(Boolean).length}</span>}*/}
-                  {/*setting{Object.values(settings).filter(Boolean).length > 1 && 's'}*/}
-                </div>
-              )}
-              <button className={['dex-button', showFilters ? 'active' : ''].join(' ')} style={{ margin: '' }} onClick={() => setShowFilters(!showFilters)}>
+          <div className='config-box right'>
+            <div className='filters-head'>
+              {/*{(Object.values(filters).some(Boolean) || Object.values(settings).some(Boolean)) && (*/}
+              {/*  <div style={{ lineHeight: 0, opacity: 0.8 }} onClick={onResetFilter}>*/}
+              {/*    <span style={{verticalAlign: "text-top"}}>reset</span>*/}
+              {/*    <svg*/}
+              {/*      xmlns="http://www.w3.org/2000/svg"*/}
+              {/*      fill="#000000"*/}
+              {/*      height="30px"*/}
+              {/*      width="30px"*/}
+              {/*      version="1.1"*/}
+              {/*      id="Layer_1"*/}
+              {/*      viewBox="0 0 512 512"*/}
+              {/*      style={{ padding: '8px', fill: 'var(--text-color)' }}>*/}
+              {/*      <g>*/}
+              {/*        <g>*/}
+              {/*          <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   " />*/}
+              {/*        </g>*/}
+              {/*      </g>*/}
+              {/*    </svg>*/}
+              {/*    /!*reset*!/*/}
+              {/*    /!*reset {Object.values(settings).some(Boolean) && <span>{Object.values(settings).filter(Boolean).length}</span>}*!/*/}
+              {/*    /!*setting{Object.values(settings).filter(Boolean).length > 1 && 's'}*!/*/}
+              {/*  </div>*/}
+              {/*)}*/}
+              <button className={['dex-button', showFilters ? 'active' : ''].join(' ')}
+                      style={{ margin: '', fontSize: '14px' }} onClick={() => setShowFilters(!showFilters)}>
                 Filters
+                {filtersApply > 0 && <small>{` (${filtersApply})`}</small>}
               </button>
             </div>
 
-            {showFilters &&
-              [
-                // { key: 'is_first_form', label: '1st form' },
-                { key: 'is_baby', label: 'baby' },
-                { key: 'is_legendary', label: 'legendary' },
-                {
-                  key: 'is_mythical',
-                  label: 'mythical',
-                },
-              ].map(({ key, label }) => (
-                <Fragment key={label}>
-                  <input
-                    className="radio-gens"
-                    type="radio"
-                    id={label}
-                    value={key}
-                    name={'filter' + key}
-                    checked={
-                      // @ts-ignore
-                      filters[key] === true
-                    }
-                    readOnly
-                  />
-                  <label htmlFor={label} className="label-gens" onClick={() => onFilterSelected(key)}>
-                    {label}
-                  </label>
-                </Fragment>
-              ))}
+            {showFilters && (
+              <div className='filters-popup'>
+                <span style={{ padding: '2px 4px 0' }}>Show</span>
+
+                {[{ key: 'first_form', label: '1st form' }].map(({ key, label }) => (
+                  <Fragment key={label}>
+                    <input
+                      className='radio-gens'
+                      type='radio'
+                      id={'settings' + label}
+                      value={key}
+                      name={'settings' + key}
+                      checked={
+                        // @ts-ignore
+                        settings[key] === true
+                      }
+                      readOnly
+                    />
+                    <label htmlFor={'settings' + label} className='label-gens' onClick={() => onSettingsSelected(key)}>
+                      {
+                        // @ts-ignore
+                        settings[key] === true ? '✔️' : ''
+                      }{' '}
+                      {label}
+                    </label>
+                  </Fragment>
+                ))}
+                {[
+                  // { key: 'is_first_form', label: '1st form' },
+                  { key: 'is_baby', label: 'baby' },
+                  { key: 'is_legendary', label: 'legendary' },
+                  { key: 'is_mythical', label: 'mythical' },
+                  { key: 'is_ultra_beasts', label: 'ultra beasts' },
+                ].map(({ key, label }) => (
+                  <Fragment key={label}>
+                    <input
+                      className='radio-gens'
+                      type='radio'
+                      id={label}
+                      value={key}
+                      name={'filter' + key}
+                      checked={
+                        // @ts-ignore
+                        filters[key] === true
+                      }
+                      readOnly
+                    />
+                    <label htmlFor={label} className='label-gens' onClick={() => onFilterSelected(key)}>
+                      {
+                        // @ts-ignore
+                        filters[key] === true ? '✔️' : ''
+                      }{' '}
+                      {label}
+                    </label>
+                  </Fragment>
+                ))}
+                <span style={{ padding: '2px 4px 0' }}>Hide</span>
+                {[{ key: 'hide_collected', label: `${dex}` }].map(({ key, label }) => (
+                  <Fragment key={label}>
+                    <input
+                      className='radio-gens'
+                      type='radio'
+                      id={'settings' + label}
+                      value={key}
+                      name={'settings' + key}
+                      checked={
+                        // @ts-ignore
+                        settings[key] === true
+                      }
+                      readOnly
+                    />
+                    <label htmlFor={'settings' + label} className='label-gens' onClick={() => onSettingsSelected(key)}>
+                      {
+                        // @ts-ignore
+                        settings[key] === true ? '❌️' : ''
+                      }{' '}
+                      {label}
+                    </label>
+                  </Fragment>
+                ))}
+                <div style={{ padding: '4px' }} />
+                {[
+                  // { key: 'hide_collected', label: `${dex}` },
+                  { key: 'hide_legendary', label: 'Legendary' },
+                  { key: 'hide_mythical', label: 'Mythical' },
+                ].map(({ key, label }) => (
+                  <Fragment key={label}>
+                    <input
+                      className='radio-gens'
+                      type='radio'
+                      id={'settings' + label}
+                      value={key}
+                      name={'settings' + key}
+                      checked={
+                        // @ts-ignore
+                        settings[key] === true
+                      }
+                      readOnly
+                    />
+                    <label htmlFor={'settings' + label} className='label-gens' onClick={() => onSettingsSelected(key)}>
+                      {
+                        // @ts-ignore
+                        settings[key] === true ? '❌' : ''
+                      }{' '}
+                      {label}
+                    </label>
+                  </Fragment>
+                ))}
+
+                <button className='dex-button' disabled={!filtersApply} style={{
+                  margin: '10px 4px 0', background: 'var(--danger-color)',
+                  borderColor: 'var(--danger-color)',
+                  color: 'var(--white)', fontSize: '14px',
+                }} onClick={onResetFilter}>
+                  RESET
+                </button>
+
+                <button className='dex-button' style={{
+                  margin: '0 4px 0', background: 'var(--success-color)',
+                  borderColor: 'var(--success-color)',
+                  color: 'var(--white)', fontSize: '14px',
+                }} onClick={() => setShowFilters(!showFilters)}>
+                  OK
+                </button>
+              </div>
+            )}
           </div>
         </div>
 
-        <div className={`container dex-${dex}`} id="container">
+        <div className={`container dex-${dex}`} id='container'>
           {displayPokemons.map((pokemon, i) => (
             <Fragment key={[dex, i].join('_')}>
               {REGIONS[pokemon.nr] && (
-                <li className="region">
+                <li className='region'>
                   <div>{REGIONS[pokemon.nr]}</div>
                 </li>
               )}
@@ -796,8 +921,8 @@ export const Home = () => {
           ))}
 
           {relesedPokemon.length > 0 && displayPokemons.length === 0 && (
-            <div className="no-pokemons">
-              <img src={Detective} alt="sad pokemon" className="displayed" style={{ maxWidth: '120px' }} />
+            <div className='no-pokemons'>
+              <img src={Detective} alt='sad pokemon' className='displayed' style={{ maxWidth: '120px' }} />
               <br />
               <div>No matching Pokemon found</div>
             </div>

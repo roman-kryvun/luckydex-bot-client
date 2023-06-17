@@ -52,7 +52,7 @@ li.region {
   /* margin: 0 20px; */
   letter-spacing: 3px;
   position: sticky;
-  top: 125px;
+  top: 118px;
   background: var(--bg-color);
    z-index: 1;
 }
@@ -392,7 +392,12 @@ color: #d9881e;
   /*flex: 1 1 100%;*/
   justify-content: flex-start;
   display: flex;
-  margin: 0.65rem 0.25rem 0.25rem;
+  /*margin: 0.65rem 0.25rem 0.25rem;*/
+  margin: 2px  0.25rem;
+}
+.filters-head.text {
+  align-items: center;
+  margin: 2px 0;
 }
 .filters-head > button {
   flex: unset;
@@ -412,13 +417,13 @@ color: #d9881e;
 
 .filters-head > button:after {
   content: '';
-  width: calc(100% - 6px);
+  width: calc(100% - 8px);
   border-radius: 2px;
-  height: 18px;
+  height: 22px;
   background-color: var(--success-color);
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 4px;
+  left: 4px;
   opacity: 0;
   transition: all 0.2s ease;
 }
@@ -428,13 +433,29 @@ color: #d9881e;
   transform: scale(1);
 }
 
+.filters-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  flex: 1;
+  background: var(--block-bg-color);
+  padding: 20px 10px;
+}
+
 .config-box {
-  flex: 1 1 calc(50% - 1.9rem);
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
   gap: 6px;
   width: auto;
-  max-width: calc(50% - 1.9rem);
+  max-width: 50%;
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 .config-box.left {
   align-items: flex-start;
@@ -445,6 +466,7 @@ color: #d9881e;
   align-items: flex-end;
   margin-right: 0;
   margin-left: auto;
+  justify-content: center;
 }
 
 .config-box.center {

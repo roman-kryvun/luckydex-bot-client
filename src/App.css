@@ -7,6 +7,7 @@ html.light {
     --img-opacity: 0.4;
     --text-color: #2d2e33;
     --success-color: #31b82e;
+    --danger-color: #e64d44;
 
     --block-bg-color: var(--tg-theme-bg-color);
     --page-hint-color: #9b9ba1;
@@ -30,6 +31,7 @@ html.dark {
     --img-opacity: 0.25;
     --text-color: #fff;
     --success-color: #90ee90;
+    --danger-color: #ef5f56;
 
     /*--block-bg-color: var(--tg-theme-bg-color);*/
     /*--page-hint-color: #9b9ba1;*/
