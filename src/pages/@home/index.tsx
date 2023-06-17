@@ -13,7 +13,9 @@ import pokDataMap from './data/data.json'
 import pokInfoMap from './data/info.json'
 import generatinosMap from './data/generations.json'
 import releasedPokemon from './data/released_pokemon.json'
-import shinyPokemon from './data/shiny_pokemon.json'
+import __shinyPokemon from './data/shiny_pokemon.json'
+
+const shinyPokemon = [...new Set(__shinyPokemon.concat(['785', '786', '787', '793', '866', '900', '901']))]
 
 var geners = [
   { key: '0', label: 'All' },
@@ -28,17 +30,16 @@ var geners = [
   { key: '9', label: 'Paldea' },
 ]
 
-
-const REGIONS: {[str: string]: string} = {
-  "1": "Kanto",
-  "152": 'Johto',
-  "252": 'Hoenn',
-  "387": 'Sinnoh',
-  "494": 'Unova',
-  "650": 'Kalos',
-  "722": 'Alola',
-  "810": 'Galar',
-  "906": 'Paldea',
+const REGIONS: { [str: string]: string } = {
+  '1': 'Kanto',
+  '152': 'Johto',
+  '252': 'Hoenn',
+  '387': 'Sinnoh',
+  '494': 'Unova',
+  '650': 'Kalos',
+  '722': 'Alola',
+  '810': 'Galar',
+  '906': 'Paldea',
 }
 
 type DexType = 'lucky' | 'shiny' | 'perfect'
@@ -214,12 +215,12 @@ export const Home = () => {
 
     pokemons = pokemons.filter(({ nr }: { nr: string }) => releasedPokemon.includes(nr))
 
-    if(dex === 'lucky') {
+    if (dex === 'lucky') {
       // @ts-ignore
       pokemons = pokemons.filter(({ nr }) => {
         // @ts-ignore
         const _deteils = pokDataMap[nr]
-        return !_deteils?.is_mythical || ["808", "809"].includes(nr)
+        return !_deteils?.is_mythical || ['808', '809'].includes(nr)
       })
     }
 
@@ -442,9 +443,9 @@ export const Home = () => {
         const arr = (generatinosMap[key] || []).filter(({ url }: { url: string }) => {
           const _nr = orderNumber(url)
 
-          if(dex === 'lucky') {
+          if (dex === 'lucky') {
             // @ts-ignore
-            return releasedPokemon.includes(_nr) && (!pokDataMap[_nr]?.is_mythical || ["808", "809"].includes(_nr))
+            return releasedPokemon.includes(_nr) && (!pokDataMap[_nr]?.is_mythical || ['808', '809'].includes(_nr))
           }
 
           return dex === 'shiny' ? shinyPokemon.includes(_nr) : releasedPokemon.includes(_nr)
@@ -683,22 +684,27 @@ export const Home = () => {
         <div className={`container dex-${dex}`} id="container">
           {displayPokemons.map((pokemon, i) => (
             <Fragment key={[dex, i].join('_')}>
-              {REGIONS[pokemon.nr] && <li className='region'><div>{REGIONS[pokemon.nr]}</div></li>}
+              {REGIONS[pokemon.nr] && (
+                <li className="region">
+                  <div>{REGIONS[pokemon.nr]}</div>
+                </li>
+              )}
 
-            <li
-              className={`item ${catchPokemon[pokemon.nr] && catchPokemon[pokemon.nr][dex] ? 'selected' : ''}`}
-              key={[dex, i].join('_')}
-              onClick={() => onPokemonSelect(dex, pokemon.nr)}>
-              <ImageRenderer
-                key={pokemon.numero3decimals || i}
-                url={pokemon.urlImage}
-                altLabel={pokemon.name}
-                thumb={'https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif'}
-                width={100}
-                height={100}
-              />
-              <div>#{pokemon.numero3decimals}</div>
-            </li></Fragment>
+              <li
+                className={`item ${catchPokemon[pokemon.nr] && catchPokemon[pokemon.nr][dex] ? 'selected' : ''}`}
+                key={[dex, i].join('_')}
+                onClick={() => onPokemonSelect(dex, pokemon.nr)}>
+                <ImageRenderer
+                  key={pokemon.numero3decimals || i}
+                  url={pokemon.urlImage}
+                  altLabel={pokemon.name}
+                  thumb={'https://i.gifer.com/origin/28/2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif'}
+                  width={100}
+                  height={100}
+                />
+                <div>#{pokemon.numero3decimals}</div>
+              </li>
+            </Fragment>
           ))}
 
           {relesedPokemon.length > 0 && displayPokemons.length === 0 && (

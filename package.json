@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "bundle": "vite-bundle-visualizer",
-    "deploy:prod": "npm run build && firebase deploy -P prod --only hosting:prod"
+    "deploy": "npm run build && firebase deploy -P prod --only hosting:prod"
   },
   "engines": {
     "node": "18.15.0"
@@ -23,6 +23,7 @@
     "classnames": "^2.3.2",
     "copy-to-clipboard": "^3.3.3",
     "firebase": "^9.17.1",
+    "firebase-tools": "^12.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
