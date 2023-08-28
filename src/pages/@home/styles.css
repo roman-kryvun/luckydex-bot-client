@@ -443,7 +443,8 @@ color: #d9881e;
   left: 0;
   max-width: 100%;
   flex: 1;
-  background: var(--block-bg-color);
+  background: var(--bg-color2);
+  color: var(--text-color);
   padding: 20px 10px;
 }
 
@@ -456,6 +457,7 @@ color: #d9881e;
   max-width: 50%;
   font-size: 13px;
   letter-spacing: 2px;
+  color: var(--text-color);
 }
 .config-box.left {
   align-items: flex-start;

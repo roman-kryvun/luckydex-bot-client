@@ -4,6 +4,7 @@
 html.light {
     --tg-theme-secondary-bg-color: #f4f4f5;
     --bg-color: var(--tg-theme-secondary-bg-color, #f4f4f5);
+    --bg-color2: #f4f4f5;
     --img-opacity: 0.4;
     --text-color: #2d2e33;
     --success-color: #31b82e;
@@ -28,6 +29,7 @@ html.light {
 html.dark {
     --tg-theme-secondary-bg-color: #1f2029;
     --bg-color: var(--tg-theme-secondary-bg-color, #1f2029);
+    --bg-color2: #0e0e0e;
     --img-opacity: 0.25;
     --text-color: #fff;
     --success-color: #90ee90;
