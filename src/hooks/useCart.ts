@@ -14,7 +14,6 @@ export type Pokemon = {
   released_shiny: boolean
   forms_switchable: boolean
   released_shadow: boolean
-  released_purified: boolean
   shiny_shadow: boolean
 }
 
@@ -31,7 +30,6 @@ export type Pokemon = {
 //   released_shiny: true,
 //   forms_switchable: false,
 //   released_shadow: true,
-//   released_purified: true,
 //   shiny_shadow: true
 // }
 //
@@ -47,8 +45,9 @@ export type Pokemon = {
 //   console.error(e)
 // }
 
+const initPokemons: Pokemon[] = []
 export const useCart = () => {
-  const [pokemons, setPokemons] = useState<Pokemon[]>([])
+  const [pokemons, setPokemons] = useState<Pokemon[]>(initPokemons)
 
   // const total = useMemo(() => Object.values(order).reduce((total, numb) => total + numb, 0), [order])
   //
@@ -76,9 +75,9 @@ export const useCart = () => {
   }, [])
 
   const pokemonsMap = useMemo(() => {
-    return pokemons.reduce((agg: {[srt: string]: Pokemon}, pok) => {
+    return pokemons.reduce((agg: { [srt: string]: Pokemon }, pok) => {
       agg[pok.num] = pok
-      return agg;
+      return agg
     }, {})
   }, [pokemons])
 

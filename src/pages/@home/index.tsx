@@ -435,17 +435,18 @@ export const Home = () => {
 
     // set breakpoints
     Object.entries(REGIONS).forEach(([numb, regionTitle]) => {
-      const brakpoint = +numb;
-      const index = res.findIndex(({nr}) => +nr >= brakpoint)
-      if(index > -1) res[index].collection = regionTitle
+      const brakpoint = +numb
+      const index = res.findIndex(({ nr }) => +nr >= brakpoint)
+      if (index > -1) res[index].collection = regionTitle
     })
 
     setDisplayPokemons(res)
   }
 
   useEffect(() => {
+    console.log('> dex', dex, 'gen', gen, 'dataset', dataset)
     getPokemons()
-  }, [dex, gen, dataset])
+  }, [dex, gen, dataset?.length])
 
   // useEffect(() => {
   //   updateDisplayPokemon()
@@ -546,64 +547,65 @@ export const Home = () => {
 
   if (!dataset?.length) {
     return (
-      <div className="global-loader">
-        <div className="gbc">
-          <input id="powerSwitch" checked aria-label="Toggle Gameboy power" className="gbc-power-control" type="checkbox" />
-          <label htmlFor="powerSwitch" className="gbc-power-label">
-            <div className="gbc-power-label-lines">
-              <div className="gbc-power-label-line gbc-power-label-line-1" />
-              <div className="gbc-power-label-line gbc-power-label-line-2" />
-              <div className="gbc-power-label-line gbc-power-label-line-3" />
+      <div className='global-loader'>
+        <div className='gbc'>
+          <input id='powerSwitch' checked aria-label='Toggle Gameboy power' className='gbc-power-control'
+                 type='checkbox' />
+          <label htmlFor='powerSwitch' className='gbc-power-label'>
+            <div className='gbc-power-label-lines'>
+              <div className='gbc-power-label-line gbc-power-label-line-1' />
+              <div className='gbc-power-label-line gbc-power-label-line-2' />
+              <div className='gbc-power-label-line gbc-power-label-line-3' />
             </div>
           </label>
-          <div className="gbc-body">
-            <div className="gbc-screen-wrap">
-              <div className="gbc-screen-light" />
-              <div className="gbc-screen">
-                <div className="pika-wrap">
-                  <div className="pika">
-                    <div className="pika-head">
-                      <div className="pika-face">
-                        <div className="pika-eye pika-eye-left" />
-                        <div className="pika-eye pika-eye-right" />
-                        <div className="pika-nose" />
-                        <div className="pika-mouth">
-                          <div className="pika-mouth-3" />
-                          <div className="pika-mouth-inner" />
+          <div className='gbc-body'>
+            <div className='gbc-screen-wrap'>
+              <div className='gbc-screen-light' />
+              <div className='gbc-screen'>
+                <div className='pika-wrap'>
+                  <div className='pika'>
+                    <div className='pika-head'>
+                      <div className='pika-face'>
+                        <div className='pika-eye pika-eye-left' />
+                        <div className='pika-eye pika-eye-right' />
+                        <div className='pika-nose' />
+                        <div className='pika-mouth'>
+                          <div className='pika-mouth-3' />
+                          <div className='pika-mouth-inner' />
                         </div>
-                        <div className="pika-cheek pika-cheek-left" />
-                        <div className="pika-cheek pika-cheek-right" />
+                        <div className='pika-cheek pika-cheek-left' />
+                        <div className='pika-cheek pika-cheek-right' />
                       </div>
-                      <div className="pika-ear pika-ear-left" />
-                      <div className="pika-ear pika-ear-right" />
+                      <div className='pika-ear pika-ear-left' />
+                      <div className='pika-ear pika-ear-right' />
                     </div>
-                    <div className="pika-body">
-                      <div className="pika-torso" />
-                      <div className="pika-arm pika-arm-left">
-                        <div className="pika-arm-fingers" />
-                        <div className="pika-arm-shadow" />
+                    <div className='pika-body'>
+                      <div className='pika-torso' />
+                      <div className='pika-arm pika-arm-left'>
+                        <div className='pika-arm-fingers' />
+                        <div className='pika-arm-shadow' />
                       </div>
-                      <div className="pika-arm pika-arm-right">
-                        <div className="pika-arm-fingers" />
-                        <div className="pika-arm-shadow" />
+                      <div className='pika-arm pika-arm-right'>
+                        <div className='pika-arm-fingers' />
+                        <div className='pika-arm-shadow' />
                       </div>
-                      <div className="pika-tail pika-tail-1">
-                        <div className="pika-tail pika-tail-2">
-                          <div className="pika-tail pika-tail-3" />
+                      <div className='pika-tail pika-tail-1'>
+                        <div className='pika-tail pika-tail-2'>
+                          <div className='pika-tail pika-tail-3' />
                         </div>
                       </div>
                     </div>
-                    <div className="pika-bubble">Pika!</div>
+                    <div className='pika-bubble'>Pika!</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="gbc-controls">
-              <div className="gbc-dpad" />
-              <div className="gbc-button gbc-button-a" />
-              <div className="gbc-button gbc-button-b" />
-              <div className="gbc-pill gbc-pill-start" />
-              <div className="gbc-pill gbc-pill-select" />
+            <div className='gbc-controls'>
+              <div className='gbc-dpad' />
+              <div className='gbc-button gbc-button-a' />
+              <div className='gbc-button gbc-button-b' />
+              <div className='gbc-pill gbc-pill-start' />
+              <div className='gbc-pill gbc-pill-select' />
             </div>
           </div>
         </div>
@@ -616,35 +618,40 @@ export const Home = () => {
       <CopyNeeded list={displayPokemons.map(({ nr }) => nr)} />
       {/*<Navigation />*/}
       <div className={`dex-buttons`}>
-        <div className={`dex-button  dex-lucky ${dex === 'lucky' ? 'active' : ''}`} onClick={() => onDexSelected('lucky')}>
+        <div className={`dex-button  dex-lucky ${dex === 'lucky' ? 'active' : ''}`}
+             onClick={() => onDexSelected('lucky')}>
           Lucky
         </div>
-        <div className={`dex-button  dex-shiny ${dex === 'shiny' ? 'active' : ''}`} onClick={() => onDexSelected('shiny')}>
+        <div className={`dex-button  dex-shiny ${dex === 'shiny' ? 'active' : ''}`}
+             onClick={() => onDexSelected('shiny')}>
           Shiny
         </div>
-        <div className={`dex-button  dex-perfect ${dex === 'perfect' ? 'active' : ''}`} onClick={() => onDexSelected('perfect')}>
+        <div className={`dex-button  dex-perfect ${dex === 'perfect' ? 'active' : ''}`}
+             onClick={() => onDexSelected('perfect')}>
           Perfect
         </div>
-        <div className={`dex-button  dex-shadow ${dex === 'shadow' ? 'active' : ''}`} onClick={() => onDexSelected('shadow')}>
+        <div className={`dex-button  dex-shadow ${dex === 'shadow' ? 'active' : ''}`}
+             onClick={() => onDexSelected('shadow')}>
           Shadow
         </div>
-        <div className={`dex-button  dex-purified ${dex === 'purified' ? 'active' : ''}`} onClick={() => onDexSelected('purified')}>
+        <div className={`dex-button  dex-purified ${dex === 'purified' ? 'active' : ''}`}
+             onClick={() => onDexSelected('purified')}>
           Purified
         </div>
       </div>
 
-      <section className="">
+      <section className=''>
         {/*<img id="btnAllSchool" src="https://img.icons8.com/color/48/000000/pokeball-2.png" />*/}
-        <h2 className="title" id="title">
+        <h2 className='title' id='title'>
           Gotta catch 'em all!
         </h2>
 
-        <div className="filters filters-sticky">
+        <div className='filters filters-sticky'>
           <select
             style={{ flex: '1 1 100%', margin: '0 0.25rem', textAlign: 'center' }}
-            className="minimal"
-            name="generation-select"
-            id="generation-select"
+            className='minimal'
+            name='generation-select'
+            id='generation-select'
             value={gen}
             onChange={e => onGenSelected(e.target.value)}>
             {/*{selectOptions?.map(({ key, label }) => (*/}
@@ -739,14 +746,14 @@ export const Home = () => {
           {/* ********************************* */}
           {/* ************ FILTERS ************ */}
           {/* ********************************* */}
-          <div className="config-box left">
-            <div className="filters-head text" onClick={() => setEditable(!editable)}>
+          <div className='config-box left'>
+            <div className='filters-head text' onClick={() => setEditable(!editable)}>
               <span style={{ fontSize: '24px' }}>{editable ? '🔓' : '🔒'}</span>
               <small>{editable ? 'edit mode' : 'view only'}</small>
             </div>
           </div>
-          <div className="config-box right">
-            <div className="filters-head">
+          <div className='config-box right'>
+            <div className='filters-head'>
               {/*{(Object.values(filters).some(Boolean) || Object.values(settings).some(Boolean)) && (*/}
               {/*  <div style={{ lineHeight: 0, opacity: 0.8 }} onClick={onResetFilter}>*/}
               {/*    <span style={{verticalAlign: "text-top"}}>reset</span>*/}
@@ -780,14 +787,14 @@ export const Home = () => {
             </div>
 
             {showFilters && (
-              <div className="filters-popup">
+              <div className='filters-popup'>
                 <span style={{ padding: '2px 4px 0' }}>Show</span>
 
                 {[{ key: 'first_form', label: '1st form' }].map(({ key, label }) => (
                   <Fragment key={label}>
                     <input
-                      className="radio-gens"
-                      type="radio"
+                      className='radio-gens'
+                      type='radio'
                       id={'settings' + label}
                       value={key}
                       name={'settings' + key}
@@ -797,7 +804,7 @@ export const Home = () => {
                       }
                       readOnly
                     />
-                    <label htmlFor={'settings' + label} className="label-gens" onClick={() => onSettingsSelected(key)}>
+                    <label htmlFor={'settings' + label} className='label-gens' onClick={() => onSettingsSelected(key)}>
                       {
                         // @ts-ignore
                         settings[key] === true ? '✔️' : ''
@@ -815,8 +822,8 @@ export const Home = () => {
                 ].map(({ key, label }) => (
                   <Fragment key={label}>
                     <input
-                      className="radio-gens"
-                      type="radio"
+                      className='radio-gens'
+                      type='radio'
                       id={label}
                       value={key}
                       name={'filter' + key}
@@ -826,7 +833,7 @@ export const Home = () => {
                       }
                       readOnly
                     />
-                    <label htmlFor={label} className="label-gens" onClick={() => onFilterSelected(key)}>
+                    <label htmlFor={label} className='label-gens' onClick={() => onFilterSelected(key)}>
                       {
                         // @ts-ignore
                         filters[key] === true ? '✔️' : ''
@@ -839,8 +846,8 @@ export const Home = () => {
                 {[{ key: 'hide_collected', label: `${dex}` }].map(({ key, label }) => (
                   <Fragment key={label}>
                     <input
-                      className="radio-gens"
-                      type="radio"
+                      className='radio-gens'
+                      type='radio'
                       id={'settings' + label}
                       value={key}
                       name={'settings' + key}
@@ -850,7 +857,7 @@ export const Home = () => {
                       }
                       readOnly
                     />
-                    <label htmlFor={'settings' + label} className="label-gens" onClick={() => onSettingsSelected(key)}>
+                    <label htmlFor={'settings' + label} className='label-gens' onClick={() => onSettingsSelected(key)}>
                       {
                         // @ts-ignore
                         settings[key] === true ? '❌️' : ''
@@ -867,8 +874,8 @@ export const Home = () => {
                 ].map(({ key, label }) => (
                   <Fragment key={label}>
                     <input
-                      className="radio-gens"
-                      type="radio"
+                      className='radio-gens'
+                      type='radio'
                       id={'settings' + label}
                       value={key}
                       name={'settings' + key}
@@ -878,7 +885,7 @@ export const Home = () => {
                       }
                       readOnly
                     />
-                    <label htmlFor={'settings' + label} className="label-gens" onClick={() => onSettingsSelected(key)}>
+                    <label htmlFor={'settings' + label} className='label-gens' onClick={() => onSettingsSelected(key)}>
                       {
                         // @ts-ignore
                         settings[key] === true ? '❌' : ''
@@ -889,7 +896,7 @@ export const Home = () => {
                 ))}
 
                 <button
-                  className="dex-button"
+                  className='dex-button'
                   disabled={!filtersApply}
                   style={{
                     margin: '10px 4px 0',
@@ -903,7 +910,7 @@ export const Home = () => {
                 </button>
 
                 <button
-                  className="dex-button"
+                  className='dex-button'
                   style={{
                     margin: '0 4px 0',
                     background: 'var(--success-color)',
@@ -920,11 +927,11 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className={`container dex-${dex}`} id="container">
+        <div className={`container dex-${dex}`} id='container'>
           {displayPokemons.map((pokemon, i) => (
             <Fragment key={[dex, i].join('_')}>
               {pokemon?.collection && (
-                <li className="region">
+                <li className='region'>
                   <div>{pokemon.collection}</div>
                 </li>
               )}
@@ -952,8 +959,8 @@ export const Home = () => {
           ))}
 
           {relesedPokemon.length > 0 && displayPokemons.length === 0 && (
-            <div className="no-pokemons">
-              <img src={Detective} alt="sad pokemon" className="displayed" style={{ maxWidth: '120px' }} />
+            <div className='no-pokemons'>
+              <img src={Detective} alt='sad pokemon' className='displayed' style={{ maxWidth: '120px' }} />
               <br />
               <div>No matching Pokemon found</div>
             </div>

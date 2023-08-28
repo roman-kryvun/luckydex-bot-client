@@ -1,5 +1,5 @@
 import { AccountCircle, ContactSupportOutlined, ShoppingCart } from '@mui/icons-material'
-import { useCartContext } from '../../contexts/cart'
+// import { useCartContext } from '../../contexts/cart'
 import { Badge, Box } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import logoBlackHoney from '../../assets/logo.svg'
