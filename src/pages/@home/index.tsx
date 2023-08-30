@@ -12,35 +12,12 @@ import { updatePokedex } from './../../api'
 // import pokDataMap from './data/data.json'
 // import pokInfoMap from './data/info.json'
 import generatinosMap from './data/generations.json'
+import { GlobalLoader } from '../../components/GlobalLoader'
+import { geners, UNIC_GENERATIONS, REGIONS, CAN_NO_BE_TRADED, CAN_BE_TRADED } from './constants'
 // import releasedPokemon from './data/released_pokemon.json'
 // import __shinyPokemon from './data/shiny_pokemon.json'
 //
 // const shinyPokemon = [...new Set(__shinyPokemon.concat(['785', '786', '787', '793', '866', '900', '901']))]
-
-var geners = [
-  { key: '0', label: 'All' },
-  { key: '1', label: 'Kanto' },
-  { key: '2', label: 'Johto' },
-  { key: '3', label: 'Hoenn' },
-  { key: '4', label: 'Sinnoh' },
-  { key: '5', label: 'Unova' },
-  { key: '6', label: 'Kalos' },
-  { key: '7', label: 'Alola' },
-  { key: '8', label: 'Galar' },
-  { key: '9', label: 'Paldea' },
-]
-
-const REGIONS: { [str: string]: string } = {
-  '1': 'Kanto',
-  '152': 'Johto',
-  '252': 'Hoenn',
-  '387': 'Sinnoh',
-  '494': 'Unova',
-  '650': 'Kalos',
-  '722': 'Alola',
-  '810': 'Galar',
-  '906': 'Paldea',
-}
 
 type DexType = 'lucky' | 'shiny' | 'perfect' | 'shadow' | 'purified'
 
@@ -103,7 +80,7 @@ const GEN_KEY = 'gen_0'
 const initGen = getLocalStorageValue<string>(
   GEN_KEY,
   DEFAULT_GEN,
-  geners.map(({ key }) => key),
+  UNIC_GENERATIONS,
 )
 
 const DEFAULT_DEX = 'lucky'
@@ -183,13 +160,13 @@ export const Home = () => {
   //https://vignette.wikia.nocookie.net/es.pokemon/images/4/43/Bulbasaur.png
   let html = ''
   // @ts-ignore
-  const fetchPokemons = async (endpoint, gen) => {
+  const fetchPokemons = async (endpoint, gen: string) => {
     if (gen === '0') {
       // @ts-ignore
-      return geners.reduce((agg, { key }) => {
+      return geners.reduce((agg, { key, gen }) => {
         if (key === '0') return agg
         // @ts-ignore
-        return [...agg, ...generatinosMap[key]]
+        return [...agg, ...generatinosMap[gen]]
       }, [])
     }
     // @ts-ignore
@@ -213,25 +190,33 @@ export const Home = () => {
   }
 
   async function getPokemons(toggle = false) {
-    let endpoint = `https://pokeapi.co/api/v2/generation/${gen}/`
-    // var container = document.getElementById('container')
-    // @ts-ignore
-    // container.innerHTML = ''
+    const genNumber = parseInt(gen).toFixed(0)
+    let endpoint = `https://pokeapi.co/api/v2/generation/${genNumber}/`
     let pokemons = []
 
-    pokemons = await fetchPokemons(endpoint, gen)
+    pokemons = await fetchPokemons(endpoint, genNumber)
 
-    for (let j = 0; j < pokemons.length; j++) {
+    const len = pokemons?.length || 0
+    for (let j = 0; j < len; j++) {
       pokemons[j].nr = orderNumber(pokemons[j].url)
     }
 
-    pokemons = pokemons.filter(({ nr }: { nr: string }) => releasedPokemon.includes(nr))
+    pokemons = (pokemons || []).filter(({ nr }: { nr: string }) => releasedPokemon.includes(nr))
 
     if (dex === 'lucky') {
       // @ts-ignore
       pokemons = pokemons.filter(({ nr }) => {
         const _deteils = pokemonsMap[nr]
-        return !_deteils?.mythical || ['808', '809'].includes(nr)
+        return (!_deteils?.mythical && !CAN_NO_BE_TRADED.includes(nr)) || CAN_BE_TRADED.includes(nr)
+      })
+    }
+
+
+    const  region = geners.find(({key}) => key === gen)
+    if(region?.rangeStart && region?.rangeEnd) {
+      pokemons = pokemons.filter(({nr = '0', url = ''}) => {
+        const pokemonNumber = +nr || orderNumber(url);
+        return pokemonNumber >= region.rangeStart && pokemonNumber <= region.rangeEnd;
       })
     }
 
@@ -378,8 +363,6 @@ export const Home = () => {
         res = [...relesedPokemon]
     }
 
-    console.log({ filters, settings })
-
     if (Object.values(filters).some(Boolean) || Object.values(settings).some(Boolean)) {
       const { is_baby, is_legendary, is_mythical, is_ultra_beasts } = filters
       const { first_form, hide_collected, hide_mythical, hide_legendary } = settings
@@ -444,13 +427,8 @@ export const Home = () => {
   }
 
   useEffect(() => {
-    console.log('> dex', dex, 'gen', gen, 'dataset', dataset)
     getPokemons()
   }, [dex, gen, dataset?.length])
-
-  // useEffect(() => {
-  //   updateDisplayPokemon()
-  // }, [shinyRelesedPokemon, relesedPokemon])
 
   useEffect(() => {
     updateDisplayPokemon()
@@ -468,25 +446,34 @@ export const Home = () => {
 
   const selectOptions = useMemo(() => {
     const [common, ...rest] = geners
-    const options = rest.map(({ key, label }) => {
+    const options = rest.map(({ key, gen, region, rangeStart , rangeEnd }) => {
       let count = 0
       let total = 0
-      if (key === '0') {
+      if (key !== '0') {
         // @ts-ignore
-        // total = geners.reduce((agg, { key }) => {
-        //   // @ts-ignore
-        //   const arr = generatinosMap[key] || []
-        //   return agg + (arr?.length || 0)
-        //   // return agg + 1
-        // }, 0)
-      } else {
+        let regionPokemons = (generatinosMap[gen] || []);
+
+        if(rangeStart && rangeEnd) {
+          regionPokemons = regionPokemons.filter(({nr = '0', url = ''}) => {
+            const pokemonNumber = +nr || orderNumber(url);
+
+            // console.log('| pokemonNumber', pokemonNumber)
+            // if(!pokemonNumber) return true
+
+            // console.log('> []', [pokemonNumber, rangeStart, rangeEnd])
+
+            return pokemonNumber >= rangeStart && pokemonNumber <= rangeEnd;
+          })
+        }
+
         // @ts-ignore
-        const arr = (generatinosMap[key] || []).filter(({ url }: { url: string }) => {
+        const arr = regionPokemons.filter(({ url }: { url: string }) => {
+        // const arr = (generatinosMap[gen] || []).filter(({ url }: { url: string }) => {
           const _nr = orderNumber(url)
 
           switch (dex) {
             case 'lucky':
-              return (pokemonsMap[_nr]?.released && (!pokemonsMap[_nr]?.mythical || ['808', '809'].includes(_nr))) || false
+              return (pokemonsMap[_nr]?.released && ( (!pokemonsMap[_nr]?.mythical && !CAN_NO_BE_TRADED.includes(_nr)) || CAN_BE_TRADED.includes(_nr))) || false
             case 'perfect':
               return pokemonsMap[_nr]?.released || false
             case 'shiny':
@@ -505,8 +492,11 @@ export const Home = () => {
           // return dex === 'shiny' ? shinyPokemon.includes(_nr) : releasedPokemon.includes(_nr)
         })
         // console.log('-----------------')
-        // console.log('arr', arr)
+        // console.log('| region', region, [rangeStart, rangeEnd])
+        // console.log('| regionPokemons', regionPokemons)
+        // console.log('|', arr)
         // console.log('-----------------')
+        // console.log('| ')
         // const arr = (generatinosMap[key] || []).filter((_i) => dex !== 'shiny' ? releasedPokemon.includes(_i) : shinyPokemon.includes(_i))
         total = arr.length || 0
         // @ts-ignore
@@ -518,8 +508,10 @@ export const Home = () => {
         // total = 0
       }
 
-      return { key, label, count, total }
+      return { key, region, count, total }
     })
+
+    // console.log('> options', options)
 
     const { count, total } = options.reduce(
       (agg, { count, total }) => {
@@ -530,9 +522,13 @@ export const Home = () => {
       { count: 0, total: 0 },
     )
 
-    return [{ ...common, count, total }, ...options].reduce((agg, { key, label, count, total }) => {
+    return [{ ...common, count, total }, ...options].reduce((agg, { key, region, count, total }) => {
       //@ts-ignore
-      agg[key] = `${label}  (${count}/${total})`
+      agg[key] = `${region}  (${count}/${total})`
+
+      const progress = count > 0 ? '- ' +parseFloat((count / total * 100).toFixed(2)) + '%' : ''
+      //@ts-ignore
+      agg[key] = `${region} ${progress}`
 
       return agg
     }, {})
@@ -545,73 +541,7 @@ export const Home = () => {
 
   const filtersApply = Object.values(filters).filter(Boolean).length + Object.values(settings).filter(Boolean).length
 
-  if (!dataset?.length) {
-    return (
-      <div className='global-loader'>
-        <div className='gbc'>
-          <input id='powerSwitch' checked aria-label='Toggle Gameboy power' className='gbc-power-control'
-                 type='checkbox' />
-          <label htmlFor='powerSwitch' className='gbc-power-label'>
-            <div className='gbc-power-label-lines'>
-              <div className='gbc-power-label-line gbc-power-label-line-1' />
-              <div className='gbc-power-label-line gbc-power-label-line-2' />
-              <div className='gbc-power-label-line gbc-power-label-line-3' />
-            </div>
-          </label>
-          <div className='gbc-body'>
-            <div className='gbc-screen-wrap'>
-              <div className='gbc-screen-light' />
-              <div className='gbc-screen'>
-                <div className='pika-wrap'>
-                  <div className='pika'>
-                    <div className='pika-head'>
-                      <div className='pika-face'>
-                        <div className='pika-eye pika-eye-left' />
-                        <div className='pika-eye pika-eye-right' />
-                        <div className='pika-nose' />
-                        <div className='pika-mouth'>
-                          <div className='pika-mouth-3' />
-                          <div className='pika-mouth-inner' />
-                        </div>
-                        <div className='pika-cheek pika-cheek-left' />
-                        <div className='pika-cheek pika-cheek-right' />
-                      </div>
-                      <div className='pika-ear pika-ear-left' />
-                      <div className='pika-ear pika-ear-right' />
-                    </div>
-                    <div className='pika-body'>
-                      <div className='pika-torso' />
-                      <div className='pika-arm pika-arm-left'>
-                        <div className='pika-arm-fingers' />
-                        <div className='pika-arm-shadow' />
-                      </div>
-                      <div className='pika-arm pika-arm-right'>
-                        <div className='pika-arm-fingers' />
-                        <div className='pika-arm-shadow' />
-                      </div>
-                      <div className='pika-tail pika-tail-1'>
-                        <div className='pika-tail pika-tail-2'>
-                          <div className='pika-tail pika-tail-3' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='pika-bubble'>Pika!</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='gbc-controls'>
-              <div className='gbc-dpad' />
-              <div className='gbc-button gbc-button-a' />
-              <div className='gbc-button gbc-button-b' />
-              <div className='gbc-pill gbc-pill-start' />
-              <div className='gbc-pill gbc-pill-select' />
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-  }
+  if (!dataset?.length) return (<GlobalLoader />)
 
   return (
     <div>
@@ -660,8 +590,8 @@ export const Home = () => {
             {/*  </option>*/}
             {/*))}*/}
             {/*<option value="0">All generations </option>*/}
-            {geners.map(({ key, label }) => (
-              <option key={label} value={key}>
+            {geners.map(({ key, region }) => (
+              <option key={region} value={key}>
                 {
                   // @ts-ignore
                   selectOptions[key]

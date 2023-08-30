@@ -1,4 +1,9 @@
+import { GlobalLoader } from '../../components/GlobalLoader'
+
 export const Login = () => {
+
+  return <GlobalLoader />
+
   return (
     <>
       <h1>login</h1>
