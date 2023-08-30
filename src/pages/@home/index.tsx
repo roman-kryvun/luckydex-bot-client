@@ -163,10 +163,21 @@ export const Home = () => {
   const fetchPokemons = async (endpoint, gen: string) => {
     if (gen === '0') {
       // @ts-ignore
-      return geners.reduce((agg, { key, gen }) => {
-        if (key === '0') return agg
+      return UNIC_GENERATIONS.reduce((agg, gen) => {
+        if (gen === '0') return agg
+
         // @ts-ignore
-        return [...agg, ...generatinosMap[gen]]
+        let pokemons = [...(generatinosMap[gen] || [])]
+
+        // const region = geners.find(({ key }) => key === gen)
+        // if (region?.rangeStart && region?.rangeEnd) {
+        //   pokemons = pokemons.filter(({ nr = '0', url = '' }) => {
+        //     const pokemonNumber = +nr || orderNumber(url)
+        //     return pokemonNumber >= region.rangeStart && pokemonNumber <= region.rangeEnd
+        //   })
+        // }
+
+        return [...agg, ...pokemons]
       }, [])
     }
     // @ts-ignore
@@ -212,11 +223,11 @@ export const Home = () => {
     }
 
 
-    const  region = geners.find(({key}) => key === gen)
-    if(region?.rangeStart && region?.rangeEnd) {
-      pokemons = pokemons.filter(({nr = '0', url = ''}) => {
-        const pokemonNumber = +nr || orderNumber(url);
-        return pokemonNumber >= region.rangeStart && pokemonNumber <= region.rangeEnd;
+    const region = geners.find(({ key }) => key === gen)
+    if (region?.rangeStart && region?.rangeEnd) {
+      pokemons = pokemons.filter(({ nr = '0', url = '' }) => {
+        const pokemonNumber = +nr || orderNumber(url)
+        return pokemonNumber >= region.rangeStart && pokemonNumber <= region.rangeEnd
       })
     }
 
@@ -446,34 +457,34 @@ export const Home = () => {
 
   const selectOptions = useMemo(() => {
     const [common, ...rest] = geners
-    const options = rest.map(({ key, gen, region, rangeStart , rangeEnd }) => {
+    const options = rest.map(({ key, gen, region, rangeStart, rangeEnd }) => {
       let count = 0
       let total = 0
       if (key !== '0') {
         // @ts-ignore
-        let regionPokemons = (generatinosMap[gen] || []);
+        let regionPokemons = (generatinosMap[gen] || [])
 
-        if(rangeStart && rangeEnd) {
-          regionPokemons = regionPokemons.filter(({nr = '0', url = ''}) => {
-            const pokemonNumber = +nr || orderNumber(url);
+        if (rangeStart && rangeEnd) {
+          regionPokemons = regionPokemons.filter(({ nr = '0', url = '' }) => {
+            const pokemonNumber = +nr || orderNumber(url)
 
             // console.log('| pokemonNumber', pokemonNumber)
             // if(!pokemonNumber) return true
 
             // console.log('> []', [pokemonNumber, rangeStart, rangeEnd])
 
-            return pokemonNumber >= rangeStart && pokemonNumber <= rangeEnd;
+            return pokemonNumber >= rangeStart && pokemonNumber <= rangeEnd
           })
         }
 
         // @ts-ignore
         const arr = regionPokemons.filter(({ url }: { url: string }) => {
-        // const arr = (generatinosMap[gen] || []).filter(({ url }: { url: string }) => {
+          // const arr = (generatinosMap[gen] || []).filter(({ url }: { url: string }) => {
           const _nr = orderNumber(url)
 
           switch (dex) {
             case 'lucky':
-              return (pokemonsMap[_nr]?.released && ( (!pokemonsMap[_nr]?.mythical && !CAN_NO_BE_TRADED.includes(_nr)) || CAN_BE_TRADED.includes(_nr))) || false
+              return (pokemonsMap[_nr]?.released && ((!pokemonsMap[_nr]?.mythical && !CAN_NO_BE_TRADED.includes(_nr)) || CAN_BE_TRADED.includes(_nr))) || false
             case 'perfect':
               return pokemonsMap[_nr]?.released || false
             case 'shiny':
@@ -522,11 +533,22 @@ export const Home = () => {
       { count: 0, total: 0 },
     )
 
+    const fillProgressLabel = (count: number, total: number) => {
+      const collected = `(${count}/${total})`
+      let persentage = '';
+
+      if(count > 0 && total > 0) {
+        persentage = ' - ' + parseFloat((count / total * 100).toFixed(2)) + '%';
+      }
+
+      return `${collected}${persentage}`
+    }
+
     return [{ ...common, count, total }, ...options].reduce((agg, { key, region, count, total }) => {
       //@ts-ignore
       agg[key] = `${region}  (${count}/${total})`
 
-      const progress = count > 0 ? '- ' +parseFloat((count / total * 100).toFixed(2)) + '%' : ''
+      const progress = fillProgressLabel(count, total)
       //@ts-ignore
       agg[key] = `${region} ${progress}`
 
