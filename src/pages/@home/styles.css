@@ -113,6 +113,31 @@ color: #d9881e;
     color: #4cc9bd;
 }
 
+.container li.selected.placeholder {
+  box-shadow: inset 0 0 0 7px var(--bg-color), inset 0 0 0 60px currentColor;
+  border-radius: 30px;
+  opacity: .9;
+}
+
+.container li.selected.placeholder div {
+  color: #ffffff;
+  font-size: 28px;
+}
+@media screen and (max-width: 480px) {
+  .container li.selected.placeholder div {
+    font-size: 22px;
+  }
+}
+
+.pokemon-tile-name {
+  font-size: 8px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
 /*li.item.selected:before {*/
 /*    content: '';*/
 /*    position: absolute;*/

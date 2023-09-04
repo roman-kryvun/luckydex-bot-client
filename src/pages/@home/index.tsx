@@ -14,6 +14,7 @@ import { updatePokedex } from './../../api'
 import generatinosMap from './data/generations.json'
 import { GlobalLoader } from '../../components/GlobalLoader'
 import { geners, UNIC_GENERATIONS, REGIONS, CAN_NO_BE_TRADED, CAN_BE_TRADED } from './constants'
+import { Box } from '@mui/material'
 // import releasedPokemon from './data/released_pokemon.json'
 // import __shinyPokemon from './data/shiny_pokemon.json'
 //
@@ -151,12 +152,6 @@ export const Home = () => {
     imagelink.className += imagelink.className ? ' loaded' : 'loaded'
   }
 
-  // @ts-ignore
-  function orderNumber(str) {
-    var mySubString = str.substring(str.lastIndexOf('s/') + 2, str.lastIndexOf('/'))
-    return mySubString
-  }
-
   //https://vignette.wikia.nocookie.net/es.pokemon/images/4/43/Bulbasaur.png
   let html = ''
   // @ts-ignore
@@ -240,13 +235,17 @@ export const Home = () => {
 
     // @ts-ignore
     const _nv = pokemons.map(pokemon => {
-      let numero3decimals = orderNumber(pokemon.url)
-      if (numero3decimals < 10) {
-        numero3decimals = '0' + numero3decimals
-      }
-      if (numero3decimals < 100) {
-        numero3decimals = '0' + numero3decimals
-      }
+      let numero3decimals: string = orderNumber(pokemon.url)
+      numero3decimals = numbTo4Dec(numero3decimals)
+      // if (numero3decimals < 10) {
+      //   numero3decimals = '0' + numero3decimals
+      // }
+      // if (numero3decimals < 100) {
+      //   numero3decimals = '0' + numero3decimals
+      // }
+      // if (numero3decimals < 1000) {
+      //   numero3decimals = '0' + numero3decimals
+      // }
       let toggleurl = dex === 'shiny' ? 'https://www.serebii.net/pokemongo/pokemon/shiny/' : 'https://www.serebii.net/pokemongo/pokemon/'
 
       // fix for Lake Trio Shiny
@@ -374,6 +373,7 @@ export const Home = () => {
         res = [...relesedPokemon]
     }
 
+
     if (Object.values(filters).some(Boolean) || Object.values(settings).some(Boolean)) {
       const { is_baby, is_legendary, is_mythical, is_ultra_beasts } = filters
       const { first_form, hide_collected, hide_mythical, hide_legendary } = settings
@@ -426,11 +426,67 @@ export const Home = () => {
         })
     }
 
+    /////////////////////////////////
+    // UNRELEASED PLACEHOLDER START
+    /////////////////////////////////
+    /*console.log('> gen', gen)
+    console.log('> geners', geners)
+
+    const currentCollection = geners.find(({key}) => key === gen)
+
+    if(currentCollection) {
+      console.log('> currentCollection.rangeStart', currentCollection.rangeStart)
+      console.log('> currentCollection.rangeEnd', currentCollection.rangeEnd)
+
+      const start = currentCollection.rangeStart || 0;
+      const end = currentCollection.rangeEnd || 0;
+      const len = end - start;
+
+      console.log('> len === res.length', len, res.length, len === res.length)
+      // continue;
+
+      if(res.length > 0 && len !== res.length) {
+        const arr = new Array(len).fill(null);
+
+        const populate = arr.map((_, idx) => {
+
+          const _nr = start + idx;
+          const _nrString = _nr.toString();
+
+          const exists = res.find(({nr}) => nr === _nrString)
+          if(exists) return exists;
+
+          return {
+            collection: '',
+            name: 'unreleased',
+            nr: _nrString,
+            numero3decimals: numbTo4Dec(_nr),
+            url: "",
+            urlImage: ''
+          } as Pokemon
+        })
+
+        console.log('> populate', populate)
+        res = populate
+      }
+      // res = populate
+    }
+    console.log('> res', res)*/
+
+    /////////////////////////////////
+    // UNRELEASED PLACEHOLDER END
+    /////////////////////////////////
 
     // set breakpoints
     Object.entries(REGIONS).forEach(([numb, regionTitle]) => {
       const brakpoint = +numb
-      const index = res.findIndex(({ nr }) => +nr >= brakpoint)
+      // const index = res.findIndex(({ nr }) => +nr >= brakpoint)
+      const index = res.findIndex(({ nr }) => {
+      // console.log('> +nr >= brakpoint', +nr, brakpoint, +nr >= brakpoint)
+        return +nr >= brakpoint
+      })
+      console.log('> index', index)
+      console.log('> regionTitle', regionTitle)
       if (index > -1) res[index].collection = regionTitle
     })
 
@@ -567,7 +623,7 @@ export const Home = () => {
 
   return (
     <div>
-      <CopyNeeded list={displayPokemons.map(({ nr }) => nr)} />
+      <CopyNeeded list={displayPokemons.filter(({name}) => !name).map(({ nr }) => nr)} />
       {/*<Navigation />*/}
       <div className={`dex-buttons`}>
         <div className={`dex-button  dex-lucky ${dex === 'lucky' ? 'active' : ''}`}
@@ -887,13 +943,8 @@ export const Home = () => {
                   <div>{pokemon.collection}</div>
                 </li>
               )}
-              {/*{REGIONS[pokemon.nr] && (*/}
-              {/*  <li className="region">*/}
-              {/*    <div>{REGIONS[pokemon.nr]}</div>*/}
-              {/*  </li>*/}
-              {/*)}*/}
 
-              <li
+              {pokemon.name !== 'unreleased' && <li
                 className={`item ${catchPokemon[pokemon.nr] && catchPokemon[pokemon.nr][dex] ? 'selected' : ''}`}
                 key={[dex, i].join('_')}
                 onClick={() => onPokemonSelect(dex, pokemon.nr)}>
@@ -905,8 +956,14 @@ export const Home = () => {
                   width={100}
                   height={100}
                 />
-                <div>#{pokemon.numero3decimals}</div>
-              </li>
+                <div className="pokemon-tile-name">{pokemon.name}</div>
+                <div>{pokemon.numero3decimals}</div>
+              </li>}
+
+              {pokemon.name === 'unreleased' && <li
+                className="item selected placeholder" key={[dex, i].join('_')}>
+                <div>{pokemon.numero3decimals}</div>
+              </li>}
             </Fragment>
           ))}
 
@@ -925,3 +982,18 @@ export const Home = () => {
 
 //https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png
 //https://www.serebii.net/pokemongo/pokemon/${numero3decimals}.png
+
+
+function orderNumber(str: string): string {
+  var mySubString = str.substring(str.lastIndexOf('s/') + 2, str.lastIndexOf('/'))
+  return mySubString
+}
+
+function numbTo4Dec (numb: string | number): string {
+  const tempNumb = typeof numb === 'number' ? numb : parseInt(numb, 10)
+  if (tempNumb < 10) return '00' + numb
+  if (tempNumb < 100) return '0' + numb
+  // if (numb < 1000) return '0' + numb
+
+  return '' + tempNumb
+}
