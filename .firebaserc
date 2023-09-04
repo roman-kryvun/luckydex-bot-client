@@ -7,19 +7,10 @@
   "targets": {
     "lucky-dex": {
       "hosting": {
-        "prod": ["lucky-dex"]
-      }
-    }
-  },
-    "bot-administration": {
-      "hosting": {
-        "dev": [
-          "shop-web-client"
-        ],
-        "prod": [
-          "shop-web-client"
-        ]
+        "bot": ["lucky-dex"],
+        "web": ["my-godex"]
       }
     }
   }
+}
 

@@ -9,7 +9,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "bundle": "vite-bundle-visualizer",
-    "deploy": "npm run build && firebase deploy -P prod --only hosting:prod"
+    "deploy": "npm run build && firebase deploy -P prod --only hosting",
+    "dp": "npm run build && firebase deploy -P prod --only hosting:bot"
   },
   "engines": {
     "node": "18.15.0"

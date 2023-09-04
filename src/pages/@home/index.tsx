@@ -1,5 +1,5 @@
 import './styles.css'
-import { Fragment, useEffect, useMemo, useState } from 'react'
+import React, { Fragment, Profiler, useEffect, useMemo, useState } from 'react'
 import { useCartContext } from '../../contexts/cart'
 import { useNavigate } from 'react-router-dom'
 // @ts-ignore
@@ -15,6 +15,8 @@ import generatinosMap from './data/generations.json'
 import { GlobalLoader } from '../../components/GlobalLoader'
 import { geners, UNIC_GENERATIONS, REGIONS, CAN_NO_BE_TRADED, CAN_BE_TRADED } from './constants'
 import { Box } from '@mui/material'
+import { showMainPage } from '../../utils'
+import { AccountCircle, SupervisedUserCircle } from '@mui/icons-material'
 // import releasedPokemon from './data/released_pokemon.json'
 // import __shinyPokemon from './data/shiny_pokemon.json'
 //
@@ -28,16 +30,6 @@ type Pokemon = {
   name: string;
   nr: string
   collection?: string
-}
-
-type SelectedPokemon = {
-  [str: string]: {
-    lucky?: boolean
-    shiny?: boolean
-    perfect?: boolean
-    shadow?: boolean
-    purified?: boolean
-  }
 }
 
 // init start
@@ -623,7 +615,12 @@ export const Home = () => {
 
   return (
     <div>
-      <CopyNeeded list={displayPokemons.filter(({name}) => !name).map(({ nr }) => nr)} />
+      {showMainPage() && <Box display="flex">
+        <Box ml="auto" onClick={() => navigate("/main")}><AccountCircle color={'error'} /> <small color='#dc2b2b'><sup>beta</sup></small></Box>
+      </Box>}
+
+      <CopyNeeded list={displayPokemons.map(({ nr }) => nr)} />
+      {/*<CopyNeeded list={displayPokemons.filter(({name}) => !name).map(({ nr }) => nr)} />*/}
       {/*<Navigation />*/}
       <div className={`dex-buttons`}>
         <div className={`dex-button  dex-lucky ${dex === 'lucky' ? 'active' : ''}`}
@@ -850,7 +847,7 @@ export const Home = () => {
                     </label>
                   </Fragment>
                 ))}
-                <span style={{ padding: '2px 4px 0' }}>Hide</span>
+                <span style={{ padding: '24px 4px 0' }}>Hide</span>
                 {[{ key: 'hide_collected', label: `${dex}` }].map(({ key, label }) => (
                   <Fragment key={label}>
                     <input

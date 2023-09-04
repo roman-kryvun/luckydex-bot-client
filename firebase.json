@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "2085",
+      "target": "web",
       "public": "dist",
       "ignore": [
         "firebase.json",
@@ -16,22 +16,7 @@
       ]
     },
     {
-      "target": "dev",
-      "public": "dist",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
-    {
-      "target": "prod",
+      "target": "bot",
       "public": "dist",
       "ignore": [
         "firebase.json",
