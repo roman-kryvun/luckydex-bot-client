@@ -479,7 +479,7 @@ color: #d9881e;
   flex-direction: column;
   gap: 6px;
   width: auto;
-  max-width: 50%;
+  max-width: calc(50% - 20px);
   font-size: 13px;
   letter-spacing: 2px;
   color: var(--text-color);

@@ -14,9 +14,9 @@ import { updatePokedex } from './../../api'
 import generatinosMap from './data/generations.json'
 import { GlobalLoader } from '../../components/GlobalLoader'
 import { geners, UNIC_GENERATIONS, REGIONS, CAN_NO_BE_TRADED, CAN_BE_TRADED } from './constants'
-import { Box } from '@mui/material'
+import { Box, FormControl, IconButton, InputAdornment, InputLabel, OutlinedInput } from '@mui/material'
 import { showMainPage } from '../../utils'
-import { AccountCircle, SupervisedUserCircle } from '@mui/icons-material'
+import { AccountCircle, Close, Search, SupervisedUserCircle } from '@mui/icons-material'
 // import releasedPokemon from './data/released_pokemon.json'
 // import __shinyPokemon from './data/shiny_pokemon.json'
 //
@@ -128,6 +128,9 @@ export const Home = () => {
 
   const [catchPokemon, setCatchPokemon] = useState<SelectedPokemon>({})
   const [showFilters, setShowFilters] = useState(false)
+
+  const [search, setSearch] = useState('')
+  const [isSearchActive, setIsSearchActive] = useState(false)
   // const [showSettings, setShowSettings] = useState(false)
   const [gen, setGen] = useState(initGen)
   const [dex, setDex] = useState<DexType>(initDex)
@@ -241,7 +244,7 @@ export const Home = () => {
       let toggleurl = dex === 'shiny' ? 'https://www.serebii.net/pokemongo/pokemon/shiny/' : 'https://www.serebii.net/pokemongo/pokemon/'
 
       // fix for Lake Trio Shiny
-      if (dex === 'shiny' && ['480', '481', '482'].includes(numero3decimals)) {
+      if (dex === 'shiny' && ['433', '480', '481', '482'].includes(numero3decimals)) {
         toggleurl = 'https://www.serebii.net/Shiny/SWSH/'
       }
 
@@ -474,13 +477,20 @@ export const Home = () => {
       const brakpoint = +numb
       // const index = res.findIndex(({ nr }) => +nr >= brakpoint)
       const index = res.findIndex(({ nr }) => {
-      // console.log('> +nr >= brakpoint', +nr, brakpoint, +nr >= brakpoint)
+        // console.log('> +nr >= brakpoint', +nr, brakpoint, +nr >= brakpoint)
         return +nr >= brakpoint
       })
       console.log('> index', index)
       console.log('> regionTitle', regionTitle)
       if (index > -1) res[index].collection = regionTitle
     })
+
+    const searchValue = search.trim().toLowerCase()
+    if(searchValue.length > 0) {
+      console.log('> res', res[0])
+      setDisplayPokemons(res.filter(({name = '', nr}) => name.includes(searchValue) || nr == searchValue ))
+      return
+    }
 
     setDisplayPokemons(res)
   }
@@ -491,7 +501,7 @@ export const Home = () => {
 
   useEffect(() => {
     updateDisplayPokemon()
-  }, [dex, shinyRelesedPokemon, relesedPokemon, filters, settings, gen])
+  }, [dex, shinyRelesedPokemon, relesedPokemon, filters, settings, gen, search])
 
   useEffect(() => {
     const uid = (Telegram?.WebApp?.initDataUnsafe?.user?.id || '').toString()
@@ -583,10 +593,10 @@ export const Home = () => {
 
     const fillProgressLabel = (count: number, total: number) => {
       const collected = `(${count}/${total})`
-      let persentage = '';
+      let persentage = ''
 
-      if(count > 0 && total > 0) {
-        persentage = ' - ' + parseFloat((count / total * 100).toFixed(2)) + '%';
+      if (count > 0 && total > 0) {
+        persentage = ' - ' + parseFloat((count / total * 100).toFixed(2)) + '%'
       }
 
       return `${collected}${persentage}`
@@ -615,8 +625,9 @@ export const Home = () => {
 
   return (
     <div>
-      {showMainPage() && <Box display="flex">
-        <Box ml="auto" onClick={() => navigate("/main")}><AccountCircle color={'error'} /> <small color='#dc2b2b'><sup>beta</sup></small></Box>
+      {showMainPage() && <Box display='flex'>
+        <Box ml='auto' onClick={() => navigate('/main')}><AccountCircle color={'error'} /> <small
+          color='#dc2b2b'><sup>beta</sup></small></Box>
       </Box>}
 
       <CopyNeeded list={displayPokemons.map(({ nr }) => nr)} />
@@ -930,6 +941,64 @@ export const Home = () => {
               </div>
             )}
           </div>
+
+          <Box sx={{
+            display: 'flex',
+            flex: isSearchActive ? '1 1 100%' : '1 1 20px',
+            m: 0
+          }}>
+            {!isSearchActive && <IconButton type='button' size='medium' onClick={() => setIsSearchActive(true)}>
+              <Search />
+            </IconButton>}
+
+            {isSearchActive &&
+              <FormControl sx={{ mr: { sm: 1 }, mb: 2, width: { xs: '100%', sm: 'auto' }, maxWidth: { sm: '300px' } }}>
+                <InputLabel htmlFor='standard-adornment-password'>Search</InputLabel>
+
+                <OutlinedInput
+                  size='small'
+                  autoFocus
+                  autoComplete='off'
+                  label='Search'
+                  type='text'
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value || '')}
+                  inputProps={{ variant: 'outlined' }}
+                  startAdornment={
+                    <InputAdornment position='start'>
+                      <IconButton
+                        sx={{ mx: 0 }}
+                        type='button'
+                        color='primary'
+                        size='medium'
+                        // onClick={() => {
+                        //   setIsSearchActive(false)
+                        //   setSearch('')
+                        // }}
+                      >
+                        <Search />
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                  endAdornment={
+                    <InputAdornment position='end'>
+                      <IconButton
+                        onClick={() => {
+                          setIsSearchActive(false)
+                          setSearch('')
+                        }}
+                        onMouseDown={() => {
+                          setIsSearchActive(false)
+                          setSearch('')
+                        }}
+                      >
+                        <Close />
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                />
+              </FormControl>}
+          </Box>
         </div>
 
         <div className={`container dex-${dex}`} id='container'>
@@ -953,12 +1022,12 @@ export const Home = () => {
                   width={100}
                   height={100}
                 />
-                <div className="pokemon-tile-name">{pokemon.name}</div>
+                <div className='pokemon-tile-name'>{pokemon.name}</div>
                 <div>{pokemon.numero3decimals}</div>
               </li>}
 
               {pokemon.name === 'unreleased' && <li
-                className="item selected placeholder" key={[dex, i].join('_')}>
+                className='item selected placeholder' key={[dex, i].join('_')}>
                 <div>{pokemon.numero3decimals}</div>
               </li>}
             </Fragment>
@@ -986,7 +1055,7 @@ function orderNumber(str: string): string {
   return mySubString
 }
 
-function numbTo4Dec (numb: string | number): string {
+function numbTo4Dec(numb: string | number): string {
   const tempNumb = typeof numb === 'number' ? numb : parseInt(numb, 10)
   if (tempNumb < 10) return '00' + numb
   if (tempNumb < 100) return '0' + numb
